@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Warby_GiftCardAccount>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Warby_GiftCardAccount>
+    </modules>
+</config>

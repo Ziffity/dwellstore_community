@@ -1,0 +1,245 @@
+<config>
+    <modules>
+        <Kartparadigm_Giftcard>
+            <version>0.1.5</version>
+        </Kartparadigm_Giftcard>
+    </modules>
+    <adminhtml>
+        <menu>
+            <customer translate="title" module="customer">
+                <children>
+                    <giftcards translate="title" module="customer">
+                        <title>Manage Giftcards</title>
+                        <action>adminhtml/giftcard/index</action>
+                    </giftcards>
+                </children>
+            </customer>
+        </menu>
+    </adminhtml>
+    <global>
+        <template>
+            <email>
+                <custom_email_template1 module="kartparadigm_giftcard">
+                    <label>Giftcard Template For Customer</label>
+                    <file>giftcard/custom_email_template1.html</file>
+                    <type>html</type>
+                </custom_email_template1>
+                <admin_giftcard_template module="kartparadigm_giftcard">
+                    <label>Giftcard Template For Admin</label>
+                    <file>giftcard/admin_giftcard_template.html</file>
+                    <type>html</type>
+                </admin_giftcard_template>
+            </email>
+        </template>
+        <events>
+          
+
+            <sales_quote_collect_totals_after>
+                <observers>
+                    <kartparadigm_giftcard_model_observer>
+                        <class>Kartparadigm_Giftcard_Model_Observer</class>
+                        <method>collectTotals</method>
+                    </kartparadigm_giftcard_model_observer>
+                </observers>
+            </sales_quote_collect_totals_after>
+            <checkout_cart_product_add_after>
+                <observers>
+                    <kartparadigm_giftcard>
+                        <class>Kartparadigm_Giftcard_Model_Observer</class>
+                        <method>changingPrice</method>
+                    </kartparadigm_giftcard>
+                </observers>
+            </checkout_cart_product_add_after>
+            <!--Event when Order Invoice generation completed-->
+            <sales_order_invoice_save_after>
+                <observers>
+                    <kartparadigm_giftcard_model_observer>
+                        <type>singleton</type>
+                        <class>Kartparadigm_Giftcard_Model_Observer</class>
+                        <method>changingStatus</method>
+                    </kartparadigm_giftcard_model_observer>
+                </observers>
+            </sales_order_invoice_save_after>
+            <sales_order_payment_cancel>
+                <observers>
+                    <kartparadigm_giftcard_model_observer>
+                        <type>singleton</type>
+                        <class>Kartparadigm_Giftcard_Model_Observer</class>
+                        <method>kartparadigmCancel</method>
+                    </kartparadigm_giftcard_model_observer>
+                </observers>
+            </sales_order_payment_cancel>
+            <!--Event when checkout process complete-->
+            <sales_model_service_quote_submit_success>
+                <observers>
+                    <kartparadigm_giftcard_model_observer>
+                        <type>singleton</type>
+                        <class>Kartparadigm_Giftcard_Model_Observer</class>
+                        <method>generatecode</method>
+                    </kartparadigm_giftcard_model_observer>
+                </observers>
+            </sales_model_service_quote_submit_success>
+            <!--Event when product loaded into cart -->
+            <catalog_product_load_after>
+                <observers>
+                    <kartparadigm_giftcard_model_observer>
+                        <type>model</type>
+                        <class>Kartparadigm_Giftcard_Model_Observer</class>
+                        <method>catalogProductLoadAfter</method>
+                    </kartparadigm_giftcard_model_observer>
+                </observers>
+            </catalog_product_load_after>
+            <!--Observer to make the custom options persist-->
+            <sales_convert_quote_item_to_order_item>
+                <observers>
+                    <kartparadigm_giftcard_model_observer>
+                        <type>model</type>
+                        <class>Kartparadigm_Giftcard_Model_Observer</class>
+                        <method>salesConvertQuoteItemToOrderItem</method>
+                    </kartparadigm_giftcard_model_observer>
+                </observers>
+            </sales_convert_quote_item_to_order_item>
+        </events>
+        <blocks>
+            <kartparadigm_giftcard>
+                <class>Kartparadigm_Giftcard_Block</class>
+            </kartparadigm_giftcard>
+        </blocks>
+        <helpers>
+            <kartparadigm_giftcard>
+                <class>Kartparadigm_Giftcard_Helper</class>
+            </kartparadigm_giftcard>
+            <payment>
+                <rewrite>
+                    <data>Kartparadigm_Giftcard_Helper_Payment</data>
+                </rewrite>
+            </payment>
+        </helpers>
+        <models>
+            <kartparadigm_giftcard>
+                <class>Kartparadigm_Giftcard_Model</class>
+                <resourceModel>kartparadigm_giftcard_mysql4</resourceModel>
+            </kartparadigm_giftcard>
+            <kartparadigm_giftcard_mysql4>
+                <class>Kartparadigm_Giftcard_Model_Mysql4</class>
+                <entities>
+                    <giftcard>
+                        <table>kartparadigm_giftcard_giftcard</table>
+                    </giftcard>
+                    <giftcardtrans>
+                        <table>kartparadigm_giftcard_giftcardtrans</table>
+                    </giftcardtrans>
+                    <giftcardtemplate>
+                        <table>kartparadigm_giftcard_giftcardtemplate</table>
+                    </giftcardtemplate>
+                </entities>
+            </kartparadigm_giftcard_mysql4>
+        </models>
+        <resources>
+            <kartparadigm_giftcard_setup>
+                <setup>
+                    <module>Kartparadigm_Giftcard</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+            </kartparadigm_giftcard_setup>
+        </resources>
+        <catalog>
+            <product>
+                <type>
+                    <giftcard translate="label" module="kartparadigm_giftcard">
+                        <label>GiftCard Product</label>
+                        <model>kartparadigm_giftcard/product_type</model>
+                        <is_qty>0</is_qty>
+                        <composite>0</composite>
+                        <can_use_qty_decimals>0</can_use_qty_decimals>
+                    </giftcard>
+                </type>
+            </product>
+        </catalog>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <giftcard module="Kartparadigm_Giftcard">
+                    <file>kartparadigm/giftcard.xml</file>
+                </giftcard>
+            </updates>
+        </layout>
+        <routers>
+            <kartparadigm_giftcard>
+                <use>standard</use>
+                <args>
+                    <module>Kartparadigm_Giftcard</module>
+                    <frontName>giftcard</frontName>
+                </args>
+            </kartparadigm_giftcard>
+        </routers>
+          <translate>
+            <modules>
+                <Kartparadigm_Giftcard>
+                    <files>
+                        <default>Kartparadigm_Giftcard.csv</default>
+                    </files>
+                </Kartparadigm_Giftcard>
+            </modules>
+        </translate>
+    </frontend>
+    <!-- Default Values for giftcard fields-->
+    <default>
+        <giftcard>
+            <giftcard>
+            <enabled>0</enabled>
+                <txt_clength>12</txt_clength>
+                <txt_dashafter>4</txt_dashafter>
+                <txt_expiry>60</txt_expiry>
+                <giftcard_sender_email>Sales</giftcard_sender_email>
+            </giftcard>
+        </giftcard>
+        <payment>
+            <kartparadigm_giftcard>
+                <active>0</active>
+                <model>kartparadigm_giftcard/quote_payment</model>
+                <order_status>pending</order_status>
+                <title>Gift Card Payment</title>
+                <allowspecific>0</allowspecific>
+                <comments>
+                    <![CDATA[This order will be fully paid by the gift card]]>
+                </comments>
+            </kartparadigm_giftcard>
+        </payment>
+    </default>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <kartparadigm_giftcard before="Mage_Adminhtml">Kartparadigm_Giftcard_Adminhtml</kartparadigm_giftcard>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <!-- Over loading admin templates in module-->
+    <stores>
+        <admin>
+            <design>
+                <package>
+                    <name>default</name>
+                </package>
+                <theme>
+                    <default>kartparadigm</default>
+                </theme>
+            </design>
+        </admin>
+    </stores>
+    <adminhtml>
+        <layout>
+            <updates>
+                <kartparadigm_giftcard module="Kartparadigm_Giftcard">
+                    <file>giftcard.xml</file>
+                </kartparadigm_giftcard>
+            </updates>
+        </layout>
+    </adminhtml>
+   
+</config>

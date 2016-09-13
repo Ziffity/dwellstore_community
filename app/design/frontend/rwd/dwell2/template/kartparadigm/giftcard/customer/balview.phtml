@@ -1,0 +1,77 @@
+
+<div class="category-description" style="margin-right:75px; margin-bottom:20px; "><h3><?php echo $this->__('Gift Card Transactions')?></h3>
+
+</div>
+<hr style='border-size:1px'/>
+<?php
+$_collection = $this->getGiftcardTrans();
+$firstitem=$_collection->getFirstItem();
+echo "<br/><h4 style='color:#E26703'>".$this->__('Giftcard Name')." : ".$firstitem->getGiftcardName()."</h4>";
+echo "<h4 style='color:green'>".$this->__('Giftcard Code')." : ".$firstitem->getGiftcardCode()."</h4>";
+
+$evenodd="odd";
+$helper = Mage::helper('kartparadigm_giftcard');
+$myarr=$helper->getStatusarray();
+if($_collection->count()<=0):
+echo "<br/><h5>You have not purchased any Giftcard products yet.</h5>";
+echo "<br/><br/><hr style='border-size:1px'/>";
+else :
+?>
+
+<br/>
+<a class="link-reorder" href="<?php echo  Mage::getBaseUrl()?>giftcard/customer/balance" style="float:right;margin-right:30px">&lt; <?php echo $this->__('Go back')?> </a>
+<br/>
+
+<br/>
+   <table id="" class="data-table">
+    <colgroup><col width="1">
+    <col width="1">
+    <col width="1">
+    <col width="1">
+    <col width="1">
+    <col width="1">
+        </colgroup><thead>
+            <tr class="first last">
+      <th><?php echo $this->__('Order ID')?></th>
+     
+  		<th><?php echo $this->__('Giftcard Balance')?></th>
+ 		<th><?php echo $this->__('Amount Used')?></th>
+		<th><?php echo $this->__('Transaction Date')?></th>
+                
+                <th><?php echo  $this->__('Status')?></th>
+               <th><?php echo $this->__('Comment')?></th>
+            </tr>
+        </thead>
+        <tbody>
+	<?php
+$evenodd='odd';
+	     foreach($_collection as $row): ?>
+		<tr class="<?php echo $evenodd?>">
+			<td ><?php 
+			$orderincreid=$row->getOrderId();
+			 $order = Mage::getModel('sales/order')->load($orderincreid, 'increment_id');
+                   $orderid = $order->getId();
+                   if(is_numeric($orderid))
+                   $url= Mage::getBaseUrl().'sales/order/view/order_id/'.$orderid;
+                   else
+                   $url="#";
+                   ?>
+			<a  href="<?php echo $url?>"><?php echo $orderincreid?></a>
+			</td>
+<!--<td><?php echo Mage::getModel('kartparadigm_giftcard/custommethods')->getBalance($row->getGiftcardVal(),$row->getGiftcardCurrency())?></td>-->
+			<td><?php echo Mage::getModel('kartparadigm_giftcard/custommethods')->getBalance($row->getGiftcardBal(),$row->getGiftcardCurrency())?></td>
+<td><?php echo Mage::getModel('kartparadigm_giftcard/custommethods')->getBalance($row->getGiftcardBalused(),$row->getGiftcardCurrency())?></td>
+			<td><?php echo $row->getTransacDate()?></td>
+			<!--<td><?php echo $row->getExpiryDate()?></td>-->
+			<td><?php echo $myarr[$row->getGiftcardStatus()]?></td>
+			<td><?php echo $row->getComment()?></td>
+		
+		</tr>
+<?php if($evenodd=='even')
+$evenodd='odd';
+else
+$evenodd='even';?>
+	<?php endforeach;?>
+        </tbody>
+    </table>
+<?php endif;?>

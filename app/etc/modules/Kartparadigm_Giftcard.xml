@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Kartparadigm_Giftcard>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Catalog />
+                <Mage_Adminhtml />
+                <Mage_Checkout />
+                <Mage_Sales />
+            </depends>
+        </Kartparadigm_Giftcard>
+    </modules>
+</config>

@@ -1,0 +1,169 @@
+#magestore-bannerslider-popup{
+	padding: 2px;
+    position: fixed;
+    z-index: 19990;
+	background: #fff;
+	border: 2px;
+}
+#magestore-bannerslider-popup-close{
+	cursor: pointer;
+    height: 22px;
+	width:22px;
+    position: absolute;
+    right: 0px;
+    top: -25px;   
+    z-index: 19999;
+	background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/default/css/magestore/bannerslider/image/close-tiny.png) no-repeat center;
+}
+#bg_fade {
+    background-color: #000000;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1000;
+	opacity: 0.7;
+}
+.gc.discount .button.active{
+    background-color: rgb(51, 153, 204);
+    color: #ffffff;
+}
+
+.gc.discount .button.active:hover {
+    background-color: rgb(46, 138, 184);
+}
+
+.gc.giftcard.discount h2,
+.gc .gc-applied-gift-cards dt {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 5px;
+    display: block;
+}
+
+.gc.discount label {
+    font-size: 12px;
+    font-weight: normal;
+    font-family: "Helvetica Neue",Verdana,Arial,sans-serif;
+
+}
+
+.gc .gc-applied-gift-cards {
+    padding-top: 10px;
+}
+.gc-applied-gift-cards span.price {
+    display: inline-block;
+}
+/*checkout*/
+
+.sp-methods #checkout-payment-method-gift-card ul.form-list {
+    padding-left: 0;
+}
+
+.gc-cart-action {
+    padding: 5px 0 10px;
+    height: auto;
+    overflow: hidden;;
+}
+
+.gc-cart-action .button-box {
+    display: block;
+    float: left;
+    width: auto;
+}
+.gc-cart-action .please-wait {
+    float: left;
+    display: block;
+    width: auto;
+}
+
+#gc-please-wait {
+    display: none;
+}
+#gc-applied-codes-error {
+    color: #eb5040;
+    height: 24px;
+    line-height: 24px;
+    margin: 5px 0 0 10px;
+    white-space: nowrap;
+    float: left;
+    width: auto;
+}
+div.oneall_social_login {
+  padding-top: 10px;
+}
+
+.oneall_social_login_error {
+  margin-bottom: 20px;
+  background-color: #efdfdf;
+  color: #B80C14;
+  padding: 10px;
+  line-height: 16px;
+  font-size: 12px;
+  border: 1px dashed #B80C14;
+}
+
+.customer-account-login .page-title {
+  position: absolute;
+  max-width: 1260px;
+  width: 1200px;
+  margin-top: -150px;
+}
+
+.loginpage {
+  margin-top: 31px;
+}
+
+.logup {
+  padding-bottom: 5px;
+}
+
+.oneall_social_login iframe {
+  max-width: 100%;
+  width: 100%;
+}
+
+.siginf {
+  max-width: 308px;
+  width: 100%;
+  float: right;
+  margin-right: 230px;
+}
+
+.clr {
+  clear: both;
+}
+
+.registerloginform {
+  max-width: 308px;
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.placeregister {
+  padding-bottom: 10px;
+}
+
+.customer-account-create .oneall_social_login_providers {
+  margin-bottom: 25px;
+}
+
+@media ( max-width : 1200px) {
+  .customer-account-login .page-title {
+    max-width: 100%;
+  }
+  .registerloginform,.siginf {
+    float: none;
+    display: inline-block;
+    margin: 0px auto;
+  }
+  .customer-account-login .page-title {
+    position: static;
+    margin-top: 0px;
+  }
+}

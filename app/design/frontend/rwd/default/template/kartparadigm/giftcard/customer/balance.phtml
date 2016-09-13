@@ -1,0 +1,65 @@
+<div class="category-description" style="margin-right:75px; margin-bottom:20px; "><h3><?php echo $this->__('My Gift Cards')?></h3>
+</div>
+<hr style='border-size:1px'/>
+<?php
+$_collection = $this->getCustomerGiftcards();
+$evenodd="odd";
+$helper = Mage::helper('kartparadigm_giftcard');
+$myarr=$helper->getStatusarray();
+if($_collection->count()<=0):
+echo "<br/><h5>".$this->__('You have not purchased any Giftcard products yet.')."</h5>";
+echo "<br/><br/><hr style='border-size:1px'/>";
+else :
+?>
+<br/>
+
+<br/>
+<br/>
+
+   <table id="" class="data-table">
+    <colgroup><col width="1">
+    <col width="1">
+    <col width="1">
+    <col width="1">
+    <col width="1">
+    <col width="1">
+        </colgroup><thead>
+            <tr class="first last">
+                <th><?php echo $this->__('Giftcard Code')?></th>
+		 <th><?php echo $this->__('Giftcard Value')?></th>
+                <th><?php echo $this->__('Balance')?></th>
+                <th><?php echo $this->__('Added Date')?></th>
+                <th><?php echo $this->__('Expire Date')?></th>
+                <th><?php echo $this->__('Status')?></th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+	<?php
+$evenodd='odd';
+	     foreach($_collection as $row): ?>
+		<tr class="<?php echo $evenodd?>">
+			<td ><?php echo $helper->getCodeMasked($row->getGiftcardCode())?></td>
+<td><?php echo Mage::getModel('kartparadigm_giftcard/custommethods')->getBalance($row->getGiftcardVal(),$row->getGiftcardCurrency())?></td>
+			<td><?php echo Mage::getModel('kartparadigm_giftcard/custommethods')->getBalance($row->getGiftcardBal(),$row->getGiftcardCurrency())?></td>
+			<td><?php echo $row->getCreatedDate()?></td>
+			<td><?php echo $row->getExpiryDate()?></td>
+			<td><?php echo $myarr[$row->getGiftcardStatus()]?></td>
+			<td class="a-center last"><a class="link-reorder" href="<?php echo  Mage::getBaseUrl()?>giftcard/customer/view/id/<?php echo $row->getGiftcardId()?>">View</a>
+			<?php if($row->getGiftcardStatus()==1):?>
+			<span class="separator">|</span>
+			
+			<a class="link-reorder" href="<?php echo  Mage::getBaseUrl()?>giftcard/customer/shareview/id/<?php echo $row->getGiftcardId()?>">Share </a>
+			
+			<?php endif;?>
+			</td>
+		</tr>
+<?php if($evenodd=='even')
+$evenodd='odd';
+else
+$evenodd='even';?>
+	<?php endforeach;?>
+        </tbody>
+    </table>
+<?php endif;?>
+

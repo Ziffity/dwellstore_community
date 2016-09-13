@@ -1,0 +1,27 @@
+
+
+<?php
+$gccode=Mage::getModel('kartparadigm_giftcard/giftcard')->load($this->getRequest()->getParam('id'))->getGiftcardCode();
+?>
+<div class="category-description" style="margin-right:75px; margin-bottom:20px; "><h3><?php echo $this->__('Share Giftcard')?></h3>
+</div>
+<hr style='border-size:1px'/>
+<br/>
+<br/>
+<form id="sharegc_form" name="sharegc_form" action="<?php echo  Mage::getBaseUrl()?>giftcard/customer/share" method="post">
+<?php echo $this->__('Giftcard Code')?> : <input type="text" name="GiftcardCode" value="<?php echo $gccode ?>" id='gccode' class="input-text required-entry" >
+<br/>
+<br/>
+
+<?php echo $this->__('Sharing Mail ID')?> : <input type="text" name="Sharingmail" id='sharemail' class="input-text required-entry validate-email" >
+<br/>
+<br/>
+<input type="hidden" name="gcid" id='gcid' value="<?php echo $this->getRequest()->getParam('id')?>" >
+<button type="submit" class="button" title="Share Giftcard" name="share" id="share"><span><span><?php echo $this->__('Share Giftcard')?> </span></span></button>
+</form>
+
+<script type="text/javascript">
+    //< ![CDATA[
+        var customForm = new VarienForm('sharegc_form');
+    //]]>
+</script>

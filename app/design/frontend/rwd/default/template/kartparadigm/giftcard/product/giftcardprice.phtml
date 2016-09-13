@@ -1,0 +1,34 @@
+
+
+<?php
+$_product = $this->getProduct();
+if($_product->getAttributeText('price_type')=='Range Price'): // checking price type range or fixed
+?>
+<span id="product-price-27" class="price">
+        <input id="CP_ID" class="input-text price required-entry" type="text"   name="custom_price" ></input>
+    </span><br/><br/>
+    <input id="customp" type="hidden"  name="customp" value="<?php echo $_product->getMinGcamt(); ?>"></input>
+<?php endif;?>
+<script src="<?php echo $this->getSkinUrl('js/giftcard/jquery.min-1.11.1.js')?>"></script>  <script>
+var min='<?php echo $_product->getMinGcamt(); ?>';
+var max='<?php echo $_product->getMaxGcamt(); ?>';
+min=parseInt(min, 10);
+max=parseInt(max, 10);
+var changeprice=$.noConflict();
+
+changeprice(document).ready(function(){
+  changeprice("#CP_ID").focusout(function(){
+
+if(min<=changeprice("#CP_ID").val()&&changeprice("#CP_ID").val()<=max){
+
+    changeprice("#customp").val(changeprice("#CP_ID").val());
+}
+else{
+alert("enter price in given range");
+changeprice("#CP_ID").val("");
+}
+  });
+  
+});
+</script>
+

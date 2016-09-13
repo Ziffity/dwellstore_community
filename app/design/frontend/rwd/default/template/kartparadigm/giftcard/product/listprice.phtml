@@ -1,0 +1,24 @@
+<style>
+.myprice{
+font-weight: bold;
+font-size: 13px;
+color: #C76200;
+}
+</style>
+
+<?php
+$_product = $this->getProduct();
+
+if($_product->getAttributeText('price_type')=='Range Price'){ // checking price type range or fixed
+echo $this->__('From')." : <span class='myprice'> ".Mage::helper('core')->currency($_product->getMinGcamt(), true, false)."</span>";
+echo "<br/>".$this->__('To')." : <span class='myprice'>".Mage::helper('core')->currency($_product->getMaxGcamt(), true, false)."</span>";
+}
+else if($_product->getGiftcardValue()!=$_product->getPrice()&& ($_product->getGiftcardValue()!=0)){
+echo $this->__('Price')." : <span class='myprice'> ".Mage::helper('core')->currency($_product->getPrice(), true, false)."</span>";
+echo "<br/>".$this->__('Value'). ": <span class='myprice'> ".Mage::helper('core')->currency($_product->getGiftcardValue(), true, false)."</span>";
+}
+else {
+echo $this->__('Price')." : <span class='myprice'> ".Mage::helper('core')->currency($_product->getPrice(), true, false)."</span>";
+}
+?>
+

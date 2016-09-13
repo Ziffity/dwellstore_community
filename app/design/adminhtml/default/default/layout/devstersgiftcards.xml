@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_giftcards_index>
+        <reference name="content">
+            <block type="gift/adminhtml_giftcards" name="giftcards" />
+        </reference>
+        <reference name="js">
+            <block type="core/template" template="devsters/giftcards/devsterscardbalance.phtml" />
+        </reference>
+    </adminhtml_giftcards_index>
+</layout>

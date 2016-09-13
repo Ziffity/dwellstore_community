@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+<adminhtml_system_config_edit>
+    <reference name="head">
+      <action method="addJs">
+        <file>jscolor/jscolor.js</file>
+      </action>
+     </reference>
+  </adminhtml_system_config_edit>
+ 
+  
+<adminhtml_giftcard_index>
+<reference name="content">
+<block type="kartparadigm_giftcard/adminhtml_registries" name="registries" />
+</reference>
+</adminhtml_giftcard_index>
+
+
+  
+<adminhtml_giftcard_send>
+<reference name="content">
+<block type="kartparadigm_giftcard/adminhtml_groupsend_edit" name="adminhtml_groupsend_tabs" />
+</reference>
+</adminhtml_giftcard_send>
+
+<adminhtml_giftcard_groupsend>
+<reference name="content">
+<block type="kartparadigm_giftcard/adminhtml_groupsend_edit" name="adminhtml_groupsend_tabs" />
+</reference>
+</adminhtml_giftcard_groupsend>
+
+
+<adminhtml_template_index>
+<reference name="content">
+<block type="kartparadigm_giftcard/adminhtml_templates" name="templates" />
+</reference>
+</adminhtml_template_index>
+
+
+<adminhtml_template_view>
+<reference name="content">
+    <block type="core/template" name="template.view"  as="template_view" template="kartparadigm/giftcard/view.phtml" />          
+       
+</reference>
+</adminhtml_template_view>
+
+
+<adminhtml_giftcard_view>
+<reference name="content">
+    <block type="core/template" name="giftcard.view"  as="giftcard_view" template="kartparadigm/giftcard/view.phtml" />          
+       
+</reference>
+</adminhtml_giftcard_view>
+
+<adminhtml_template_edit>
+<reference name="head">
+      <action method="addJs">
+        <file>jscolor/jscolor.js</file>
+      </action>
+     </reference>
+<reference name="content">
+<block type="kartparadigm_giftcard/adminhtml_templates_edit" name="edit_template_tabs" />
+</reference>
+</adminhtml_template_edit>
+<adminhtml_template_new>
+<reference name="head">
+      <action method="addJs">
+        <file>jscolor/jscolor.js</file>
+      </action>
+     </reference>
+<reference name="content">
+<block type="kartparadigm_giftcard/adminhtml_templates_new" name="new_template_tabs" />
+</reference>
+</adminhtml_template_new>
+
+
+
+
+
+
+<adminhtml_giftcard_new>
+<reference name="head">
+      <action method="addJs">
+        <file>jscolor/jscolor.js</file>
+      </action>
+     </reference>
+<reference name="content">
+<block type="kartparadigm_giftcard/adminhtml_registries_new" name="new_registry_tabs" />
+</reference>
+</adminhtml_giftcard_new>
+
+<adminhtml_giftcard_edit>
+<reference name="head">
+      <action method="addJs">
+        <file>jscolor/jscolor.js</file>
+      </action>
+     </reference>
+<reference name="content">
+<block type="kartparadigm_giftcard/adminhtml_registries_edit" name="edit_registry_tabs" />
+</reference>
+</adminhtml_giftcard_edit>
+
+
+
+<adminhtml_customer_edit>
+<reference name="left">
+<reference name="customer_edit_tabs">
+<block type="kartparadigm_giftcard/adminhtml_customer_edit_tab_giftcard" name="tab_giftcard_main"
+template="kartparadigm/giftcard/customer/main.phtml">
+<block type="kartparadigm_giftcard/adminhtml_customer_edit_tab_giftcard_list" name="tab_giftcard_list" as="giftcard_list" />
+</block>
+<action method="addTab">
+<name>kartparadigm_giftcard</name>
+<block>tab_giftcard_main</block>
+</action>
+</reference>
+</reference>
+</adminhtml_customer_edit>
+
+
+
+</layout>
+

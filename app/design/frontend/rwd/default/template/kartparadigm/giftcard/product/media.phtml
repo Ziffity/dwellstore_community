@@ -1,0 +1,247 @@
+
+
+<?php
+
+ $_product = $this->getProduct();
+$options=$_product->getAttributeText('giftcard_template');
+$value=reset($options);
+ //$row=Mage::getModel('kartparadigm_giftcard/giftcardtemplate')->getCollection()->addFieldToFilter('template_name',$value)->getFirstItem();
+ $textcol="#BF0D0D";
+ $themecol="#32943F";
+ $mediapath=Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA);
+ $imgpath=$this->helper('catalog/image')->init($_product, 'image');
+ $barcode=$mediapath."giftcard/bar.gif";
+ $close=$mediapath."giftcard/clos.png";
+ 
+if(($_product->getGiftcardValue()!=$_product->getPrice())&& ($_product->getGiftcardValue()!=0))
+$price =Mage::helper('core')->currency($_product->getGiftcardValue(), true, false);
+else
+$price=Mage::helper('core')->currency($_product->getPrice());
+ 
+
+?>
+<style>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+   
+  
+</style>
+<style type="text/css">
+/* example styling, feel free to move it to your styles.css */
+
+.col1-layout .product-view .product-shop {
+    float: right;
+    width: 290px;
+}
+.product-view .product-img-box {
+    float: left;
+    width: 550px;
+    height:350px;
+}
+.tab .tr{
+padding:2px 2px;
+height:28px;
+}
+.tab td{
+padding:2px 2px;
+height:24px;
+}
+.froml{
+font-weight:bold;
+font-size:14px;
+
+}
+.tol{
+font-weight:bold;
+font-size:14px;
+
+}
+.proname{
+font-size: 22px;
+font-family: 'Tangerine', serif;font-style: oblique;
+
+}
+.themecolor{
+color:<?php echo $themecol ?>;
+}
+.textcolor{
+color:<?php echo $textcol ?>;
+}
+
+.giftcard-code{
+
+font-weight:bold;
+font-size:12px;
+float:right;
+padding-right:15px;
+}
+.val{
+font-weight:bold;
+font-size:15px;
+width:100px;
+float:left;
+}
+.gcnote{
+font-size:12px;
+width:240px;
+float:left;
+padding-top:30px;
+}
+.tab{
+margin-left: 250px; width:290px;position: absolute;
+}
+.imgright{
+float:right;
+}
+.barcode{
+width:140px;
+height:50px;
+}
+.amt{
+font-size:18px;
+}
+.giftcard-preview-message-box{
+background-repeat: no-repeat; 
+background-image: url('<?php echo $imgpath ?>');
+background-size: 240px 350px;
+}
+.fromto{
+font-size:14px;font-weight:bold;
+}
+.giftcard-preview-container{width:550px;height:350px;}
+.giftcard-preview-message-box {width:525px;position: absolute; height:350px; padding-top:5px}
+.giftcard-message { margin:0 auto; width:270px; height:75px;padding:5px; line-height:15px; text-align:left;color:brown;border-radius:10px;border:1px solid gray; }
+</style>
+
+<script src="<?php echo $this->getSkinUrl('js/giftcard/jquery.min-1.11.1.js')?>"></script> 
+
+<?php Mage::log("version : ". Mage::getVersion());if((Mage::getVersion()=="1.8.1.0")||(Mage::getVersion()=="1.8.0.0")) :?> 
+<script src="<?php echo $this->getSkinUrl('js/giftcard/blurbox1.js')?>"></script>
+<?php else :?>
+<script src="<?php echo $this->getSkinUrl('js/giftcard/blurbox.js')?>"></script>
+<style>
+.col1-layout .product-view .product-shop {
+    float: left;
+margin-left: 50px;
+}
+</style>
+<?php endif; ?>
+<script>
+var gctemp=$.noConflict();
+gctemp(document).ready(function() {
+    gctemp(".pop").click(function() {
+gctemp('.popup').blurbox({blur: 10, animateBlur: true}).show();
+ 
+});
+    gctemp("#quick-close").click(function() {
+    
+      //alert(pid);
+gctemp('.popup').blurbox().hide();
+
+});
+
+gctemp("#giftcard_template").change(function() {
+
+        
+          var array = gctemp('option:selected',gctemp(this)).val().split(",");
+          var text="#"+array[0];
+          var theme="#"+array[1];
+          var url='<?php echo $mediapath;?>';
+          var p='url('+url+array[2]+')';
+          var dpath='<?php $imgpath ?>';
+          var dcolor='<?php  $textcol ?>';
+          var dthem= '<?php $themecol ?>';
+	    var note=array[3];
+          if(array[0]!='')
+          {
+            gctemp(".themecolor").css("color",text);
+             gctemp(".textcolor").css("color",theme);
+             gctemp(".giftcard-preview-message-box").css('background-image',p);
+	     gctemp(".gcnote").html(note);
+             }
+             else
+             {
+             gctemp(".themecolor").css("color",dcolor);
+             gctemp(".textcolor").css("color",dthem);
+             gctemp(".giftcard-preview-message-box").css('background-image',dpath);
+            
+             }
+           
+           
+        });
+
+});
+</script>
+<div class='pop' class="giftcard-preview-container">
+<div  class="giftcard-preview-message-box"  >
+	
+    </div>
+   
+<table class='tab' >
+<tr><td colspan="2" style="padding-bottom:10px;"> <span class="proname themecolor"><?php echo $_product->getName();?></td></tr>
+	<tr><td style="width: 140px;">
+	 <span class="froml textcolor"><?php echo $this->__('From') ?> : <span  id='from' class="fromto themecolor" ></span></span></td>
+<td >
+	<span class="tol " style="color:gray;">| </span><span class="tol textcolor"> <?php echo $this->__(' To') ?> : <span  id='to' class="fromto themecolor" ></span></span></td></tr>
+	
+	<tr><td colspan="2">
+	
+		<div class="giftcard-message themecolor" id="txtCustName"></div></td>
+		</tr>
+		<tr><td colspan="2">
+	<div class="giftcard-code themecolor"><?php echo $this->__('Giftcard Code') ?>: <span class="textcolor" >XXX-XXX</span></div>
+	</td>
+		</tr>
+	<tr><td colspan="2">
+	
+		<div class="val textcolor"><?php echo $this->__('Value') ?> : <br/><span class="amt themecolor"><?php echo $price?></span></div>
+		
+</td>
+		</tr>
+		<tr><td colspan="2">
+		<div class="gcnote textcolor"><?php echo $this->__('Giftcards only used for purchase in store only') ?></div>
+		</td></tr>
+		</table>
+		
+		</div>
+		
+		<!--Pop UP Div-->
+
+<div class="popup" style="display:none;width:550px;height:350px;" >
+<img class='imgright' src="<?php echo $close?>" id="quick-close" style="margin-right: -8px;margin-top: -8px;">
+
+<div  class="giftcard-preview-message-box" >	
+    </div>
+    	
+   
+<table class='tab' >
+<tr><td style="padding-bottom:10px;"> <span class="proname themecolor" ><?php echo $_product->getName();?></span></td></tr>
+	<tr><td style="width:140px">
+	 <span class="froml textcolor"><?php echo $this->__('From') ?> : <span  id='from1' class="fromto themecolor" ></span></span></td>
+<td>
+	<span class="tol " style="color:gray;">| </span><span class="tol textcolor"> <?php echo $this->__(' To') ?> : <span  id='to1' class="fromto themecolor" ></span></span></td>
+</tr>
+	
+	<tr><td colspan="2">
+	
+		<div class="giftcard-message themecolor" id="txtCustName1"></div></td>
+		</tr>
+		<tr><td colspan="2">
+	<div class="giftcard-code themecolor"><?php echo $this->__('Giftcard Code') ?>: <span class="textcolor" >XXX-XXX</span></div>
+	</td>
+		</tr>
+	<tr><td colspan="2">
+	
+		<div class="val textcolor"><?php echo $this->__('Value') ?> : <br/><span class="amt themecolor"><?php echo $price?> </span></div>
+		
+</td>
+		</tr>
+		<tr><td colspan="2">
+		<div class="gcnote textcolor"><?php echo $this->__('Giftcards only used for purchase in store only') ?></div>
+		</td></tr>
+
+		</table>
+		
+		</div>
+
+
+        

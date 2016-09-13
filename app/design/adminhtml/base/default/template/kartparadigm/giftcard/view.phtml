@@ -1,0 +1,137 @@
+<?php $temp=Mage::registry('tempvariables');
+
+
+
+
+?>
+<script>
+function goBack() {
+    window.history.back()
+}
+</script>
+<style>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+   
+  
+</style>
+<div class="content-header">
+    <table cellspacing="0">
+        <tbody><tr>
+            <td style="width:50%;"><h3 class="icon-head head-adminhtml-templates">Giftcard Template</h3></td>
+            <td class="form-buttons"><button type="button" onclick="printDiv('giftcard')" value="print Giftcard" style="float:right;margin-right:25px;" /><span><span><span>Print Giftcard</span></span></span></button>
+
+<button title="View Template" onclick="goBack()" type="button"><span><span><span>Back</span></span></span></button></td>
+       </form> </tr>
+    </tbody></table>
+</div>
+<center>
+<div id='giftcard' class="giftcard-preview-container" style="width: 678px;
+height: 448px;
+
+
+-webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);">
+   <div  style="background-repeat: no-repeat;float:left;
+      width:350px; ; padding-top:2px;" >
+      <img src="<?php echo $temp['templateimg']?>" style="width: 340px;
+height: 435px;
+padding-top: 5px;" alt="Image Name" >
+  </div>
+   <table style="    float: right;
+    padding-top: 15px;
+    width: 315px;" >
+      <tr style="padding:2px 2px;
+         height:32px;">
+         <td colspan="2" style="padding:2px 2px;
+            height:24px;"> <span  style="font-size: 24px;
+font-family: 'Tangerine', serif;font-style: oblique;color:<?php echo $temp['textcolor'] ?>;"><?php echo $temp['giftcardname']?></td>
+      </tr>
+       <tr style="padding:2px 2px;
+         height:24px;">
+         <td  style="padding:2px 2px;
+            height:24px;">
+           
+         </td>
+      </tr>
+      <tr style="padding:2px 2px;
+         height:20px;">
+         <td  style="padding:2px 2px;
+            height:20px;">
+            <span  style="
+               font-size: 18px;
+               color:<?php echo $temp['themecolor'] ?>;">From : <span  id='from'  style="font-size:16px; text-transform: capitalize;
+               color:<?php echo $temp['textcolor'] ?>;" ><?php echo $temp['customername']?></span></span>
+         </td>
+          <td  style="padding:2px 10px;
+            height:18px;">
+            <span  style="
+               font-size:18px;
+               color:<?php echo $temp['themecolor'] ?>;"><span  style="
+               font-size:18px;color:gray;">| </span>To : <span  id='to'  style="font-size:16px; text-transform: capitalize;
+               color:<?php echo $temp['textcolor'] ?>;" ><?php echo $temp['receivername']?></span></span>
+         </td>
+      </tr>
+     
+      <tr style="padding-top:10px;
+         height:32px;">
+         <td colspan="2" style="padding:2px 2px;
+            height:24px;">
+            <div style="margin: 0px auto;font-size:14px;
+width: 285px;
+height: 100px;
+padding: 5px;
+line-height: 15px;text-align:left;color:<?php echo $temp['textcolor'] ?>;border-radius:10px;border:1px solid gray;" id="txtCustName"><?php echo $temp['gcmsg']?></div>
+         </td>
+      </tr>
+      <tr style="padding:2px 2px;
+         height:32px;">
+         <td colspan="2" style="padding:2px 2px;
+            height:24px;">
+            <div style="color:<?php echo $temp['textcolor'] ?>;
+               font-weight:bold;
+               font-size:12px;
+               float:right;
+               padding-right:15px;">Giftcard Code: <span class="textcolor" style="color:<?php echo $temp['themecolor'] ?>;"><?php echo $temp['giftcardcode']?></span></div>
+         </td>
+      </tr>
+      <tr style="padding:2px 2px;
+         height:32px;" >
+         <td colspan="2" style="padding:2px 2px;
+            height:24px;">
+            <div  style="color:<?php echo $temp['themecolor'] ?>;
+               font-weight:bold;
+               font-size:15px;
+               width:100px;
+               float:left;">Value : <br/><span  style="color:<?php echo $temp['textcolor'] ?>;
+               font-size:18px;margin-top:15px;"><?php echo $temp['giftcardval']?></span></div>
+           
+         </td>
+      </tr>
+      <tr style="padding:2px 2px;
+         height:32px;" >
+         <td colspan="2" style="padding:2px 2px;
+            height:24px;">
+            <div style="color:<?php echo $temp['themecolor'] ?>;
+               font-weight:bold;
+               font-size:12px;
+               width:240px;
+               float:left;padding-top: 30px;"><?php echo $temp['gcnote']?>Giftcard is for purchase in store.</div>
+         </td>
+      </tr>
+   </table>
+    
+</div>
+</center>
+<script>
+function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+}
+</script>

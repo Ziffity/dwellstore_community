@@ -1,0 +1,82 @@
+
+<layout version="0.1.0">
+<!--adding new link to  Customer Myaccount links--> 
+    <customer_account>
+        <reference name="customer_account_navigation">
+            <action method="addLink" translate="label" module="kartparadigm_giftcard"  ifconfig="giftcard/giftcard/enabled" ><name>Gift Card</name><path>kartparadigm_giftcard/customer/balance/</path><label>My Gift Cards</label></action>
+        </reference>
+    </customer_account>
+     <PRODUCT_TYPE_giftcard translate="label" module="kartparadigm_giftcard">
+        <label>Catalog Product View (Giftcard)</label>
+         <reference name="head">
+<action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params></params></action>
+<action method="addItem"><type>js</type><name>calendar/calendar.js</name></action>
+<action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name></action>
+<block type="core/html_calendar" name="head.calendar" as="calendar" template="page/js/calendar.phtml"></block>
+</reference>
+        <reference name="product.info">
+
+            <block type="kartparadigm_giftcard/catalog_product_view_type" name="product.info.giftcard" as="product_type_data" template="kartparadigm/giftcard/product/type.phtml">
+          
+   <block type="core/html_calendar" name="html_calendar" as="html_calendar" template="page/js/calendar.phtml"/>
+            <block type="kartparadigm_giftcard/catalog_product_view_type" name="product.info.gcprice" as="product_type_gcprice" template="kartparadigm/giftcard/product/giftcardprice.phtml"/>
+            
+            </block>
+               <reference name="product.info"> 
+        <block type="catalog/product_view_media" name="product.info.media" as="media" template="kartparadigm/giftcard/product/media.phtml" />
+    </reference>
+        </reference>
+  
+    <reference name="root">
+        <action method="setTemplate"><template>page/1column.phtml</template></action>
+    </reference>
+
+  </PRODUCT_TYPE_giftcard>
+  
+   <default>
+  
+          <reference name="catalog_product_price_template">
+            <action method="addPriceBlockType"><type>giftcard</type><block>catalog/product_price</block><template>kartparadigm/giftcard/product/listprice.phtml</template></action>
+            <!-- duplicate for each product type you need to handle i.e. change the value of the <type> node" -->
+        </reference>
+    </default>
+   
+    <!-- This will override the coupon output, then adds the coupon block back as well as our own custom creditpoint block-->
+ <checkout_cart_index>
+    <reference name="checkout.cart">
+      <block type="core/text_list" name="coupon.and.discount" as="coupon">
+        <action method="insert">
+          <block>checkout.cart.coupon</block>
+        </action>
+        <block type="core/template" name="discountblock" template="kartparadigm/giftcard/product/coupon.phtml" after="checkout.cart.coupon" />
+      </block>
+     </reference>
+  </checkout_cart_index>
+
+
+  <!-- adding custom page block to customer myaccount-->
+ <kartparadigm_giftcard_customer_balance>
+       <reference name="my.account.wrapper">
+            <block type="kartparadigm_giftcard/balance" name="giftcard.balance"  as="giftcard_balance" template="kartparadigm/giftcard/customer/balance.phtml" />
+        </reference>
+    </kartparadigm_giftcard_customer_balance>
+    
+    <kartparadigm_giftcard_customer_shareview>
+       <reference name="my.account.wrapper">
+            <block type="kartparadigm_giftcard/balance" name="giftcard.shareview"  as="giftcard_shareview" template="kartparadigm/giftcard/customer/shareview.phtml" />
+        </reference>
+    </kartparadigm_giftcard_customer_shareview>
+
+<kartparadigm_giftcard_customer_share>
+       <reference name="my.account.wrapper">
+            <block type="kartparadigm_giftcard/balance" name="giftcard.share"  as="giftcard_share" template="kartparadigm/giftcard/customer/shareview.phtml" />
+        </reference>
+    </kartparadigm_giftcard_customer_share>
+    
+<kartparadigm_giftcard_customer_view>
+       <reference name="my.account.wrapper">
+            <block type="kartparadigm_giftcard/view" name="giftcard.view"  as="giftcard_view" template="kartparadigm/giftcard/customer/balview.phtml" />          
+        </reference>
+    </kartparadigm_giftcard_customer_view>
+
+</layout>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<config>
+<reference name="head">
+      <action method="addJs">
+        <file>jscolor/jscolor.js</file>
+      </action>
+     </reference>
+<menu>
+
+
+ 
+<kartparadigm_giftcard module="kartparadigm_giftcard">
+<title>Gift Cards</title>
+<sort_order>71</sort_order>
+<children>
+<managegiftcards module="kartparadigm_giftcard">
+<title>Manage GiftCards</title>
+<sort_order>0</sort_order>
+<action>adminhtml/giftcard/index</action>
+</managegiftcards>
+<managetemplates module="kartparadigm_giftcard">
+<title>Manage Templates</title>
+<sort_order>1</sort_order>
+<action>adminhtml/template/index</action>
+</managetemplates>
+<sendgroupgcs module="kartparadigm_giftcard">
+<title>Send Giftcard</title>
+<sort_order>3</sort_order>
+<action>adminhtml/giftcard/groupsend</action>
+</sendgroupgcs>
+<giftcardsettings module="kartparadigm_giftcard">
+<title>Giftcard Settings</title>
+<sort_order>4</sort_order>
+<action>adminhtml/system_config/edit/section/giftcard</action>
+</giftcardsettings>
+
+</children>
+</kartparadigm_giftcard>
+</menu>
+<acl> remove from bottom and uncomment this
+<resources>
+<admin>
+<children>
+<giftcard translate="title" module="kartparadigm_giftcard">
+<title>Gift Cards</title>
+<sort_order>300</sort_order>
+<children>
+<items translate="title" module="kartparadigm_giftcard">
+<title>Manage GiftCards</title>
+<sort_order>0</sort_order>
+</items>
+</children>
+</giftcard>
+
+<system>
+                        <children>
+                            <config>
+                                <children>
+                                    <giftcard>
+                                        <title>Giftcard Settings</title> <!-- Used in resources tree -->
+                                    </giftcard>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+</children>
+</admin>
+</resources>
+</acl>
+
+</config>
+

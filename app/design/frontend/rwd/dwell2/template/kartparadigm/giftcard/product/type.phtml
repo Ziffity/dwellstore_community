@@ -1,0 +1,180 @@
+
+
+
+<?php
+$_product = $this->getProduct();
+echo "<h2>" . $this->getPriceHtml($_product) . "</h2>";
+echo $this->getChildHtml("product_type_gcprice");
+$options = $_product->getAttributeText('giftcard_template');
+if(is_array($options))
+$firsttemp=reset($options);
+if(!isset($firsttemp))
+$firsttemp="";
+?>
+
+<?php
+if (count($options) > 1): ?>
+
+  <?php echo $this->__('Select Template') ?> : <select name="templates" id="giftcard_template">
+        <option value=""><?php echo $this->__('Select Template') ?></option>
+        <?php
+   
+    foreach($options as $key => $value):
+       
+        $row = Mage::getModel('kartparadigm_giftcard/giftcardtemplate')->getCollection()->addFieldToFilter('template_name', $value)->getFirstItem();
+?>
+            <option value="<?php
+        echo $row['text_color'] . ',' . $row['theme_color'] . ',' . $row['template_img']. ',' . $row['giftcard_note'] ?>">
+                <?php
+        echo $value; ?>
+            </option>
+        <?php
+    endforeach; ?>
+    </select>
+    
+    
+   
+<?php
+elseif(count($options) >= 0):
+    $row = Mage::getModel('kartparadigm_giftcard/giftcardtemplate')->getCollection()->addFieldToFilter('template_name', $options)->getFirstItem();
+?>
+<?php if($row['text_color']!=''):?>
+  <?php echo $this->__('Select Template') ?> :<select name="templates" id="giftcard_template">
+        <option value=""><?php echo $this->__('Select Template') ?></option>
+        <option value="<?php
+    echo $row['text_color'] . ',' . $row['theme_color'] . ',' . $row['template_img']. ',' . $row['giftcard_note'] ?>">
+                <?php
+    echo $options; ?>
+            </option>
+              </select>
+    <?php endif;?>
+<?php
+else:
+echo "";
+endif; ?>
+
+ <br/> <br/>
+<style type="text/css">
+    .box{
+       
+        display: none;
+        margin-top: 10px;
+        border: 1px  #000;
+    }
+    .customform{ background: #fff; }
+   td{
+  
+   padding:2px 2px;
+   }
+.price-info{
+display:none;
+}
+</style>
+<script src="<?php echo $this->getSkinUrl('js/giftcard/jquery.min-1.11.1.js') ?>"></script>  
+<script type="text/javascript">
+var gc=$.noConflict();
+
+    gc(document).ready(function(){
+        gc('input[type="checkbox"]').click(function(){
+            if(gc(this).attr("value")=="customform"){
+                gc(".customform").toggle();
+            }
+          
+        });
+     
+     
+     gc("#giftcard_template").change(function() {
+          var templat = gc('option:selected',gc(this)).text(); 
+          var trimtemplat = gc.trim(templat)
+            gc("#template").val(trimtemplat);
+        });
+        
+    gc("#txt1").keyup(function(){
+   gc("#from").html(gc(this).val());
+   gc("#from1").html(gc(this).val());
+});
+  gc("#txt2").keyup(function(){
+   gc("#to").html(gc(this).val());
+   gc("#to1").html(gc(this).val());
+});
+
+ gc("#txt1").blur(function(){
+   gc("#from").html(gc(this).val());
+   gc("#from1").html(gc(this).val());
+});
+  gc("#txt2").blur(function(){
+   gc("#to").html(gc(this).val());
+   gc("#to1").html(gc(this).val());
+});
+
+gc('#tb1').keyup(function(e){
+      var keyed = gc(this).val().replace(/[\n]/g,'<br />');
+      gc("#txtCustName").html(keyed);
+      gc("#txtCustName1").html(keyed);
+ });
+ 
+ gc('#tb1').blur(function(e){
+      var keyed = gc(this).val().replace(/[\n]/g,'<br />');
+      gc("#txtCustName").html(keyed);
+      gc("#txtCustName1").html(keyed);
+ });
+
+    });
+</script>
+
+</head>
+<body>
+    <div>
+        <label><input type="checkbox" name="colorCheckbox" value="customform"><?php echo $this->__('Send To Someone') ?> </label>
+     
+    </div>
+    <input type="hidden" name="Template" id='template' value="<?php echo $firsttemp; ?>" class="input-text " >
+
+    <div class="customform box">
+       <table>
+    <tr>
+        <td><?php echo $this->__('SenderName') ?>:</td><td><input type="text" name="SenderName" id='txt1' class="input-text " ><br /></td></tr>
+    <tr>
+        <td><?php echo $this->__('RecipientName') ?>:</td><td><input type="text" name="ReciptentName" id='txt2' class="input-text " ><br /></td></tr>
+        <tr>
+        <td> <?php echo $this->__('RecipientEmail') ?>:</td><td> <input type="email" name="RecipientEmail" id='txt3' class="input-text " ><br /></td></tr>
+        
+        
+        <tr><td><?php echo $this->__('CustomMessage') ?>: </td><td><textarea rows= "3" cols="18"  id='tb1' name="CustomMessage" class="input-text "></textarea></td></tr>
+      <tr>
+       <td><?php echo $this->__('Delivery Date') ?> :</td><td><span>
+    <input type="text" style="width: 120px;" class="input-text" value="" id="selected_date" name="DeliveryDate"/>
+      <img style="display:inline;" title="Select Date" id="date_select_trig" class="v-middle" alt="" src="<?php
+echo $this->getSkinUrl('images/calendar.gif'); ?> "/>
+  
+    <script type="text/javascript">
+    // <![CDATA[
+        Calendar.setup({
+            inputField: "selected_date",
+            ifFormat: "%m/%e/%Y ",
+            showsTime: true,
+            button: "date_select_trig",
+            align: "Bl",
+            singleClick : true
+        });
+    // ]]>
+    </script>
+</span>
+ </td></tr>
+    
+       <?php
+$attributeValue = $_product->getAttributeText('giftcard_type');
+if (($attributeValue == 'Physical Giftcard' || $attributeValue == 'Mixed Giftcard')): ?>
+              <tr>
+        <td> <?php echo $this->__('RecipientAddress') ?>: </td><td><textarea rows= "3" cols="18" name="Address" class="input-text " ></textarea><br /></td></tr>
+         <?php
+endif; ?>
+<tr><td class="pop" style="cursor:pointer"><a >Preview Giftcard</a></td></tr>
+ </table>
+
+
+    </div>
+  
+ 
+
+

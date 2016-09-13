@@ -1,0 +1,92 @@
+<?php if( Mage::getStoreConfig('giftcard/giftcard/enabled', Mage::app()->getStore()->getStoreId())):?>
+<?php 
+$currentCustomer =Mage::getSingleton('customer/session')->getCustomer();
+$collection =Mage::getModel('kartparadigm_giftcard/giftcard')->getCollection()
+		->addFieldToFilter('receiver_mail',$currentCustomer->getEmail())
+		->addFieldToFilter('giftcard_status',1)
+		->addOrder('giftcard_id','DESC');
+		?>
+ <div class="discount">
+<form id="discount-form" action="<?php
+echo Mage::getBaseUrl() ?>giftcard/index/index" method="post">
+   
+        <h2><?php
+echo $this->__('Giftcard Codes') ?></h2>
+        <div class="discount-form">
+   
+                    <?php if(Mage::getSingleton('customer/session')->isLoggedIn()):?>
+            <label for="coupon_code"><?php
+echo $this->__('Choose Giftcard To Apply.') ?></label>
+                    <div class="input-box">
+                    <?php $quote=Mage::getSingleton('checkout/session')->getQuote();
+                    $appliedcodes=$quote->getGiftcardCode();?>
+                   
+                    <?php if($collection->count()>0):?>
+                        <select name="gccodes" id="gccodes" class="validate-select" title="Giftcard">
+                        <option value=""> <?php echo $this->__('Select Giftcard Code')?> </option>
+                        <?php foreach($collection as $coll):
+                        if (strpos($appliedcodes,$coll->getGiftcardCode()) !== false)
+   				      continue;?>
+                        <option value="<?php echo $coll->getGiftcardCode().','.$coll->getGiftcardBal();?>"><?php echo $coll->getGiftcardCode()." (".Mage::helper('core')->currency($coll['giftcard_bal']).")";?>
+                <?php endforeach;?>
+                </option></select>                 
+                <?php endif;?>   </div>
+                <?php endif;?>
+            <input type="hidden" name="remove" id="remove-coupone" value="0" />
+            <div class="input-box">
+           <?php echo $this->__('Giftcard Code')?> : <input class="input-text required-entry" id="gc_code" name="gc_code"  />
+<br/>
+<?php
+if (Mage::getStoreConfig('giftcard/giftcard/customamt_select', Mage::app()->getStore()->getStoreId())) {
+    echo "<br/>".$this->__('Redeem Amount')." : <input class='input-text required-entry' id='redeem_amt' name='redeem_amt'  />";
+}
+?>
+</div>
+<br/>
+
+<div class="buttons-set">
+ <input type="submit" name="<?php echo $this->__('Apply Code')?>" value="<?php echo $this->__('Redeem Code')?>" class="button" style="color:white;font-weight:bold; border-color: #406A83;
+background:#618499;"/>   
+   
+            </div>
+        </div>
+    
+</form>
+<br/>
+<?php
+if (Mage::getSingleton('checkout/session')->getQuote()->getGiftcardBalused() != 0): ?>
+<form action="<?php
+    echo Mage::getBaseUrl() ?>giftcard/index/cancel" method="post">
+
+<?php
+    $gccodes = explode(",", Mage::getSingleton('checkout/session')->getQuote()->getGiftcardCode());
+    $gcbals = explode(",", Mage::getSingleton('checkout/session')->getQuote()->getGiftcardBal());
+    $gcbalused = explode(",", Mage::getSingleton('checkout/session')->getQuote()->getGiftcardBalused());
+    $i = 0;
+    foreach($gccodes as $gccode) {
+        echo "<h5 style='color:green'>".$this->__('Code').": " . $gccode .$this->__('  Net Bal') ." : " . Mage::helper('core')->currency($gcbals[$i] - $gcbalused[$i], true, false) . "</h5>";
+        $i++;
+    }
+?>
+<input type="submit" name="<?php echo $this->__('Cancel Code')?>" value="Cancel Code" class="button" style="color:white;font-weight:bold; border-color: #406A83;
+background:#618499;"/>
+
+</form>
+<?php
+endif; ?>
+</div>
+<?php endif;?>
+<script src="<?php echo $this->getSkinUrl('js/giftcard/jquery.min-1.11.1.js')?>"></script>  
+<script type="text/javascript">
+var cgc=$.noConflict();
+cgc(document).ready(function() {
+     cgc("#gccodes").change(function() {
+          var gcdata = cgc('option:selected',cgc(this)).val().split(",");
+          cgc("#gc_code").val(gcdata[0]);
+            cgc("#redeem_amt").val(gcdata[1]);
+        });
+        });
+        </script>
+
+
+
