@@ -210,6 +210,7 @@ button.button:active {
       border-bottom: 1px dotted #dbdbdb; }
 
 .messages {
+  width:100%;
   min-height: 50px;
   font-family: "TheinhardtRegular-Regular", Arial, sans-serif;
   border: none !important;
@@ -719,7 +720,7 @@ div.multishipping-title-cont {
   appearance: none;
   padding: 0px 30px 2px 2px;
   border: 1px solid #c7c7c7;
-  background: transparent url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat right center; }
+  background: transparent url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat right center; }
 .catalog-product-view .product-view .product-options #Color .amconf-images-container .amconf-image-container:hover .bubble_tooltop {
   border: 1px solid #009900 !important;
   /*.borderFrame{
@@ -752,7 +753,7 @@ div.multishipping-title-cont {
   	}
   }*/ }
 .catalog-product-view .product-view .product-options #Size.swatch-custom-select-box::before {
-  background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right top;
+  background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right top;
   content: "";
   display: block;
   height: 20px;
@@ -762,7 +763,7 @@ div.multishipping-title-cont {
   width: 30px;
   margin-top: -52px; }
 .catalog-product-view .product-view .product-options #style.swatch-custom-select-box::before {
-  background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right top;
+  background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right top;
   content: "";
   display: block;
   height: 20px;
@@ -1015,7 +1016,7 @@ nav {
   background: transparent none repeat scroll 0 0;
   border: 1px solid #dedede; }
 .cms-trade-program-application .fsForm select {
-  background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center !important;
+  background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center !important;
   border: 1px solid #c7c7c7;
   padding: 0 30px 2px 3px;
   -moz-appearance: none;
@@ -1051,7 +1052,7 @@ nav {
 
 .customer-address-form .form-list select {
   -moz-appearance: none;
-  background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
+  background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
   border: 1px solid #c7c7c7;
   height: 22px;
   padding: 0px 30px 2px 2px;
@@ -1576,6 +1577,7 @@ nav {
     .account-login .new-users {
       padding: 4% 0px 0px 5% !important;
       clear: both; }
+
     .account-login .buttons-set {
       float: left; }
     .account-login p.required {
@@ -1692,7 +1694,7 @@ nav {
 
   .category-view .pager .sort-by select, .results-view .pager .sort-by select {
     -moz-appearance: none;
-    background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
+    background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
     border: 1px solid #c7c7c7;
     height: 29px;
     padding: 0px 30px 2px 3px;
@@ -1701,7 +1703,7 @@ nav {
 
   #contactForm .form-list select {
     -moz-appearance: none;
-    background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
+    background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
     border: 1px solid #c7c7c7;
     height: 26px;
     padding: 0px 30px 2px 3px;
@@ -1711,7 +1713,7 @@ nav {
 
   .product-options .validation-error .options-list, .validation-failed, .input-text.required-entry.validate-email.validation-failed, select.validation-failed {
     -moz-appearance: none;
-    background: #FFF7F5 url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center !important;
+    background: #FFF7F5 url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center !important;
     border: 1px solid #c7c7c7;
     height: 23px !important;
     padding: 0px 30px 2px 3px;
@@ -1994,7 +1996,7 @@ nav {
     background-image: none; }
   .cms-trade-program-application .fsSection .fs1Col select {
     -moz-appearance: none;
-    background: #FFF7F5 url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center !important;
+    background: #FFF7F5 url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center !important;
     border: 1px solid #c7c7c7;
     height: 23px;
     padding: 0px 30px 2px 3px;
@@ -2013,7 +2015,7 @@ nav {
     width: 100%; }
   .cms-trade-program-application .fsFieldHorizontal select {
     -moz-appearance: none;
-    background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center !important;
+    background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center !important;
     border: 1px solid #c7c7c7;
     height: 23px;
     padding: 0px 30px 2px 3px;
@@ -2201,7 +2203,7 @@ nav {
         top: 2px;
         z-index: 9999; }
         .cms-home .form-search .form-search-inner .button span, .catalog-category-view .form-search .form-search-inner .button span, .catalogsearch-result-index .form-search .form-search-inner .button span, .customer-account-index .form-search .form-search-inner .button span, .catalog-product-view .form-search .form-search-inner .button span, .checkout-cart-index .form-search .form-search-inner .button span, .cms-page-view .form-search .form-search-inner .button span, .customer-account-login .form-search .form-search-inner .button span, .customer-account-edit .form-search .form-search-inner .button span, .customer-address-form .form-search .form-search-inner .button span, .newsletter-manage-index .form-search .form-search-inner .button span, .sales-order-history .form-search .form-search-inner .button span, .wishlist-index-index .form-search .form-search-inner .button span, .amxnotif-subscr-index .form-search .form-search-inner .button span, .cms-registry .form-search .form-search-inner .button span, .customer-account-create .form-search .form-search-inner .button span, .customer-account-forgotpassword .form-search .form-search-inner .button span {
-          background: transparent url("/skin/frontend/enterprise/dwell2/images/magnifier-glass.png") no-repeat scroll 0 0; }
+          background: transparent url("/skin/frontend/rwd/dwell2/images/magnifier-glass.png") no-repeat scroll 0 0; }
   .cms-home .cart .messages, .catalog-category-view .cart .messages, .catalogsearch-result-index .cart .messages, .customer-account-index .cart .messages, .catalog-product-view .cart .messages, .checkout-cart-index .cart .messages, .cms-page-view .cart .messages, .customer-account-login .cart .messages, .customer-account-edit .cart .messages, .customer-address-form .cart .messages, .newsletter-manage-index .cart .messages, .sales-order-history .cart .messages, .wishlist-index-index .cart .messages, .amxnotif-subscr-index .cart .messages, .cms-registry .cart .messages, .customer-account-create .cart .messages, .customer-account-forgotpassword .cart .messages {
     width: 100%; }
     .cms-home .cart .messages li, .catalog-category-view .cart .messages li, .catalogsearch-result-index .cart .messages li, .customer-account-index .cart .messages li, .catalog-product-view .cart .messages li, .checkout-cart-index .cart .messages li, .cms-page-view .cart .messages li, .customer-account-login .cart .messages li, .customer-account-edit .cart .messages li, .customer-address-form .cart .messages li, .newsletter-manage-index .cart .messages li, .sales-order-history .cart .messages li, .wishlist-index-index .cart .messages li, .amxnotif-subscr-index .cart .messages li, .cms-registry .cart .messages li, .customer-account-create .cart .messages li, .customer-account-forgotpassword .cart .messages li {
@@ -2335,11 +2337,11 @@ nav {
       margin-left: 0px !important;
       box-shadow: none; }
     .top-nav ul li .droparrow {
-      background-image: url("/skin/frontend/enterprise/dwell2/images/expand-arrows.png");
+      background-image: url("/skin/frontend/rwd/dwell2/images/expand-arrows.png");
       background-position: 83% -7%;
       background-repeat: no-repeat; }
     .top-nav ul li.expanded .droparrow {
-      background-image: url("/skin/frontend/enterprise/dwell2/images/expand-arrows.png");
+      background-image: url("/skin/frontend/rwd/dwell2/images/expand-arrows.png");
       background-position: 38% 89%;
       color: #ed3e3a;
       right: 11px !important; }

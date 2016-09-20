@@ -104,13 +104,13 @@ $fieldset->addField('receiver_name', 'text', array(
   
  $finderLink1 = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'giftcard/preview.png';
 
-         $fieldset->addField('imagelab', 'label', array(
+        /* $fieldset->addField('imagelab', 'label', array(
             'label' => Mage::helper('kartparadigm_giftcard')->__('Giftcard Template') ,
             'name' => 'image',
             'value' => $finderLink1,
             'required' => true,
             'after_element_html' => '<img src="' . $finderLink1 . '" alt="Template" height="200" width="280" />',
-         ));
+         )); */
  $fieldset->addField('giftcard_status', 'select', array(
             'name' => 'giftcard_status',
             'label' => Mage::helper('kartparadigm_giftcard')->__('Giftcard Status') ,
@@ -147,7 +147,7 @@ $fieldset->addField('giftcard_currency', 'select', array(
             $arr['input_format'] = Varien_Date::DATE_INTERNAL_FORMAT;
         }
         $expireAt = $fieldset->addField('expiry_date', 'date', $arr);
-        $form->setValues($data);
+        $form->addValues($data);
         return parent::_prepareForm();
     }
 }

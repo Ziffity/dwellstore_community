@@ -319,7 +319,7 @@ img{
 	.pager{
 		.sort-by select{
 			-moz-appearance: none;
-			background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
+			background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
 			border: 1px solid #c7c7c7;
 			height: 29px;
 			padding: 0px 30px 2px 3px;
@@ -330,7 +330,7 @@ img{
 }
 #contactForm .form-list select{
 	-moz-appearance: none;
-	background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
+	background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
 	border: 1px solid #c7c7c7;
 	height: 26px;
 	padding: 0px 30px 2px 3px;
@@ -340,7 +340,7 @@ img{
 }
 .product-options .validation-error .options-list, .validation-failed,.input-text.required-entry.validate-email.validation-failed,select.validation-failed{
 	-moz-appearance: none;
-    background:#FFF7F5  url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center!important;
+    background:#FFF7F5  url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center!important;
     border: 1px solid #c7c7c7;
     height: 23px!important;
     padding: 0px 30px 2px 3px;
@@ -651,6 +651,7 @@ img{
 		.col-1{
 			display:none;
 		}
+
 		.col-2 a img{
 			display:block;
 			margin-right:10px;
@@ -735,7 +736,7 @@ img{
 				}
 				select{
 					-moz-appearance: none;
-					background:#FFF7F5  url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center!important;
+					background:#FFF7F5  url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center!important;
 					border: 1px solid #c7c7c7;
 					height: 23px;
 					padding: 0px 30px 2px 3px;
@@ -761,7 +762,7 @@ img{
 		}
 		.fsFieldHorizontal select{
 				-moz-appearance: none;
-				background:#fff  url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center!important;
+				background:#fff  url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center!important;
 				border: 1px solid #c7c7c7;
 				height: 23px;
 				padding: 0px 30px 2px 3px;
@@ -1023,7 +1024,7 @@ img{
 					top: 2px;
 					z-index: 9999;
 					span{
-						background: rgba(0, 0, 0, 0) url("/skin/frontend/enterprise/dwell2/images/magnifier-glass.png") no-repeat scroll 0 0;
+						background: rgba(0, 0, 0, 0) url("/skin/frontend/rwd/dwell2/images/magnifier-glass.png") no-repeat scroll 0 0;
 					}
 				}
 			}
@@ -1235,14 +1236,14 @@ img{
 			}
 			li{
 				.droparrow{
-				background-image: url("/skin/frontend/enterprise/dwell2/images/expand-arrows.png");
+				background-image: url("/skin/frontend/rwd/dwell2/images/expand-arrows.png");
 				background-position: 83% -7%;
 				background-repeat: no-repeat;
 				}
 			}
 			li.expanded{
 					.droparrow{
-						background-image: url("/skin/frontend/enterprise/dwell2/images/expand-arrows.png");
+						background-image: url("/skin/frontend/rwd/dwell2/images/expand-arrows.png");
 						background-position: 38% 89%;
 						color: #ed3e3a;
 						right:11px !important;

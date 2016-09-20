@@ -367,6 +367,7 @@ button.button:active {
           font-weight: normal !important;        
           text-align: center;
           line-height: 33px;
+
           width: 170px;
         }
       }
@@ -897,7 +898,7 @@ div.multishipping-title-cont {
 			appearance: none;
 			padding: 0px 30px 2px 2px;
 			border: 1px solid #c7c7c7;
-			background: transparent url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat right center;
+			background: transparent url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat right center;
 		}
 		#Color{
 			.amconf-images-container{
@@ -941,7 +942,7 @@ div.multishipping-title-cont {
 			}
 		}
 		#Size.swatch-custom-select-box::before {
-			background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right top;
+			background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right top;
 			content: "";
 			display: block;
 			height: 20px;
@@ -952,7 +953,7 @@ div.multishipping-title-cont {
 			margin-top:-52px;
 			}
 		#style.swatch-custom-select-box::before {
-			background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right top;
+			background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right top;
 			content: "";
 			display: block;
 			height: 20px;
@@ -1283,7 +1284,7 @@ nav {
 			border: 1px solid #dedede;
 	}
 	.fsForm select{
-			background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center !important;
+			background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center !important;
 			border: 1px solid #c7c7c7;
 			padding: 0 30px 2px 3px;
 			-moz-appearance: none; 
@@ -1325,7 +1326,7 @@ nav {
 .customer-address-form{
 	.form-list select{
 		-moz-appearance: none;
-		background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
+		background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
 		border: 1px solid #c7c7c7;
 		height: 22px;
 		padding: 0px 30px 2px 2px;

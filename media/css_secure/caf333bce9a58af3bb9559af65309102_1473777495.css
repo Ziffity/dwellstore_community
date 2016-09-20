@@ -384,7 +384,7 @@ ul,ol         { list-style:none; }
 .page-print { background:#fff; padding:20px; text-align:left; }
 .page-popup { padding:20px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
-.main { margin:0 auto 14px; min-height:350px; /*background-image:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif); background-color:#fff; background-repeat:repeat-y; */border:0px solid #cfcfcf; text-align:left; width:1000px;}
+.main { margin:0 auto 14px; min-height:350px; /*background-image:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif); background-color:#fff; background-repeat:repeat-y; */border:0px solid #cfcfcf; text-align:left; width:1000px;}
 .sidebar { min-height:350px; }
 
 /* Base Columns */
@@ -451,7 +451,7 @@ button.button { border:0; padding:0; margin:0; background:transparent; /* line-h
 a.button,
 button.button span,
 a.button span,
-button.button span span { background-color:transparent; /*background-image:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_btn.gif);*/background-image:none; background-repeat:no-repeat; }
+button.button span span { background-color:transparent; /*background-image:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_btn.gif);*/background-image:none; background-repeat:no-repeat; }
 
 a.button,
 button.button span { border:0; padding:0 0 0 10px; margin:0; cursor:pointer; background-position:0 0; display:-moz-inline-stack; display:inline-block; color:#c73615; height:21px; text-decoration:none; background:#ef3a43}
@@ -476,11 +476,11 @@ button.disabled span { cursor:default !important; color:#bbb !important; }
 .product-options .validation-error .options-list,
 .validation-failed { border:1px solid #f47d4e !important; background:#fff7f5 !important; }
 input.input-text.validation-failed,
-textarea.validation-failed { background:#fff7f5 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_input-failed.gif) 0 0 repeat-x !important; }
+textarea.validation-failed { background:#fff7f5 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_input-failed.gif) 0 0 repeat-x !important; }
 span.validation-passed,
-div.validation-passed { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/icon_ok.gif) 100% 2px no-repeat; padding-right:20px; }
+div.validation-passed { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/icon_ok.gif) 100% 2px no-repeat; padding-right:20px; }
 span.validation-error,
-div.validation-error { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/icon_error.gif) 100% 2px no-repeat; padding-right:20px; }
+div.validation-error { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/icon_error.gif) 100% 2px no-repeat; padding-right:20px; }
 .required em { color:#f15c22; margin-right:4px; }
 p.required { margin:0; padding:5px 0 7px; text-align:right; width:620px; font-size:11px; color:#f02800; }
 .form-list .validation-advice { width:250px; margin-right:-250px; }
@@ -507,7 +507,7 @@ p.required { margin:0; padding:5px 0 7px; text-align:right; width:620px; font-si
 .form-list select { float:left; width:380px; vertical-align:top; }
 .form-list p { margin:0; padding:0 0 0 240px; }
 ul.add-row,
-.form-list li.add-row { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 0; margin-top:15px; }
+.form-list li.add-row { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 0; margin-top:15px; }
 ul.add-row .btn-remove,
 .form-list li.add-row .btn-remove { font-size:0; line-height:0; padding:5px 5px 0 0; margin:0; text-align:right; }
 .form-list .range input.input-text { float:none; width:64px; vertical-align:middle; }
@@ -599,20 +599,20 @@ p.error-msg, p.success-msg { border-style:solid !important; padding:10px; border
 /* Error Message */
 .messages li.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 .messages li.error-msg a { color:#d91a00; }
-.messages li.error-msg ul { /* background-image:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_msg-error.gif); */ }
+.messages li.error-msg ul { /* background-image:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_msg-error.gif); */ }
 p.error-msg { border-color:#e9581f; background-color:#fff5f3; color:#d91a00; }
 p.success-msg { border-color:#446423; background-color:#eff5ea; color:#3d6611; }
 /* Success Message */
 .messages li.success-msg { border-color:#446423; background-color:#eff5ea; color:#3d6611; }
 .messages li.success-msg a { color:#3d6611; }
-.messages li.success-msg ul { /* background-image:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_msg-success.gif); */ }
+.messages li.success-msg ul { /* background-image:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_msg-success.gif); */ }
 /* Notification Message */
 .messages li.note-msg,
 .messages li.notice-msg { border-color:#fcd344; background-color:#fafaec; color:#3d6611; }
 .messages li.note-msg a,
 .messages li.notice-msg a { color:#3d6611; }
 .messages li.note-msg ul,
-.messages li.notice-msg ul { /* background-image:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_msg-note.gif); */ }
+.messages li.notice-msg ul { /* background-image:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_msg-note.gif); */ }
 
 /* std class reset */
 .std .messages { margin-top:0; }
@@ -668,7 +668,7 @@ p.success-msg { border-color:#446423; background-color:#eff5ea; color:#3d6611; }
 .section-title { font-size:14px; font-weight:normal; color:#151515; margin:0 0 5px; }
 
 /* Pager */
-.pager { margin:15px 0; font-size:14px; padding:3px 20px; background:#f5f5f5 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_pager.gif) repeat-x 0 0; border:1px solid #ddd; color:#333; }
+.pager { margin:15px 0; font-size:14px; padding:3px 20px; background:#f5f5f5 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_pager.gif) repeat-x 0 0; border:1px solid #ddd; color:#333; }
 .pager p { margin:0 !important; }
 .pager select { padding:0; margin-bottom:1px; }
 .pager .amount { float:left; line-height:20px; }
@@ -686,7 +686,7 @@ p.success-msg { border-color:#446423; background-color:#eff5ea; color:#3d6611; }
 .pager-only .pages { margin:0; }
 
 /* Sorter */
-.sorter { font-size:11px; margin:0 0 0; padding:3px 20px; background:#f5f5f5 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_pager.gif) repeat-x 0 0; border-top:1px solid #ddd; color:#333; }
+.sorter { font-size:11px; margin:0 0 0; padding:3px 20px; background:#f5f5f5 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_pager.gif) repeat-x 0 0; border-top:1px solid #ddd; color:#333; }
 .sorter p { margin:0; }
 .sorter select { padding:0; margin-bottom:1px; }
 .sorter .view-mode { float:left; line-height:20px; white-space:nowrap; }
@@ -698,7 +698,7 @@ p.success-msg { border-color:#446423; background-color:#eff5ea; color:#3d6611; }
 .sorter .view-mode a.grid-fix,
 .sorter .view-mode a.grid,
 .sorter .view-mode strong.grid-fix,
-.sorter .view-mode strong.grid { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_viewmode.gif) no-repeat 0 0; float:left; width:24px; height:17px; text-align:left; text-indent:-999em; overflow:hidden; margin:2px 0 0; }
+.sorter .view-mode strong.grid { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_viewmode.gif) no-repeat 0 0; float:left; width:24px; height:17px; text-align:left; text-indent:-999em; overflow:hidden; margin:2px 0 0; }
 .sorter .view-mode a.list { background-position:-24px 0; }
 .sorter .view-mode strong.list { background-position:-24px -29px; }
 .sorter .view-mode a.grid { background-position:0 0; }
@@ -721,12 +721,12 @@ p.success-msg { border-color:#446423; background-color:#eff5ea; color:#3d6611; }
 .toolbar-bottom { /*display:none;*/ }
 
 /* Data Table */
-.table-caption { border:1px solid #ddd; border-bottom:0; margin:-1px 0 0; background:#fff url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_block-title.gif) 0 100% repeat-x; font:14px/1.25 Arial, Helvetica, sans-serif; padding:3px 7px 4px; color:#444; }
+.table-caption { border:1px solid #ddd; border-bottom:0; margin:-1px 0 0; background:#fff url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_block-title.gif) 0 100% repeat-x; font:14px/1.25 Arial, Helvetica, sans-serif; padding:3px 7px 4px; color:#444; }
 .table-caption a { font-size:11px; text-transform:lowercase; }
 .data-table { border:1px solid #d9d9d9; border-bottom:0; width:100%; border-collapse:separate; }
 .data-table th { padding:5px 12px; color:#2d2d2d; border-bottom:1px solid #d9d9d9; font-weight:normal; text-transform:uppercase; white-space:nowrap; }
 .data-table td { padding:5px 12px; }
-.data-table thead { background:#e8e8e8 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_thead.gif) repeat-x 0 0; font-size:11px; }
+.data-table thead { background:#e8e8e8 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_thead.gif) repeat-x 0 0; font-size:11px; }
 .data-table tfoot { background-color:#ededed; }
 .data-table tfoot td { padding:5px 12px; }
 .data-table tfoot th { border:none; text-transform:none; }
@@ -755,7 +755,7 @@ p.success-msg { border-color:#446423; background-color:#eff5ea; color:#3d6611; }
 
 /* Shopping cart total summary row expandable to details */
 tr.summary-total { cursor:pointer; }
-tr.summary-total .summary-collapse { float:right; text-align:right; padding-left:20px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_collapse.gif) 0 4px no-repeat; cursor:pointer; }
+tr.summary-total .summary-collapse { float:right; text-align:right; padding-left:20px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_collapse.gif) 0 4px no-repeat; cursor:pointer; }
 tr.show-details .summary-collapse { background-position:0 -53px; }
 tr.summary-details td { background-color:#ede9e6; font-size:12px; padding:5px !important; }
 tr.summary-details-excluded { font-style:italic; }
@@ -763,7 +763,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* Shopping cart tax info */
 .cart-tax-info,
 .cart-tax-info .cart-price { display:block; padding-right:20px; }
-.cart-tax-total { display:block; padding-right:20px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_collapse.gif) 100% 3px no-repeat; cursor:pointer; }
+.cart-tax-total { display:block; padding-right:20px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_collapse.gif) 100% 3px no-repeat; cursor:pointer; }
 .cart-tax-total-expanded { background-position:100% -54px; }
 
 /* Links */
@@ -774,7 +774,7 @@ ul.links li.last .separator { display:none; }
 
 /* Reward Points */
 .rewards { margin:-10px 0 20px; }
-.reward-message { display:block; margin:5px -15px 5px -15px; background:#d55721 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_rewards.gif) 5px 3px no-repeat; padding:3px 5px 3px 32px; font:normal 12px/20px Arial, Helvetica, sans-serif; color:#fff; }
+.reward-message { display:block; margin:5px -15px 5px -15px; background:#d55721 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_rewards.gif) 5px 3px no-repeat; padding:3px 5px 3px 32px; font:normal 12px/20px Arial, Helvetica, sans-serif; color:#fff; }
 .reward-message p { display:inline; margin:0 !important; }
 .reward-message .limit { display:block; font-size:11px; line-height:1.15; }
 .reward-message a { color:#ffe6dc; }
@@ -819,17 +819,17 @@ ul.links li.last .separator { display:none; }
 .std table[border="0"] th,
 .std table[border="0"] td { border-width:0; }
 
-ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_bulletsm.gif) no-repeat 0 0.5em; }
+ul.disc li { padding-left:10px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_bulletsm.gif) no-repeat 0 0.5em; }
 .std ul.disc li { padding-left:0; background:none; }
 
 /* Misc */
-.link-rss { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/icon_rss.gif) 100% 1px no-repeat; padding-right:18px; white-space:nowrap; }
+.link-rss { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/icon_rss.gif) 100% 1px no-repeat; padding-right:18px; white-space:nowrap; }
 .link-rss:hover { color:#f58550; }
-.link-print { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/icon_printer.gif) 0 1px no-repeat; padding:2px 0 2px 25px; white-space:nowrap; }
+.link-print { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/icon_printer.gif) 0 1px no-repeat; padding:2px 0 2px 25px; white-space:nowrap; }
 .link-cart { font-size:11px;    color:#c73615; }
 .link-cart:hover { color:#c73615; text-decoration:none; }
 
-.data-table .btn-remove { display:block; margin:0 auto; width:13px; height:12px; font-size:0; line-height:0; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/btn_remove.gif) 0 0 no-repeat; text-indent:-999em; overflow:hidden; cursor:pointer; }
+.data-table .btn-remove { display:block; margin:0 auto; width:13px; height:12px; font-size:0; line-height:0; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/btn_remove.gif) 0 0 no-repeat; text-indent:-999em; overflow:hidden; cursor:pointer; }
 
 .cards-list dt { margin:5px 0 0; }
 .cards-list .offset { padding:2px 0 2px 20px; }
@@ -838,7 +838,7 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 
 /* Global site notices */
 .global-site-notice { border:1px solid #cfcfcf; border-width:0 0 1px; background:#ffff90; font-size:12px; line-height:1.25; text-align:center; color:#2f2f2f; }
-.global-site-notice .notice-inner { width:860px; margin:0 auto; padding:12px 0 12px 80px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/i_notice.gif) 20px 25px no-repeat; text-align:left; }
+.global-site-notice .notice-inner { width:860px; margin:0 auto; padding:12px 0 12px 80px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/i_notice.gif) 20px 25px no-repeat; text-align:left; }
 .global-site-notice .notice-inner p { margin:0; border:1px dotted #cccc73; padding:10px; }
 .global-site-notice .notice-inner .actions { padding-top:10px; }
 
@@ -869,7 +869,7 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .header .quick-access { width:695px; float:right; padding:17px 0 0; font-family: "Lato-Reg","AvenirNextLTPro-Cn",Arial, Helvetica, sans-serif;}
 .header .quick-access .checkout-link .links { background:#ef3a43;margin: 0 0 0 10px;}
 .header .quick-access .links { float:right; line-height:28px; white-space:nowrap; }
-.header .quick-access .links li { /* float:left; line-height:18px; */ padding:0 12px 0 10px; background:url("https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/link-separator.png") no-repeat scroll 100% 50% transparent; }
+.header .quick-access .links li { /* float:left; line-height:18px; */ padding:0 12px 0 10px; background:url("http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/link-separator.png") no-repeat scroll 100% 50% transparent; }
 .header .quick-access .links li.last {background:none;}
 .header .quick-access .links li a { color:#525252; text-transform:uppercase; text-decoration:none; font-size:14px;font-weight:normal;}
 .header .quick-access .checkout-link  .links li a { color:#FFFFFF;}
@@ -878,32 +878,32 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .header .quick-access .cart-link li {    padding:0 0 0 0px; background:none; }
 
 
-#invitation-send-link { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_sep.gif) no-repeat 100% 50%; padding:0 6px 0 0; margin:0 4px 0 0;    }
-#invitation-send-link a { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_invitation-link.gif) no-repeat 3px 6px; padding-left:23px; display:inline-block; }
+#invitation-send-link { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_sep.gif) no-repeat 100% 50%; padding:0 6px 0 0; margin:0 4px 0 0;    }
+#invitation-send-link a { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_invitation-link.gif) no-repeat 3px 6px; padding-left:23px; display:inline-block; }
 
 #invitation-send-link a, x:-moz-any-link { background-position:3px -2px; }/* FireFox 2 fix */
 #invitation-send-link a, x:-moz-any-link, x:default { background-position:3px 6px; }/* FireFox 3 restore */
 
-.header-panel { text-align:center; z-index:994; background:#fff url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_header-panel-bg.gif) repeat-x 0 100%; /* border-bottom:1px solid #c8c8c8; */ /* height:28px; */ line-height:28px; padding:0 0 0 11px; }
+.header-panel { text-align:center; z-index:994; background:#fff url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_header-panel-bg.gif) repeat-x 0 100%; /* border-bottom:1px solid #c8c8c8; */ /* height:28px; */ line-height:28px; padding:0 0 0 11px; }
 .header-panel .welcome-msg {    display:inline; float:left; line-height:28px; margin-right:5px; }
 .header-panel .links { float:left; line-height:28px; margin-right:11px; white-space:nowrap; }
 .header-panel .links li a { color:#1e75b4; }
 .header-panel .links li a:hover { color:#d33911; }
 
-.switches { float:right; background:#fff url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_header-panel-bg.gif) repeat-x 0 100%; padding:0 0 1px 0; }
+.switches { float:right; background:#fff url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_header-panel-bg.gif) repeat-x 0 100%; padding:0 0 1px 0; }
 
-.switch { line-height:28px; margin-left:-1px; margin-right:0; display:inline; float:left; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_header-panel.gif) no-repeat 0 -29px; padding-left:13px; }
+.switch { line-height:28px; margin-left:-1px; margin-right:0; display:inline; float:left; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_header-panel.gif) no-repeat 0 -29px; padding-left:13px; }
 .switch label { font-weight:normal; margin-right:0; float:left; }
 .switch .switch-wrapper { float:left; position:relative; z-index:1; padding-left:7px; padding-right:11px; }
 .switch strong.current { font-weight:normal; }
 .switch .separator { margin:0 2px; font-size:10px; color:#8f8f8f; }
-.switch .switcher { color:#1e75b4; cursor:pointer; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_header-panel.gif) no-repeat 100% -73px; padding:0 10px 0 0; margin:0 3px 0 1px; }
+.switch .switcher { color:#1e75b4; cursor:pointer; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_header-panel.gif) no-repeat 100% -73px; padding:0 10px 0 0; margin:0 3px 0 1px; }
 .switch ul { position:absolute; min-width:100%; text-align:left; top:0; left:0; float:left; line-height:16px; padding:0 0 0 0; border-top:0; }
 .switch ul li { vertical-align:top; display:block; white-space:nowrap; border:1px solid #c8c8c8; border-top:0; }
 .switch ul li a { white-space:nowrap; display:block; background:#f2f2f2; padding:4px 6px; color:#1e75b4; text-decoration:none; }
 .switch ul li a:hover { color:#d33911; background:#f8f8f8; }
-.switch ul .current { line-height:28px; border:0; cursor:default; padding:0 7px; visibility:hidden; /* background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_header-panel.gif) repeat-x 0 0; */ }
-.switch ul .current span { padding-right:20px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_close.gif) no-repeat 100% 1px; }
+.switch ul .current { line-height:28px; border:0; cursor:default; padding:0 7px; visibility:hidden; /* background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_header-panel.gif) repeat-x 0 0; */ }
+.switch ul .current span { padding-right:20px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_close.gif) no-repeat 100% 1px; }
 .switch .faded { color:#8f8f8f; }
 .switch .faded li { border-color:#e6e6e6; background-color:#f6f6f6; }
 .switch .faded a { color:#9ac1dd; }
@@ -1062,7 +1062,7 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .event { background-color:#fbf4de; border-bottom:1px solid #e2d4c7; width:182px; position:static; height:144px; text-align:center; }
 .event .status { font-weight:normal; font-size:16px; display:block; padding:19px 0 0; margin:0 0 0; text-align:center; color:#cf3a00; }
 .event .event-ticker { color:#cf3a00; height:55px; }
-.event .event-ticker span { font-size:32px; line-height:40px; height:40px; padding-bottom:10px; background-image:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_ticker.gif); background-repeat:no-repeat; display:inline-block; }
+.event .event-ticker span { font-size:32px; line-height:40px; height:40px; padding-bottom:10px; background-image:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_ticker.gif); background-repeat:no-repeat; display:inline-block; }
 
 .event .event-ticker span, x:-moz-any-link { padding-bottom:13px; }/* FireFox 2 fix */
 .event .event-ticker span, x:-moz-any-link, x:default { padding-bottom:10px; }/* FireFox 3 restore */
@@ -1076,12 +1076,12 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .event .event-dates .date-part {    }
 .event .event-dates .time-part { font-size:12px; }
 
-.col-main .event .event-button { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_btn-co.gif) 0 50% no-repeat; line-height:27px !important; height:27px !important; padding:0 0 0 13px !important; vertical-align:middle; }
-.col-main .event .event-button span { width:121px; text-align:center; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_btn-co.gif) 100% 50% no-repeat; padding:0 13px 0 0 !important; color:#fff; font:bold 15px/27px Arial, Helvetica, sans-serif !important; height:27px !important; text-transform:none; }
+.col-main .event .event-button { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_btn-co.gif) 0 50% no-repeat; line-height:27px !important; height:27px !important; padding:0 0 0 13px !important; vertical-align:middle; }
+.col-main .event .event-button span { width:121px; text-align:center; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_btn-co.gif) 100% 50% no-repeat; padding:0 13px 0 0 !important; color:#fff; font:bold 15px/27px Arial, Helvetica, sans-serif !important; height:27px !important; text-transform:none; }
 
 .event p a { color:#666; font-size:11px; }
 
-.event .event-bottom { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_slider-events.gif) no-repeat 50% 0; position:absolute; z-index:2; height:12px; width:23px; left:50%; margin-left:-11px; bottom:-12px; }
+.event .event-bottom { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_slider-events.gif) no-repeat 50% 0; position:absolute; z-index:2; height:12px; width:23px; left:50%; margin-left:-11px; bottom:-12px; }
 
 
 .upcoming { background:#f6f6f6; }
@@ -1123,11 +1123,11 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .event-container .event-dates div,
 .event-container .event-dates p { display:inline; }
 
-.container-open { background:#f7d4b6 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_event-container-open.gif) repeat-x 0 0; }
-.container-open .open { background-image:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_event-container-open.gif); padding-top:3px; height:54px; }
+.container-open { background:#f7d4b6 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_event-container-open.gif) repeat-x 0 0; }
+.container-open .open { background-image:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_event-container-open.gif); padding-top:3px; height:54px; }
 
-.container-upcoming { border-color:#d0d0d0; background:#eeeeee url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_event-container-upcoming.gif) repeat-x 0 0; }
-.container-upcoming .upcoming { background-image:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_event-container-upcoming.gif); }
+.container-upcoming { border-color:#d0d0d0; background:#eeeeee url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_event-container-upcoming.gif) repeat-x 0 0; }
+.container-upcoming .upcoming { background-image:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_event-container-upcoming.gif); }
 
 .container-closed { background:#9f958c }
 
@@ -1143,12 +1143,12 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 
 .events-slider .slider-panel { position:relative; overflow:hidden; background:#d0c2b6; z-index:1; width:0; }
 .events-slider ul.slider { width:200000px; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=1)" !important; }
-.events-slider ul.slider li.slider-item { overflow:hidden; width:182px; height:386px; border-right:1px solid #d0c2b6; background:#f5f5f5 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_block.gif) repeat-x 0 0; padding-left:0; }
+.events-slider ul.slider li.slider-item { overflow:hidden; width:182px; height:386px; border-right:1px solid #d0c2b6; background:#f5f5f5 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_block.gif) repeat-x 0 0; padding-left:0; }
 .events-slider ul.slider li.slider-item .category-name { font-size:16px; font-weight:normal; color:#454343; display:block; padding:80px 10px 0; }
-.events-slider ul.slider li.slider-item .category-show { width:182px; height:241px; background:#fff url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_category-info.gif) repeat-x 0 100%; overflow:hidden; text-align:center; display:block; text-decoration:none; }
+.events-slider ul.slider li.slider-item .category-show { width:182px; height:241px; background:#fff url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_category-info.gif) repeat-x 0 100%; overflow:hidden; text-align:center; display:block; text-decoration:none; }
 .events-slider ul.slider li.slider-item .no-event { height:401px; }
 
-.events-slider .slide-button { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_slide-button.gif) no-repeat 0 0; position:absolute; text-indent:-999em; cursor:pointer; top:17px; width:28px; height:28px; z-index:2; overflow:hidden; }
+.events-slider .slide-button { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_slide-button.gif) no-repeat 0 0; position:absolute; text-indent:-999em; cursor:pointer; top:17px; width:28px; height:28px; z-index:2; overflow:hidden; }
 .events-slider .backward { left:-11px; }
 .events-slider .forward { right:-11px; background-position:0 -40px; }
 .events-slider .inactive { cursor:default; display:none; }
@@ -1160,14 +1160,14 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .sidebar .events-slider ul.slider .status { padding-top:10px; padding-bottom:5px; }
 .sidebar .events-slider ul.slider .event-dates { height:40px; }
 .sidebar .events-slider ul.slider li.slider-item .category-name { font-size:16px; font-weight:normal; color:#454343; display:block; padding:50px 10px 0; }
-.sidebar .events-slider ul.slider li.slider-item .category-show { height:241px; background:#fff url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_category-info.gif) repeat-x 0 100%; }
+.sidebar .events-slider ul.slider li.slider-item .category-show { height:241px; background:#fff url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_category-info.gif) repeat-x 0 100%; }
 
 .sidebar .events-slider { margin-top:-1px; }
 .sidebar .events-slider .backward { left:3px; top:6px; }
 .sidebar .events-slider .forward { right:3px; top:6px; }
 
 .sidebar .events-slider .event-ticker { height:45px; }
-.sidebar .events-slider .event-ticker span { font-size:22px; line-height:28px; height:28px; padding-bottom:10px; background-image:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_ticker1.gif); background-repeat:no-repeat; display:inline-block; }
+.sidebar .events-slider .event-ticker span { font-size:22px; line-height:28px; height:28px; padding-bottom:10px; background-image:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_ticker1.gif); background-repeat:no-repeat; display:inline-block; }
 .sidebar .events-slider .event-ticker span.days { background-position:50% -10px; }
 .sidebar .events-slider .event-ticker span.hour { background-position:50% -69px; }
 .sidebar .events-slider .event-ticker span.minute { background-position:50% -128px; }
@@ -1177,7 +1177,7 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .sidebar .callout { display:block; margin:10px 0; }
 
 /* Generic Block */
-.sidebar .block { background:#f5f5f5 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_block.gif) repeat-x 0 0; }
+.sidebar .block { background:#f5f5f5 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_block.gif) repeat-x 0 0; }
 .sidebar .block .block-title { padding:17px 17px 0 17px; }
 .sidebar .block .block-title strong { color: #222222;display: block;font-size: 16px;font-weight: normal;padding: 0;text-transform: uppercase;}
 .sidebar .block .block-title strong small { font-size:12px; color:#777; }
@@ -1191,17 +1191,17 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .sidebar .block .actions button.button { float:right; }
 
 .sidebar .block li a.btn-previous,
-.sidebar .block li a.btn-remove { float:right; width:13px; height:0; padding-top:12px; margin-top:3px; overflow:hidden; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/btn_remove.gif) no-repeat 0 0; }
-.sidebar .block li a.btn-previous { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_icon-back.png) no-repeat 0 0; }
+.sidebar .block li a.btn-remove { float:right; width:13px; height:0; padding-top:12px; margin-top:3px; overflow:hidden; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/btn_remove.gif) no-repeat 0 0; }
+.sidebar .block li a.btn-previous { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_icon-back.png) no-repeat 0 0; }
 
 .col-main .block { background:#fff; }
-.col-main .block .block-title { background:#e7e7e7 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_block-title.gif) repeat-x 0 0; border:1px solid #e1e1e1; padding:5px 20px 5px; margin:0 -1px; }
+.col-main .block .block-title { background:#e7e7e7 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_block-title.gif) repeat-x 0 0; border:1px solid #e1e1e1; padding:5px 20px 5px; margin:0 -1px; }
 .col-main .block .block-title h2,
 .col-main .block .block-title h3 { font-size:14px; line-height:1.2; color:#000333;    }
 .col-main .block .block-content { padding:20px; }
 
 /* Generic box */
-.info-box { border:1px solid #cfcfcf; margin-top:-1px; background:#f5f5f5 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_block.gif) repeat-x 0 0; position:relative; z-index:1; }
+.info-box { border:1px solid #cfcfcf; margin-top:-1px; background:#f5f5f5 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_block.gif) repeat-x 0 0; position:relative; z-index:1; }
 .info-box .box-title { margin:17px 17px 0 17px; font:14px/1.25 Arial, Helvetica, sans-serif; padding:0; color:#222; }
 .info-box .box-title a { font-size:11px; text-transform:lowercase; }
 .info-box .box-content { padding:10px 17px 17px; color:#555; }
@@ -1239,7 +1239,7 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .sidebar .block-layered-nav dd li { margin:2px 0; }
 .sidebar .block-layered-nav dd a { color:#222; text-decoration:none; }
 .sidebar .block-layered-nav dd a:hover { text-decoration:underline; }
-.sidebar .block-layered-nav .currently { border:1px solid #d1d1d1; border-width:1px 0; padding:10px 10px 10px 17px; margin-bottom:-1px; background:#f4f4f4 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_currently.gif) repeat-x 0 -20px; }
+.sidebar .block-layered-nav .currently { border:1px solid #d1d1d1; border-width:1px 0; padding:10px 10px 10px 17px; margin-bottom:-1px; background:#f4f4f4 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_currently.gif) repeat-x 0 -20px; }
 .sidebar .block-layered-nav .currently .block-subtitle { display:block; margin-bottom:5px; }
 .sidebar .block-layered-nav .currently li { padding:5px 26px 5px 0; color:#444; position:relative; z-index:1; }
 .sidebar .block-layered-nav .currently li .btn-remove { position:absolute; right:-7px; top:4px; }
@@ -1302,8 +1302,8 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 
 .top-cart .block-content .block-subtitle { font-size:17px; text-transform:none;color:#000; line-height:12px;padding:15px;background:#f6f6f6;}
 .top-cart .block-content .block-subtitle a {float:right;text-decoration:underline;}
-.top-cart .block-content .block-subtitle .close-btn { float:right; width:13px; height:0; padding-top:12px; text-align:left; overflow:hidden; cursor:pointer; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_close.gif) no-repeat 0 0; position:relative; z-index:1; }
-.top-cart .cart-empty .close-btn { float:right; width:13px; height:0; padding-top:12px; text-align:left; overflow:hidden; cursor:pointer; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_close.gif) no-repeat 0 0; position:relative; z-index:1; }
+.top-cart .block-content .block-subtitle .close-btn { float:right; width:13px; height:0; padding-top:12px; text-align:left; overflow:hidden; cursor:pointer; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_close.gif) no-repeat 0 0; position:relative; z-index:1; }
+.top-cart .cart-empty .close-btn { float:right; width:13px; height:0; padding-top:12px; text-align:left; overflow:hidden; cursor:pointer; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_close.gif) no-repeat 0 0; position:relative; z-index:1; }
 .top-cart .cart-empty { margin:10px 0;padding:10px 10px 10px 20px; }
 .top-cart .block-content ol {/* padding-bottom:7px;*/ }
 .top-cart .block-content .item { padding:8px 5px 8px 11px; height:80px;padding-top:30px;}
@@ -1315,7 +1315,7 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .top-cart .block-content .subtotal {float:left;text-align:left;font-size:15px;padding:20px 0px 0px 10px; }
 .top-cart .topcart-bottomrow {background:#d7d7d7;height:60px;width:100%}
 
-.top-cart .actions { /*background:#e3e3e3 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 -1px; */width:150px;float:right;text-align:center; }
+.top-cart .actions { /*background:#e3e3e3 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 -1px; */width:150px;float:right;text-align:center; }
 .top-cart .actions a { float:left; line-height:23px; }
 .top-cart .actions button { float:right; margin-top:6px;margin-right:8px;border:1px solid #ebebeb; border-radius:3px;padding:14px 15px 12px 15px;}
 .top-cart .actions button.button span {background:transparent;color:#000;padding-left:0px;}
@@ -1371,7 +1371,7 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .category-view { margin:0; }
 
 .category-title { margin-bottom:0; border:1px solid #cfcfcf; border-bottom:0; text-align:left; }
-.category-title .rss-feed { float:right; margin:7px 0 0; padding-left:17px; line-height:12px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/icon_rss.gif) 0 0 no-repeat; white-space:nowrap; text-decoration:none; }
+.category-title .rss-feed { float:right; margin:7px 0 0; padding-left:17px; line-height:12px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/icon_rss.gif) 0 0 no-repeat; white-space:nowrap; text-decoration:none; }
 .category-title .rss-feed:hover { text-decoration:underline; }
 
 .category-view .note-msg,
@@ -1409,7 +1409,7 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .category-products .products-grid .add-to-links li{margin: 10px 0 2px;}
 
 /* View Type: List */
-.products-list li.item { margin:0 0 20px 0; padding:0 20px 20px 20px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; }
+.products-list li.item { margin:0 0 20px 0; padding:0 20px 20px 20px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; }
 .products-list li.last { background-image:none; }
 .products-list .product-image { float:left; margin-right:-186px; text-decoration:none !important; position:relative; }
 .products-list .product-shop { margin-left:186px; }
@@ -1443,7 +1443,7 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .col3-layout .product-view .product-img-box { float:none; width:auto; }
 .col3-layout .product-view .product-img-box .product-image { margin:0 auto; }
 
-.product-view { /*background:#fff url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) repeat-y 279px 0; border-top:1px solid #cfcfcf;*/ margin:0px; float:left; width:1000px; }
+.product-view { /*background:#fff url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) repeat-y 279px 0; border-top:1px solid #cfcfcf;*/ margin:0px; float:left; width:1000px; }
 #messages_product_view { margin:0 -20px; position:relative; z-index:1; }
 #messages_product_view .messages { margin:0 0 1px; }
 #messages_product_view .messages li { margin:0; position:relative; z-index:1; }
@@ -1451,7 +1451,7 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .product-essential { float:left; margin-bottom:10px;}
 
 .product-collateral { float:right; clear:right; width:416px; padding:30px; }
-.product-collateral .emailto-link { font-size:11px; margin:0; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_arrow-bullet.gif) no-repeat 0 4px; padding-left:12px; }
+.product-collateral .emailto-link { font-size:11px; margin:0; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_arrow-bullet.gif) no-repeat 0 4px; padding-left:12px; }
 
 .box-collateral { background:#fff; }
 .box-collateral .box-title { 
@@ -1476,9 +1476,9 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .tab-list .tab-container { position:absolute; left:0; width:100%; }
 
 .collateral-tabs { padding-bottom:20px; margin:0; }
-.collateral-tabs .tab { position:relative; z-index:2; margin-right:3px; background:#dedede url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_collateral-tabs.gif) no-repeat 0 -39px; color:#222; padding:0 0 0 17px; font-size:12px; }
-.collateral-tabs .tab span { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_collateral-tabs.gif) no-repeat 100% -39px; padding:0 17px 0 0; line-height:24px; float:left; }
-.collateral-tabs .active { color:#000;    z-index:3; border-bottom:0; background:#fff url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_collateral-tabs.gif) 0 0 no-repeat; }
+.collateral-tabs .tab { position:relative; z-index:2; margin-right:3px; background:#dedede url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_collateral-tabs.gif) no-repeat 0 -39px; color:#222; padding:0 0 0 17px; font-size:12px; }
+.collateral-tabs .tab span { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_collateral-tabs.gif) no-repeat 100% -39px; padding:0 17px 0 0; line-height:24px; float:left; }
+.collateral-tabs .active { color:#000;    z-index:3; border-bottom:0; background:#fff url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_collateral-tabs.gif) 0 0 no-repeat; }
 .collateral-tabs .active span { background-position:100% 0; padding-bottom:1px; }
 .collateral-tabs .tab-container { z-index:1; top:24px; background:#fff; }
 .collateral-tabs .tab-content { padding:30px 25px; background:#fff; border:1px solid #c4c4c4; font-size:12px; }
@@ -1494,9 +1494,9 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 .product-view .product-img-box .product-image-zoom { position:relative; width:370px; height:370px; overflow:hidden; z-index:3; }
 .product-view .product-img-box .product-image-zoom img { position:absolute; left:0; top:0; cursor:move; }
 .product-view .product-img-box .zoom-notice { text-align:center; }
-.product-view .product-img-box .zoom { position:relative; z-index:9; height:18px; margin:0 auto 13px; padding:0 28px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/slider_bg.gif) 50% 50% no-repeat; cursor:pointer; }
+.product-view .product-img-box .zoom { position:relative; z-index:9; height:18px; margin:0 auto 13px; padding:0 28px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/slider_bg.gif) 50% 50% no-repeat; cursor:pointer; }
 .product-view .product-img-box .zoom #track { position:relative; height:18px; }
-.product-view .product-img-box .zoom #handle { position:absolute; left:0; top:-1px; width:9px; height:22px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/magnifier_handle.gif) 0 0 no-repeat; }
+.product-view .product-img-box .zoom #handle { position:absolute; left:0; top:-1px; width:9px; height:22px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/magnifier_handle.gif) 0 0 no-repeat; }
 .product-view .product-img-box .zoom .btn-zoom-out { position:absolute; left:2px; top:0; }
 .product-view .product-img-box .zoom .btn-zoom-in { position:absolute; right:2px; top:0; }
 .product-view .product-img-box .more-views { margin:10px 0 0; padding:0 0 0; float:left;width:100%;}
@@ -1511,7 +1511,7 @@ ul.disc li { padding-left:10px; background:url(https://store-assets.dwell.com/sk
 
 .product-image-popup .nav { text-align:center; margin:0 auto; width:120px; }
 .product-image-popup .nav .prev,
-.product-image-popup .nav .next { margin:0 15px; display:inline; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_slide-button.gif) no-repeat 0 0; text-indent:-999em; cursor:pointer; width:28px; height:28px; z-index:2; overflow:hidden; float:left; }
+.product-image-popup .nav .next { margin:0 15px; display:inline; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_slide-button.gif) no-repeat 0 0; text-indent:-999em; cursor:pointer; width:28px; height:28px; z-index:2; overflow:hidden; float:left; }
 .product-image-popup .nav .prev { left:-19px; float:left; }
 .product-image-popup .nav .next { right:-19px; float:right; background-position:0 -40px; }
 
@@ -1522,7 +1522,7 @@ div.jqZoomTitle { z-index:5000; text-align:center; position:absolute; top:0; lef
 a.product-image { cursor:pointer !important; }
 p.product-image { cursor:default !important; }
 .jqZoomPup img { border:0; }
-.preload { text-decoration:none; border:1px solid #ccc; padding:8px; text-align:center; background:#fff url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/zoomloader.gif) no-repeat 43px 30px; width:90px; height:43px; z-index:10; position:absolute; top:3px; left:3px; -moz-opacity:0.8; opacity:0.8; filter:alpha(opacity=80); }
+.preload { text-decoration:none; border:1px solid #ccc; padding:8px; text-align:center; background:#fff url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/zoomloader.gif) no-repeat 43px 30px; width:90px; height:43px; z-index:10; position:absolute; top:3px; left:3px; -moz-opacity:0.8; opacity:0.8; filter:alpha(opacity=80); }
 .jqZoomWindow { border:1px solid #ccc; background-color:#fff; }
 
 /* Product Shop */
@@ -1570,8 +1570,8 @@ p.product-image { cursor:default !important; }
 .product-view .product-shop .add-to-cart { float:left; padding:2px 15px 10px 0; }
 #add_to_cart, ul.add-to-links {margin-top:20px;}
 /* Rating */
-.rating-box { width:65px; height:13px; font-size:0; line-height:0; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_rating.gif) 0 100% repeat-x; overflow:hidden; }
-.rating-box .rating { float:left; height:13px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_rating.gif) 0 0 repeat-x; }
+.rating-box { width:65px; height:13px; font-size:0; line-height:0; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_rating.gif) 0 100% repeat-x; overflow:hidden; }
+.rating-box .rating { float:left; height:13px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_rating.gif) 0 0 repeat-x; }
 .ratings { margin:5px 0; }
 .ratings .rating-box { float:left; margin-right:5px; }
 .ratings .amount { font-size:12px; }
@@ -1585,15 +1585,15 @@ p.product-image { cursor:default !important; }
 .availability.in-stock { /*color:#1b6800;*/ }
 .availability.out-of-stock { /*color:#cf3a00;*/ }
 
-.availability-only { margin:10px 0 7px; line-height:16px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/i_availability_only.gif) 0 50% no-repeat; padding-left:15px; }
+.availability-only { margin:10px 0 7px; line-height:16px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/i_availability_only.gif) 0 50% no-repeat; padding-left:15px; }
 .availability-only span,
 .availability-only a { border-bottom:1px dashed #751d02; color:#000; }
-.availability-only a { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/i_availability_only_arrow.gif) 100% 0 no-repeat ; cursor:pointer; padding-right:15px; text-decoration:none; }
+.availability-only a { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/i_availability_only_arrow.gif) 100% 0 no-repeat ; cursor:pointer; padding-right:15px; text-decoration:none; }
 .availability-only .expanded { background-position:100% -15px; }
 .availability-only strong { color:#d12c01; }
 
 .availability-only-details { margin:0 0 7px; border:1px solid #d9d9d9; }
-.availability-only-details thead { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_thead.gif) repeat-x scroll 0 0 #e8e8e8; }
+.availability-only-details thead { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_thead.gif) repeat-x scroll 0 0 #e8e8e8; }
 .availability-only-details th,
 .availability-only-details td { padding:2px 8px; }
 .availability-only-details th { border-bottom:1px solid #d9d9d9; font-size:10px; text-transform:uppercase; }
@@ -1797,13 +1797,13 @@ a.minimal-price-link:hover { text-decoration:underline; }
 .bundleProduct .product-options-bottom .add-to-cart { float:right; margin:0 0 0 20px; }
 .bundleProduct .product-options-bottom .price-box { margin:0; float:right; }
 .bundleProduct .product-options-bottom p.required { padding:5px 0 0; width:auto; clear:both; text-align:right; }
-.with-bundle { position:relative; z-index:1; background:#fff url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) 460px 0 repeat-y; }
+.with-bundle { position:relative; z-index:1; background:#fff url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) 460px 0 repeat-y; }
 
 /**/
 #bundle-product-wrapper { margin:-1px -20px -21px; border-top:1px solid #cfcfcf; border-bottom:1px solid #cfcfcf; float:left; width:938px; overflow:hidden; position:relative; z-index:1; }
-#bundleProduct { width:1877px; background:#fff url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) repeat-y 279px 0; z-index:1; position:relative; }
+#bundleProduct { width:1877px; background:#fff url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) repeat-y 279px 0; z-index:1; position:relative; }
 #productView { margin:0; position:static; border:0; }
-#options-container { min-height:510px; width:938px; position:relative; z-index:2; float:right; border-left:1px solid #cfcfcf; background:#fff url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) repeat-y 460px 0; left:-1px; }
+#options-container { min-height:510px; width:938px; position:relative; z-index:2; float:right; border-left:1px solid #cfcfcf; background:#fff url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) repeat-y 460px 0; left:-1px; }
 #options-container h1 { text-align:left; }
 
 #bundleProduct .add-to-links { float:none; }
@@ -1861,11 +1861,11 @@ a.minimal-price-link:hover { text-decoration:underline; }
 .bundle-summary .summary { padding:10px 8px !important; -webkit-box-shadow:0px 0px 5px #999; -moz-box-shadow:0px 0px 5px #999; box-shadow:0px 0px 5px #999; }
 .bundle-summary .summary h4 { border-bottom:1px solid #e6e6e6; color:#5a5a5a; font-size:14px; font-weight:normal; padding:0 0 5px 5px; }
 .bundle-summary .summary ul { margin:6px 0 10px; }
-.bundle-summary .summary li { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x bottom; margin:0; padding:11px 0 7px; }
+.bundle-summary .summary li { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x bottom; margin:0; padding:11px 0 7px; }
 .bundle-summary .summary .last { background:none; padding-bottom:0; }
 
 .bundle-summary button.btn-cart span,
-.bundle-summary button.btn-cart span span { background-image:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bg_bundle_btn.gif); font-weight:normal !important; height:23px !important; line-height:23px !important; padding:0 0 0 18px !important; }
+.bundle-summary button.btn-cart span span { background-image:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bg_bundle_btn.gif); font-weight:normal !important; height:23px !important; line-height:23px !important; padding:0 0 0 18px !important; }
 .bundle-summary button.btn-cart span span { padding:0 18px 0 0 !important; }
 .bundle-summary .add-to-cart .qty { margin-right:80px; }
 .bundle-summary .add-to-cart button { margin:10px 0 0; }
@@ -1877,13 +1877,13 @@ a.minimal-price-link:hover { text-decoration:underline; }
 #bundleProduct .page-title a small { font-size:14px;    }
 #bundleProduct .product-options { padding:0; width:642px; }
 #bundleProduct .product-options dt,
-#bundleProduct .product-options dd { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bg_bundle_options.png) repeat-x; }
+#bundleProduct .product-options dd { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bg_bundle_options.png) repeat-x; }
 #bundleProduct .product-options dd { background-position:0 -33px; border-bottom:1px solid #bfbfbf; margin:0; padding:20px 10px 20px 30px; }
 #bundleProduct .product-options dt { border-bottom:1px solid #e6e6e6; color:#010101; line-height:32px; padding:0 10px 0 30px; }
 #bundleProduct .product-options dl.last .last { border-bottom:none; }
 #bundleProduct .product-options p.required { padding:0; position:absolute; right:10px; top:10px; }
 
-#bundleProduct .product-options-bottom { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bg_bundle_options_bottom.png) repeat-x 0 0; padding:11px 15px 0; width:612px; }
+#bundleProduct .product-options-bottom { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bg_bundle_options_bottom.png) repeat-x 0 0; padding:11px 15px 0; width:612px; }
 #bundleProduct .product-options-bottom a { color:#ef5d24; font-size:11px;    text-decoration:none; }
 #bundleProduct .product-options-bottom a:hover { text-decoration:underline; }
 #bundleProduct .product-options-bottom a small { font-size:14px; }
@@ -1978,7 +1978,7 @@ a.minimal-price-link:hover { text-decoration:underline; }
 .product-view .box-reviews .pager { border-width:1px 0; margin:0; }
 .product-view .box-reviews dt { margin:10px 0; font-style:italic; }
 .product-view .box-reviews dt a {    font-style:normal; margin-right:10px; }
-.product-view .box-reviews dd { margin:10px 0 20px; padding:0 0 10px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; }
+.product-view .box-reviews dd { margin:10px 0 20px; padding:0 0 10px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; }
 .product-view .box-reviews dd p { margin:0 0 10px; }
 .product-view .box-reviews dd .date { margin:0 0 10px; font-style:italic; }
 .product-view .box-reviews dd.last { background:none; margin-bottom:0; }
@@ -2006,7 +2006,7 @@ a.minimal-price-link:hover { text-decoration:underline; }
 .product-review .details .review-summary-table { margin:10px 0; }
 .product-review .buttons-set { clear:both; padding:25px 0 0; }
 
-.review-product-view .col-main { background:#fff url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) repeat-y -430px 0; padding:0; }
+.review-product-view .col-main { background:#fff url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) repeat-y -430px 0; padding:0; }
 .review-product-view .col-main .page-title { margin-left:0; margin-right:0; }
 .review-product-view .product-review .product-img-box { padding:0 0 20px 20px; }
 .review-product-view .product-review .details { width:570px; padding:0 20px 20px 0; }
@@ -2040,13 +2040,13 @@ a.minimal-price-link:hover { text-decoration:underline; }
 .cms-hp-touchsmart-iq506-has-arrived .col-main { padding:0; }
 .cms-hp-touchsmart-iq506-has-arrived .main { margin-top:0; }
 .cms-hp-touchsmart-iq506-has-arrived .breadcrumbs { display:none; }
-.new-product-spotlight { border:1px solid #cfcfcf; border-top:0; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/callouts/electronics/new_computer_bg.jpg) no-repeat; height:519px; position:relative; }
+.new-product-spotlight { border:1px solid #cfcfcf; border-top:0; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/callouts/electronics/new_computer_bg.jpg) no-repeat; height:519px; position:relative; }
 .new-product-spotlight .link { position:absolute; top:95px; left:318px; }
 .new-product-spotlight .more-new-positioning { position:absolute; top:42px; right:70px; width:207px; }
 .new-product-spotlight .more-new-positioning h3 { margin-bottom:5px; font-size:11px; text-transform:uppercase;    }
 .new-product-spotlight .more-new { position:relative; height:335px; }
-.new-product-spotlight .more-new .arrow-up { position:absolute; top:0; left:0; height:20px; width:207px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/callouts/electronics/more_new_arrow.gif) no-repeat; text-indent:-999em; }
-.new-product-spotlight .more-new .arrow-down { position:absolute; bottom:0; left:0; height:20px; width:207px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/callouts/electronics/more_new_arrow.gif) no-repeat 0 100%; text-indent:-999em; }
+.new-product-spotlight .more-new .arrow-up { position:absolute; top:0; left:0; height:20px; width:207px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/callouts/electronics/more_new_arrow.gif) no-repeat; text-indent:-999em; }
+.new-product-spotlight .more-new .arrow-down { position:absolute; bottom:0; left:0; height:20px; width:207px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/callouts/electronics/more_new_arrow.gif) no-repeat 0 100%; text-indent:-999em; }
 .new-product-spotlight .more-new .content { position:absolute; top:20px; left:0; width:205px; height:295px; border-width:0 1px; border-style:solid; border-color:#dcdcdc; background:#fff; }
 .new-product-spotlight .more-new ol { margin:10px 15px; padding-left:0; list-style-type:none; }
 .new-product-spotlight .more-new .item { padding:10px 0 10px 85px; border-bottom:1px solid #d2d2d2; }
@@ -2103,7 +2103,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .tags-list li a:hover { text-decoration:underline; }
 
 /* Advanced Search */
-.search-summary { padding:10px 10px 0; margin:10px 0 0; font-size:12px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 0; }
+.search-summary { padding:10px 10px 0; margin:10px 0 0; font-size:12px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 0; }
 .search-summary li { margin:2px 0; }
 
 /* Sitemap */
@@ -2118,7 +2118,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .checkout-cart-index .col-main { padding:0; }
 .checkout-cart-index .col-main .page-title { margin:0; }
 .cart-empty { padding:20px; background:#fff; }
-.cart { /*background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_cart.gif) repeat-y 100% 0;*/ }
+.cart { /*background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_cart.gif) repeat-y 100% 0;*/ }
 .cart .title-buttons { padding-right:0px; border:0px none;}
 .cart .messages,
 .cart .messages li { margin:20px 0; }
@@ -2126,8 +2126,8 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart .checkout-types .paypal-logo {float:right;margin-right:38px;}
 .cart .checkout-types .paypal-or { margin:0 8px; line-height:2.3; }
 .cart .checkout-types fieldset { display:inline; }
-.cart .checkout-types .btn-proceed-checkout span { /*background-image:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_btn-co.gif);*/ height:27px !important; padding:0 0 0 13px !important; }
-.cart .checkout-types .btn-proceed-checkout span span { border:0; /*background-image:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_btn-co.gif);*/ padding:1px 32px 0 19px !important; color:#fff; font:normal 17px/26px Arial, Helvetica, sans-serif !important; height:26px; text-transform:none; margin:0 !important; }
+.cart .checkout-types .btn-proceed-checkout span { /*background-image:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_btn-co.gif);*/ height:27px !important; padding:0 0 0 13px !important; }
+.cart .checkout-types .btn-proceed-checkout span span { border:0; /*background-image:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_btn-co.gif);*/ padding:1px 32px 0 19px !important; color:#fff; font:normal 17px/26px Arial, Helvetica, sans-serif !important; height:26px; text-transform:none; margin:0 !important; }
 .cart .title-buttons .checkout-types li { float:left; margin:0 0 5px 5px; }
 
 /* Shopping Cart Table */
@@ -2143,7 +2143,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 
 /* Shopping Cart Collateral boxes */
 .cart .cart-collaterals { width:1000px; padding:20px 0 10px; }
-.cart .cross-inside { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_crosssell.gif) repeat-y 0 0; }
+.cart .cross-inside { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_crosssell.gif) repeat-y 0 0; }
 .cart .cart-collaterals h2 { color:#000; font-weight:normal; margin:0 0 5px; }
 .cart .deals { float:left; width:280px; display:inline; margin:0 0 0 30px; font-size:12px; }
 .cart .deals p,
@@ -2197,8 +2197,8 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .cart .totals .checkout-types .paypal-or { clear:both; display:block; padding-top:8px; line-height:1.0; font-size:11px; }
 
 .failed-products { border:1px solid #E9581F;   }
-.failed-products .sub-title { background:#FFF5F3 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/icon_error.gif) no-repeat 10px 50%; color:#D91A00; margin:0; padding:10px 10px 10px 30px; border-bottom:1px solid #E9581F; }
-.failed-products .item-msg.error { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/icon_error.gif) no-repeat left; font-size:11px; color:#D91A00; padding:5px 0 5px 20px; }
+.failed-products .sub-title { background:#FFF5F3 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/icon_error.gif) no-repeat 10px 50%; color:#D91A00; margin:0; padding:10px 10px 10px 30px; border-bottom:1px solid #E9581F; }
+.failed-products .item-msg.error { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/icon_error.gif) no-repeat left; font-size:11px; color:#D91A00; padding:5px 0 5px 20px; }
 /* Empty Cart Add by SKU */
 
 .cart-empty .failed-products { clear:both; z-index:1; position:relative; margin:40px -20px -21px; }
@@ -2210,9 +2210,9 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .truncated { cursor:help; margin:5px 0 0; position:relative; z-index:1; width:110px; }
 .truncated:hover { z-index:2; }
 .truncated a.dots { cursor:help; }
-.truncated a.details { cursor:help; text-decoration:none; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; color:#514f4f; }
+.truncated a.details { cursor:help; text-decoration:none; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; color:#514f4f; }
 .truncated .truncated_full_value .item-options { position:absolute; top:-99999em; left:-99999em; z-index:999; padding:0; width:190px; border:1px solid #c8c8c8; border-bottom:1px solid #919191; background-color:#fff; }
-.truncated .truncated_full_value .item-options dl { margin-right:-9px; position:relative; z-index:9999; padding:0px 21px 10px 12px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_truncated.gif) no-repeat 100% 38px; }
+.truncated .truncated_full_value .item-options dl { margin-right:-9px; position:relative; z-index:9999; padding:0px 21px 10px 12px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_truncated.gif) no-repeat 100% 38px; }
 .truncated .show .item-options { top:-20px; left:50%; }
 .col-left .truncated .show .item-options { left:30px; top:7px; }
 .col-right .truncated .show .item-options { left:-240px; top:7px; }
@@ -2220,7 +2220,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .block-cart .truncated .show .item-options { top:-60px; left:-206px; }
 
 /* Item options in the cart */
-.data-table .item-options dt { padding:3px 0 0 10px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_bulletsm.gif) 0 .8em no-repeat; }
+.data-table .item-options dt { padding:3px 0 0 10px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_bulletsm.gif) 0 .8em no-repeat; }
 .data-table .item-options dd { padding:0 0 3px 10px; }
 .data-table .item-options dd .price {    margin-left:5px; }
 /* ======================================================================================= */
@@ -2230,7 +2230,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 /* One Page */
 .checkout-onepage-index .col-main { padding:20px 0 0; }
 
-.opc-wrapper { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) repeat-y -573px 0; }
+.opc-wrapper { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) repeat-y -573px 0; }
 .opc-wrapper .page-title { margin:0; position:relative; z-index:1; }
 .opc-wrapper .page-title .callout { position:absolute; top:7px; right:20px; z-index:1; }
 
@@ -2265,12 +2265,12 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .opc .form-alt .input-box select { width:695px; }
 
 #checkout-step-login { height:auto !important; min-height:0 !important; padding:0; }
-#checkout-step-login .col2-set { padding:20px 20px 30px; background:#fcfcfc url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) repeat-y 195px 0; height:auto !important; min-height:0 !important; }
+#checkout-step-login .col2-set { padding:20px 20px 30px; background:#fcfcfc url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) repeat-y 195px 0; height:auto !important; min-height:0 !important; }
 #checkout-step-login .login-only { background-image:none; }
 #checkout-step-login h4 { font-size:16px; color:#000; font-weight:normal; margin:0 0 15px; }
 #checkout-step-login .col2-set .col-2 { width:338px; }
 #checkout-step-login .col2-set .col-2 .radio { margin-right:5px; }
-#checkout-step-login .col2-set .col-2 li { padding-left:10px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_bulletsm.gif) no-repeat 0 0.5em; }
+#checkout-step-login .col2-set .col-2 li { padding-left:10px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_bulletsm.gif) no-repeat 0 0.5em; }
 #checkout-step-login .col2-set .col-2 .form-list li { background:none; padding-left:0; }
 #checkout-step-login .form-list label,
 #checkout-step-login .form-list .label { width:90px; text-align:left;}
@@ -2323,7 +2323,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 /* Multiple Addresses Checkout */
 .checkout-progress,
 .checkout-progress li.first span,
-.checkout-progress li.last span { /*background-image:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_crumbs.gif); */background-repeat:no-repeat; }
+.checkout-progress li.last span { /*background-image:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_crumbs.gif); */background-repeat:no-repeat; }
 .checkout-progress { padding:0 0 0 0; border-bottom:0px solid #cfcfcf; text-align:center; margin:0px; font-size:11px;    text-transform:uppercase; width:940px; position:relative; z-index:2; }
 .checkout-progress li {border: 1px solid #CFCFCF;color: #FFFFFF;float: left;line-height: 20px;padding: 5px 2px 2px;text-align: center;	width: 19%;}
 .checkout-progress li .step-title span {display: block;height: 30px;line-height: 30px;margin: 0 auto 10px;padding: 0;text-align: center;width: 30px;background:#E6E6E6;border-radius: 20px 20px 20px 20px;}
@@ -2404,7 +2404,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .add-gift-message h3 { font-size:16px; font-weight:normal; color:#000; line-height:19px; margin:0 0 10px; }
 .add-gift-message p { margin:10px 0; }
 
-.gift-message-form { border:1px solid #d1d1d1; background:#f5f5f5 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_block.gif) repeat-x 0 0; }
+.gift-message-form { border:1px solid #d1d1d1; background:#f5f5f5 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_block.gif) repeat-x 0 0; }
 .gift-message-form .fieldset { padding:10px 0 10px; }
 .gift-message-form .fieldset .input-text,
 .gift-message-form .fieldset textarea { width:180px; }
@@ -2413,12 +2413,12 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .gift-message-form .inner-box h5,
 .gift-message-form .inner-box h4 { font:14px/1.25 Arial, Helvetica, sans-serif; padding:0 20px; color:#222; margin:17px 0; }
 .gift-message-form .inner-box p { margin:10px 0; padding:0 20px; }
-.gift-message-form .gift-item { padding:5px 0 0; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; }
-.gift-message-form .gift-item .number { padding:5px 20px 5px; margin-bottom:0; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; color:#adadad;    }
-.gift-message-form .gift-item .product-img-box { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-y 100% 0; float:left; width:150px; padding-right:15px; }
+.gift-message-form .gift-item { padding:5px 0 0; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; }
+.gift-message-form .gift-item .number { padding:5px 20px 5px; margin-bottom:0; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; color:#adadad;    }
+.gift-message-form .gift-item .product-img-box { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-y 100% 0; float:left; width:150px; padding-right:15px; }
 .gift-message-form .gift-item .product-image { text-align:center; margin:20px; }
 .gift-message-form .gift-item .product-name { font-size:12px; margin:20px 0 5px; text-align:center; }
-.gift-message-form .gift-item .fieldset { float:left; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-y 0 0; padding:20px 0 10px 10px; margin:0 0 0 -2px; width:400px;}
+.gift-message-form .gift-item .fieldset { float:left; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-y 0 0; padding:20px 0 10px 10px; margin:0 0 0 -2px; width:400px;}
 .gift-message-form .gift-item .fieldset label { width:100%; text-align:left;}
 .gift-message-form .gift-item .gift-wrapping-form { padding:0 20px; }
 
@@ -2434,9 +2434,9 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .gift-wrapping-form label { margin-right:10px; vertical-align:middle; }
 .gift-wrapping-form .gift-wrapping-design { overflow:hidden; padding:10px 0 0; width:100%; }
 
-.gift-message-link { display:block; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_collapse.gif) 0 4px no-repeat; padding-left:20px; }
+.gift-message-link { display:block; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_collapse.gif) 0 4px no-repeat; padding-left:20px; }
 .gift-message-link.expanded { background-position:0 -53px; }
-.gift-message-row .btn-close { float:right; width:13px; height:12px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/gift-message-close.gif) 0 0 no-repeat; text-indent:-999em; overflow:hidden; }
+.gift-message-row .btn-close { float:right; width:13px; height:12px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/gift-message-close.gif) 0 0 no-repeat; text-indent:-999em; overflow:hidden; }
 .gift-message dt strong {    }
 
 /* Checkout Agreements */
@@ -2474,7 +2474,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 
 /* Account Login/Create Pages ============================================================ */
 
-.account-login { position:relative; font-size:12px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) repeat-y 318px 0; min-height:350px; margin-bottom:-20px; }
+.account-login { position:relative; font-size:12px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_cols.gif) repeat-y 318px 0; min-height:350px; margin-bottom:-20px; }
 
 .login-only { background:none; }
 .login-only .registered-users { float:none; margin:0 auto; }
@@ -2526,17 +2526,17 @@ li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; lin
 .window-overlay.active { display:block; }
 .popup-block { border:1px solid #cfcfcf; left:50%; top:40%; position:absolute; margin:-85px 0 0 -250px; width:500px; text-align:left; -moz-box-shadow:0 0 6px #000; -webkit-box-shadow:0 0 6px #000; box-shadow:0 0 6px #000; z-index:1000; position:fixed; display:none; }
 .popup-block.active { display:block; }
-.popup-block .block-title { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_page-title.gif) repeat-x scroll 0 0 #F6F6F6; border-bottom:1px solid #CFCFCF; padding:17px 17px 10px; }
-.popup-block div.btn-close { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/btn_window_close.gif) no-repeat; display:block; position:absolute; top:19px; right:17px; height:15px; width:15px; text-indent:-9999em; cursor:pointer; }
+.popup-block .block-title { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_page-title.gif) repeat-x scroll 0 0 #F6F6F6; border-bottom:1px solid #CFCFCF; padding:17px 17px 10px; }
+.popup-block div.btn-close { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/btn_window_close.gif) no-repeat; display:block; position:absolute; top:19px; right:17px; height:15px; width:15px; text-indent:-9999em; cursor:pointer; }
 .popup-block .block-title strong { color:#D12C01; font-size:16px; font-weight:normal; }
-.popup-block .block-content { padding:17px 17px 25px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_block.gif) repeat-x 0 100% #fff; font-size:12px;  }
+.popup-block .block-content { padding:17px 17px 25px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_block.gif) repeat-x 0 100% #fff; font-size:12px;  }
 .popup-block .block-content .form-list label { width:180px; }
 .popup-block .block-content .form-list .input-text { width:230px; }
 .popup-block .block-content .form-list .control .input-box { margin-left:195px; }
 .popup-block .block-content .form-buttons { width:auto; padding-left:188px; padding-top:10px; }
 .popup-block .block-content .form-buttons .button { float:left; }
 .popup-block.loading .block-content * { text-align:left; text-indent:-99999em; overflow:hidden; position:relative; margin-left:-9999em; }
-.popup-block.loading .block-content:before { content:''; display:block; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/opc-ajax-loader.gif) no-repeat 0 50%; position:absolute; z-index:99; top:50%; left:50%; line-height:16px; padding:16px; text-indent:0!important; }
+.popup-block.loading .block-content:before { content:''; display:block; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/opc-ajax-loader.gif) no-repeat 0 50%; position:absolute; z-index:99; top:50%; left:50%; line-height:16px; padding:16px; text-indent:0!important; }
 
 /* My Account ============================================================================= */
 
@@ -2600,22 +2600,22 @@ li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; lin
 .order-details .link-print { background:none; padding:0; }
 .order-details .order-additional,
 .order-details .data-table { margin-bottom:20px; }
-.order-details .order-additional dt {    background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; padding:0 0 5px; margin:0 0 5px; }
+.order-details .order-additional dt {    background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; padding:0 0 5px; margin:0 0 5px; }
 .order-details .order-additional dd { padding:10px; margin:0 0 10px; }
 
 .order-details dl.gift-message { margin:0 20px; }
 .order-details .gift-message dt { margin:1px 0; padding:2px 10px; background:#e6e6e6; }
 .order-details .gift-message dd { border:1px solid #c7c7c7; background:#fff; padding:10px; margin:0 0 10px; white-space:pre-wrap; word-wrap:break-word }
 
-.order-links { margin:0 0 10px; text-align:right; padding-bottom:5px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; text-align:right; }
+.order-links { margin:0 0 10px; text-align:right; padding-bottom:5px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; text-align:right; }
 .order-info { margin-bottom:5px; border-bottom:1px solid #c4c4c4; }
 .order-info dt { padding:6px 20px 0 10px; color:#6c6c6c; float:left; }
 .order-info dd { float:left; }
 .order-info ul { float:left; }
-.order-info li { float:left; position:relative; z-index:2; margin-right:3px; background:#dedede url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_collateral-tabs.gif) no-repeat 0 -39px; color:#222; padding:0 0 0 17px; font-size:12px; }
+.order-info li { float:left; position:relative; z-index:2; margin-right:3px; background:#dedede url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_collateral-tabs.gif) no-repeat 0 -39px; color:#222; padding:0 0 0 17px; font-size:12px; }
 .order-info li strong,
-.order-info li a { text-decoration:none; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_collateral-tabs.gif) no-repeat 100% -39px; padding:0 17px 0 0; line-height:24px; float:left; }
-.order-info li.current { margin-bottom:-1px; color:#000;    z-index:3; border-bottom:0; background:#fff url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_collateral-tabs.gif) 0 0 no-repeat; }
+.order-info li a { text-decoration:none; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_collateral-tabs.gif) no-repeat 100% -39px; padding:0 17px 0 0; line-height:24px; float:left; }
+.order-info li.current { margin-bottom:-1px; color:#000;    z-index:3; border-bottom:0; background:#fff url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_collateral-tabs.gif) 0 0 no-repeat; }
 .order-info li.current strong { background-position:100% 0; padding-bottom:1px; }
 .order-info dt {    }
 
@@ -2625,12 +2625,12 @@ li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; lin
 /* Split Button */
 .split-button { display:inline-block; z-index:1; position:relative; max-width:300px; white-space:nowrap;}
 .split-button.clickable:active { left:1px; top:1px; }
-.split-button { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_btn.gif) no-repeat 0 0; height:21px; padding:0 0 0 10px; margin:0; }
+.split-button { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_btn.gif) no-repeat 0 0; height:21px; padding:0 0 0 10px; margin:0; }
 .split-button.active { z-index:100; }
-.split-button strong { cursor:default;    text-transform:uppercase; font-size:11px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_btn.gif) no-repeat 100% 0; height:19px; padding:3px 30px 0 5px; margin:0; display:block; overflow-x:hidden; white-space:nowrap; text-overflow:ellipsis; }
+.split-button strong { cursor:default;    text-transform:uppercase; font-size:11px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_btn.gif) no-repeat 100% 0; height:19px; padding:3px 30px 0 5px; margin:0; display:block; overflow-x:hidden; white-space:nowrap; text-overflow:ellipsis; }
 .split-button.clickable > strong,
 .split-button strong[onclick] { text-transform:uppercase; font-size:11px; color:#C73615; text-transform:uppercase; cursor:pointer; }
-.split-button .change { display:inline-block; border:1px solid; border-color:transparent transparent transparent #999; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_btn-split-change.png) 5px 50% no-repeat; text-indent:-999em; overflow:hidden; width:15px; cursor:pointer; height:11px; margin-left:8px; vertical-align:middle; }
+.split-button .change { display:inline-block; border:1px solid; border-color:transparent transparent transparent #999; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_btn-split-change.png) 5px 50% no-repeat; text-indent:-999em; overflow:hidden; width:15px; cursor:pointer; height:11px; margin-left:8px; vertical-align:middle; }
 .split-button .change { position:absolute; right:5px; top:0px; height:19px; border-left-color:#ccc; }
 
 .split-button.light { background:none; height:auto; padding:0; }
@@ -2647,7 +2647,7 @@ li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; lin
 .split-button .list-container { position:absolute; display:none; right:0; top:100%; padding:0; min-width:100%; max-width:300px; float:left; }
 .split-button.active .list-container { display:block; }
 .split-button .list-container ul { background:#fff; border:1px solid rgba(0,0,0,0.1); position:relative; }
-.split-button .list-container ul > li { white-space:nowrap; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_btn-split-item.png) no-repeat -10000px -10000px; border:1px solid #c1c1c1; border-top-width:0; margin:0; display:block!important; margin:0!important; }
+.split-button .list-container ul > li { white-space:nowrap; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_btn-split-item.png) no-repeat -10000px -10000px; border:1px solid #c1c1c1; border-top-width:0; margin:0; display:block!important; margin:0!important; }
 .split-button .list-container ul > li:first-child { border-top-width:1px; }
 .split-button .list-container li a,
 .split-button .list-container li span { display:block; line-height:1.2!important; cursor:pointer; padding:5px 18px 5px 18px; color:#999; font-size:11px; text-transform:none; text-decoration:none; text-align:left; text-overflow:ellipsis; overflow:hidden; }
@@ -2681,13 +2681,13 @@ li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; lin
 p.wishlist-empty {border:0px solid #d0d0d0;}
 /* Multiple Wishlist */
 
-.link-edit { padding-left:18px; line-height:18px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_link-edit.png) no-repeat 0 0; display:inline-block; }
+.link-edit { padding-left:18px; line-height:18px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_link-edit.png) no-repeat 0 0; display:inline-block; }
 .wishlist-management .link-edit { width:16px; padding:0; margin:0 5px; height:16px; text-indent:-999em; overflow:hidden; vertical-align:middle; }
 .wishlist-management .btn-create { float:right; margin-bottom:10px; }
 .wishlist-management .sub-title { float:left;  max-width:100%; }
 .wishlist-management .sub-title h2 { word-wrap:break-word; }
 .wishlist-management .note-msg { clear:both; margin:0 0 10px; padding:10px; border-style:solid !important; border-width:1px !important; font-size:12px !important; border-color:#fcd344; background-color:#fafaec; color:#3d6611; }
-.wishlist-management .msg-private { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_lock.png) no-repeat 10px 10px #fafaec; padding-left:30px; }
+.wishlist-management .msg-private { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_lock.png) no-repeat 10px 10px #fafaec; padding-left:30px; }
 .wishlist-management .table-caption .label { font-size:12px; float:left; line-height:21px; }
 #wishlists-move { float:right; margin-left:10px; }
 #wishlists-copy { float:right; }
@@ -2696,7 +2696,7 @@ p.wishlist-empty {border:0px solid #d0d0d0;}
 #wishlists-select strong { background:none; padding-right:0; padding-left:7px; font-weight:normal; font-size:12px; text-transform:none; }
 #wishlists-select strong span {    }
 #wishlists-select .change { text-indent:0; width:auto; background:none; margin-left:4px; border:0; right:auto; left:100%; text-decoration:none; line-height:19px; margin-top:1px; }
-#wishlists-select .change span { color:#1e75b4; text-transform:none; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_header-panel.gif) no-repeat scroll 100% -74px transparent; padding-right:10px; }
+#wishlists-select .change span { color:#1e75b4; text-transform:none; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_header-panel.gif) no-repeat scroll 100% -74px transparent; padding-right:10px; }
 #wishlists-select.active .change span { color:#d33911; background-position:100% -130px; }
 #wishlists-select .list-container { right:auto; left:0; margin-top:4px; }
 #wishlists-select .list-container ul { background:#e7e7e7; border:0; }
@@ -2721,7 +2721,7 @@ p.wishlist-empty {border:0px solid #d0d0d0;}
 .col1-layout #wishlist-search-results .item-name { max-width:600px; }
 
 
-.list-info { border:1px solid #dadada; padding:10px 0; margin:0 0 15px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_block.gif) repeat-x 100% 100% #fff; max-width:100%; word-wrap:break-word; }
+.list-info { border:1px solid #dadada; padding:10px 0; margin:0 0 15px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_block.gif) repeat-x 100% 100% #fff; max-width:100%; word-wrap:break-word; }
 .list-info .item { padding:5px 0; font-size:12px; border-top:1px dotted #d9d9d9; margin:0 15px; }
 .list-info .item:first-child { border-top:0; }
 .list-info .item .label { font-weight:normal; font-style:italic; font-size:0.9em; margin-right:5px; }
@@ -2735,7 +2735,7 @@ p.wishlist-empty {border:0px solid #d0d0d0;}
 
 
 /* Store credit */
-.storecredit .account-balance { margin:0 0 20px; padding:0 0 10px; font-size:12px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; }
+.storecredit .account-balance { margin:0 0 20px; padding:0 0 10px; font-size:12px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_dots.gif) repeat-x 0 100%; }
 .storecredit .account-balance .price {    }
 .giftcard-redeem { padding-bottom:20px; }
 .giftcard-redeem .input-box { margin-right:5px; }
@@ -2802,10 +2802,10 @@ p.wishlist-empty {border:0px solid #d0d0d0;}
 .billing-agreements .form-list li button.button { float:left; margin-left:10px; }
 
 /* Gift Registry Functionality */
-.btn-gift-registry { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/i_gift-registry3.gif) 0 0 no-repeat; padding:3px 0 0 33px; text-align:left; }
+.btn-gift-registry { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/i_gift-registry3.gif) 0 0 no-repeat; padding:3px 0 0 33px; text-align:left; }
 .btn-gift-registry .input-box { margin:0 0 7px; }
 .btn-gift-registry select { width:100%; }
-.gift-registry-name { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/i_gift-registry2.gif) 0 0 no-repeat; margin:3px 0 0; padding:0 0 0 20px; line-height:18px; }
+.gift-registry-name { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/i_gift-registry2.gif) 0 0 no-repeat; margin:3px 0 0; padding:0 0 0 20px; line-height:18px; }
 /* Block: Gift Registry Search */
 .sidebar .block-gr-search .form-alt .input-box { width:148px; margin:3px 0 0; padding:0; }
 .sidebar .block-gr-search .form-alt input.input-text { width:142px; }
@@ -2830,11 +2830,11 @@ p.link-widget-sku a { color:#999; }
 
 .block-addbysku .actions { text-align:right; margin:15px 0 10px; float:right; }
 .sidebar .block-addbysku .actions { float:none; }
-.block-addbysku .file-upload { float:left; text-align:left; border:1px solid #dadada; padding:10px 17px; background:#F5F5F5 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_block.gif) repeat-x 0 100%; margin-top:10px; }
+.block-addbysku .file-upload { float:left; text-align:left; border:1px solid #dadada; padding:10px 17px; background:#F5F5F5 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_block.gif) repeat-x 0 100%; margin-top:10px; }
 .block-addbysku .file-upload label { display:block; float:none; width:auto; min-width:60px; text-align:left; }
 .block-addbysku .file-upload p { padding:3px 0; }
 .block-addbysku .file-upload .btn-reset { display:inline-block; margin-left:15px; }
-.block-addbysku .file-upload .btn-reset span { margin-left:0; padding:3px 0; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_icon-reset.png) no-repeat scroll 0 50%; padding-left:15px; display:inline-block; cursor:pointer; color:#999; }
+.block-addbysku .file-upload .btn-reset span { margin-left:0; padding:3px 0; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_icon-reset.png) no-repeat scroll 0 50%; padding-left:15px; display:inline-block; cursor:pointer; color:#999; }
 .block-addbysku .file-upload .input-box { display:block; float:none; }
 .block-addbysku .file-upload .note { width:auto; clear:both; padding:2px 0; }
 
@@ -2844,7 +2844,7 @@ p.link-widget-sku a { color:#999; }
 .sidebar .block-addbysku .data-table td .qty { width:5em!important }
 .block-addbysku .data-table td.last { padding-right:18px; }
 .block-addbysku .data-table tfoot td.last { text-align:right; }
-.block-addbysku .data-table .add-row { cursor:pointer; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_btn-split-item.png) no-repeat 0px 2px; padding-left:11px;    color:#999; }
+.block-addbysku .data-table .add-row { cursor:pointer; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_btn-split-item.png) no-repeat 0px 2px; padding-left:11px;    color:#999; }
 .block-addbysku .data-table .input-box { width:99%; }
 
 .wrapper .block.block-addbysku .data-table .validation-advice { }
@@ -2866,8 +2866,8 @@ p.link-widget-sku a { color:#999; }
 .map-popup { background:#fff; border:1px solid #aaa; margin:12px 0 0; position:absolute; -moz-box-shadow:0 0 6px #ccc; -webkit-box-shadow:0 0 6px #ccc; box-shadow:0 0 6px #ccc; text-align:left; width:300px; z-index:100; }
 .map-popup-heading { background:#efefef ; border-bottom:1px solid #ccc; padding:5px 30px 5px 10px; width:260px; }
 .map-popup-heading h2 { color:#333; font-size:14px;    margin:0; text-shadow:0 1px 0 #f6f6f6; overflow:hidden; white-space:nowrap; word-wrap:break-word; text-align:left; text-overflow:ellipsis; }
-.map-popup-arrow { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/map_popup_arrow.gif) no-repeat; position:absolute; left:50%; top:-10px; height:10px; width:19px; }
-.map-popup-close { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/btn_window_close.gif) no-repeat; display:block; position:absolute; top:6px; right:8px; height:15px; width:15px; text-align:left; text-indent:-9999em; }
+.map-popup-arrow { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/map_popup_arrow.gif) no-repeat; position:absolute; left:50%; top:-10px; height:10px; width:19px; }
+.map-popup-close { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/btn_window_close.gif) no-repeat; display:block; position:absolute; top:6px; right:8px; height:15px; width:15px; text-align:left; text-indent:-9999em; }
 .map-popup-content { border-top:1px solid #eee; padding:10px; overflow:hidden; width:280px; }
 .map-popup-checkout { display:inline; float:right; text-align:right; }
 .map-popup-checkout span { display:block; padding-right:30px; }
@@ -2897,7 +2897,7 @@ p.link-widget-sku a { color:#999; }
 
 address.copyright { margin-top:6px; }
 
-.footer .switcher-store { float:right; width:184px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_store-switch.gif) no-repeat 0 3px; padding-top:21px; }
+.footer .switcher-store { float:right; width:184px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_store-switch.gif) no-repeat 0 3px; padding-top:21px; }
 .footer .switcher-store label { display:none; }
 .footer .switcher-store select { padding:0; margin-bottom:1px; }
 .footer .switcher-store ul { float:none; width:auto; padding-left:0; margin-left:0; }
@@ -2907,7 +2907,7 @@ address.copyright { margin-top:6px; }
 
 /* Some sample data cms styles ================================================================================ */
 .page-head,
-.page-head-alt { margin-bottom:20px; padding:23px 20px 11px; background:#f6f6f6 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_page-title.gif) repeat-x 0 0; border-bottom:1px solid #cfcfcf; }
+.page-head-alt { margin-bottom:20px; padding:23px 20px 11px; background:#f6f6f6 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_page-title.gif) repeat-x 0 0; border-bottom:1px solid #cfcfcf; }
 .col-main .page-head,
 .col-main .page-head-alt { margin:0 -20px 20px; }
 .page-head-alt .link-rss { float:right; margin-top:8px; }
@@ -2920,28 +2920,28 @@ address.copyright { margin-top:6px; }
 /* Restricted ================================================================================ */
 .restriction-index-stub .page { width:652px; padding-bottom:3px; }
 .restriction-index-stub .main { margin-top:100px; min-height:0; height:auto !important; padding:13px; text-align:center; margin-bottom:0; }
-.restriction-index-stub .col-main { color:#dedede; height:auto !important; min-height:230px; height:230px; font-size:16px; background:#4a4a4a url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/logo-offline.gif) no-repeat 50% 95px; padding:170px 60px 40px; }
+.restriction-index-stub .col-main { color:#dedede; height:auto !important; min-height:230px; height:230px; font-size:16px; background:#4a4a4a url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/logo-offline.gif) no-repeat 50% 95px; padding:170px 60px 40px; }
 .restriction-index-stub .page-title { margin:0 0 15px !important; padding:0 !important; border:0 !important; background:none; }
 .restriction-index-stub .col-main h1,
 .restriction-index-stub .col-main h2 { font:italic 35px Georgia, "Times New Roman", Times, serif; color:#fff; }
 .restriction-index-stub .header-container,
 .restriction-index-stub .footer-container { display:none; }
-.restriction-index-stub .copyright { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_shadow-offline.gif) 50% 0 no-repeat; padding:15px 0 0; margin:0; }
+.restriction-index-stub .copyright { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_shadow-offline.gif) 50% 0 no-repeat; padding:15px 0 0; margin:0; }
 
 
 /* Old private sales index ================================================================================ */
 .private-sales-index { background:#2b2b2b; margin:110px 0 60px; padding:40px 0; }
-.private-sales-index .box { border:1px solid #e2ded0; background:#fff url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_ps.gif) no-repeat 50% 13px; padding:50px 13px 0; width:657px; margin:0 auto; }
-.private-sales-index .box .content { padding:0 60px 70px; background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_ps.gif) no-repeat 50% 100%; font-size:14px; }
+.private-sales-index .box { border:1px solid #e2ded0; background:#fff url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_ps.gif) no-repeat 50% 13px; padding:50px 13px 0; width:657px; margin:0 auto; }
+.private-sales-index .box .content { padding:0 60px 70px; background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_ps.gif) no-repeat 50% 100%; font-size:14px; }
 .private-sales-index .box .content p { text-align:center; }
 .private-sales-index .box .content a { color:#444444; }
-.private-sales-index .box .content h1 { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_ps-logo.gif) no-repeat 50% 0; padding:60px 0 5px; font-size:29px; font-weight:normal; color:#ec4e00; }
-.private-sales-index .box .content .description { background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_ps-descr.gif) no-repeat 50% 0; margin:40px auto 0; width:433px; padding:30px 50px 30px; font:normal 20px Georgia, "Times New Roman", Times, serif; font-style:italic; color:#817268; }
+.private-sales-index .box .content h1 { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_ps-logo.gif) no-repeat 50% 0; padding:60px 0 5px; font-size:29px; font-weight:normal; color:#ec4e00; }
+.private-sales-index .box .content .description { background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_ps-descr.gif) no-repeat 50% 0; margin:40px auto 0; width:433px; padding:30px 50px 30px; font:normal 20px Georgia, "Times New Roman", Times, serif; font-style:italic; color:#817268; }
 
 .col1-layout .private-sales-index { margin:0 -20px -31px; height:auto !important; height:350px; min-height:350px; }
 
 /* Private sales index ================================================================================
-.private-sales-index { background:#fffdf9 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_ps-home.jpg) no-repeat 50% 88px; padding-top:90px; }
+.private-sales-index { background:#fffdf9 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_ps-home.jpg) no-repeat 50% 88px; padding-top:90px; }
 .private-sales-index .box .content {}
 .private-sales-index .box .content p { padding-top:475px; text-align:center; color:#444444; font-size:18px; }
 .private-sales-index .box .content a { color:#c12900; }
@@ -2952,7 +2952,7 @@ address.copyright { margin-top:6px; }
 
 /* Private sales demo ==================================================================== */
 .cms-private-sales-home { background-color:#fffdf9; }
-.private-sales-demo { background:#fffdf9 url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/bkg_ps-home.jpg) no-repeat 50% 88px; padding-top:90px; }
+.private-sales-demo { background:#fffdf9 url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/bkg_ps-home.jpg) no-repeat 50% 88px; padding-top:90px; }
 .private-sales-demo h1 { display:none; }
 .private-sales-demo p { padding-top:475px; text-align:center; color:#444444; font-size:18px; }
 .private-sales-demo a { color:#c12900; }
@@ -3152,12 +3152,12 @@ ul.footer-social-icon li{display:inline;}
 .product-options dd .swatch-select-box select {width: 280px;padding:1px;}
 
 
-.product-options dd .swatch-select-box.validation-error:before{background:url("https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/drop-down-arrow.png") no-repeat scroll right top #FFF7F5;bottom:20px;}
+.product-options dd .swatch-select-box.validation-error:before{background:url("http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/drop-down-arrow.png") no-repeat scroll right top #FFF7F5;bottom:20px;}
 @media screen and (-webkit-min-device-pixel-ratio:0)
 { .product-options dd .swatch-select-box.validation-error:before{bottom:19px;} }
 .product-options dd .swatch-select-box .validation-advice {padding-left:70px !important;}
 div.swatch-select-box {position: relative;}
-div.swatch-select-box:before {background: url("https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/drop-down-arrow.png") no-repeat scroll right top #FFFFFF;bottom: 2px;content: "";display: block;height: 19px;pointer-events: none;position: absolute;right: 1px;width: 30px;}
+div.swatch-select-box:before {background: url("http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/drop-down-arrow.png") no-repeat scroll right top #FFFFFF;bottom: 2px;content: "";display: block;height: 19px;pointer-events: none;position: absolute;right: 1px;width: 30px;}
 
 
 .styled-select {border: 1px solid #27292c;height:22px;width:200px;}
@@ -3165,10 +3165,10 @@ div.swatch-select-box:before {background: url("https://store-assets.dwell.com/sk
 
 .product-options dd .swatch-custom-select-box{overflow: hidden;padding: 0;width: 280px;}
 .product-options dd .swatch-custom-select-box select {width: 280px;padding:1px;}
-.product-options dd .swatch-custom-select-box.validation-error:before{background:url("https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/drop-down-arrow.png") no-repeat scroll right top #FFF7F5;}
+.product-options dd .swatch-custom-select-box.validation-error:before{background:url("http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/drop-down-arrow.png") no-repeat scroll right top #FFF7F5;}
 div.swatch-custom-select-box {position: relative;}
 div.swatch-custom-select-box:before {
-/*background: url("https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/drop-down-arrow.png") no-repeat scroll right top #FFFFFF;*/
+/*background: url("http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/drop-down-arrow.png") no-repeat scroll right top #FFFFFF;*/
 top: 53px;content: "";display: block;height: 20px;pointer-events: none;position: absolute;right: 1px;width: 30px;}
 .styled-select {border: 1px solid #27292c;height:22px;width:200px;}
 .swatch-select-upper{float: left;width: 70px;}
@@ -3180,7 +3180,7 @@ top: 53px;content: "";display: block;height: 20px;pointer-events: none;position:
 .custom-products-grid li.last { margin-right:0 !important; }
 .custom-products-grid .product-image { display:block; text-decoration:none !important; margin:0 auto 10px; position:relative; width:180px;}
 .category-products .custom-products-grid .product-image { display:block; text-decoration:none !important; margin:0 auto 10px; position:relative; width:360px; background:#F1F1F1;}
-.category-products .custom-products-grid h2.product-name {background: url("https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/product-name.png") no-repeat scroll left top transparent;height:145px;position: absolute;top: 0;width: 160px;word-wrap: break-word;left:0px;padding:10px;}
+.category-products .custom-products-grid h2.product-name {background: url("http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/product-name.png") no-repeat scroll left top transparent;height:145px;position: absolute;top: 0;width: 160px;word-wrap: break-word;left:0px;padding:10px;}
 
 .custom-products-grid .ratings { text-align:left; line-height:13px; }
 .custom-products-grid .rating-links { display:block; padding:2px 0 0; clear:both; }
@@ -3192,11 +3192,11 @@ top: 53px;content: "";display: block;height: 20px;pointer-events: none;position:
 .button-remove{display: block;padding: 5px 0;}
 .cart-collaterals .col2-set{float:left;width:600px;}
 
-.secure_checkout{background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/secure_checkout.jpg) no-repeat 0 50%;padding:15px 0;}
+.secure_checkout{background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/secure_checkout.jpg) no-repeat 0 50%;padding:15px 0;}
 .secure_checkout h3 a{font-size:15px;  }
 .secure_checkout h3 {font-size:14px;font-weight:normal;padding: 0 0 0 35px;}
 
-.secure_return{background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/secure_return.png) no-repeat 0 50%;padding:15px 0;}
+.secure_return{background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/secure_return.png) no-repeat 0 50%;padding:15px 0;}
 .secure_return h3 a{font-size:15px;  }
 .secure_return h3 {font-size:14px;font-weight:normal;padding: 0 0 0 35px;}
 
@@ -3287,7 +3287,7 @@ p#special_shipping {margin-left:70px;margin-bottom:5px;}
 .dwell-header .checkout-link {
   float:left;
 }
-.dwell-header .top-cart	.block-title #cartHeader { width: 65px; background: url('https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/shopping-cart.png') no-repeat 24px -4px; color: #727272;}
+.dwell-header .top-cart	.block-title #cartHeader { width: 65px; background: url('http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/shopping-cart.png') no-repeat 24px -4px; color: #727272;}
 .dwell-header .top-cart .block-title #cartHeader:hover {color: #000;}
 .dwell-header .top-cart	.block-title #cartHeader span { float: right; }
 
@@ -3655,7 +3655,7 @@ img.amconf-image-selected {
 .widget-new-products .products-list .product-image { width:85px; height:85px; }
 .widget-new-products .products-list .product-shop { margin-left:100px; }
 .sidebar .widget-new-products .block { font-size:11px; line-height:1.25; }
-.sidebar .widget-new-products .block-title strong { background:url(https://store-assets.dwell.com/skin/frontend/base/default/css/../images/widgets/i_widget-new.gif) 0 1px no-repeat; padding-left:21px; color:#dc5033; }
+.sidebar .widget-new-products .block-title strong { background:url(http://localhost/dwellstore1.9.2/skin/frontend/base/default/css/../images/widgets/i_widget-new.gif) 0 1px no-repeat; padding-left:21px; color:#dc5033; }
 
 /* Widget: Recently Viewed Proructs */
 .widget-viewed { display:block; }
@@ -3664,7 +3664,7 @@ img.amconf-image-selected {
 .widget-viewed .products-list .product-image { width:85px; height:85px; }
 .widget-viewed .products-list .product-shop { margin-left:100px; }
 .sidebar .widget-viewed .block { font-size:11px; line-height:1.25; }
-.sidebar .widget-viewed .block-title strong { background:url(https://store-assets.dwell.com/skin/frontend/base/default/css/../images/widgets/i_block-list.gif) 0 0 no-repeat; padding-left:21px; }
+.sidebar .widget-viewed .block-title strong { background:url(http://localhost/dwellstore1.9.2/skin/frontend/base/default/css/../images/widgets/i_block-list.gif) 0 0 no-repeat; padding-left:21px; }
 
 /* Widget: Recently Compared Proructs */
 .widget-compared { display:block;}
@@ -3673,7 +3673,7 @@ img.amconf-image-selected {
 .widget-compared .products-list .product-image { width:85px; height:85px; }
 .widget-compared .products-list .product-shop { margin-left:100px; }
 .sidebar .widget-compared .block { font-size:11px; line-height:1.25; }
-.sidebar .widget-compared .block-title strong { background:url(https://store-assets.dwell.com/skin/frontend/base/default/css/../images/widgets/i_block-list.gif) 0 0 no-repeat; padding-left:21px; }
+.sidebar .widget-compared .block-title strong { background:url(http://localhost/dwellstore1.9.2/skin/frontend/base/default/css/../images/widgets/i_block-list.gif) 0 0 no-repeat; padding-left:21px; }
 
 /* Widget: CMS Static Block */
 .widget-static-block {}
@@ -3688,28 +3688,28 @@ img.amconf-image-selected {
 .widget-product-link-inline { display:inline; }
 
 .col-main .widget-product-link { display:block; text-align:right; margin:7px 0; }
-.col-main .widget-product-link a { background:url(https://store-assets.dwell.com/skin/frontend/base/default/css/../images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding-right:15px; }
+.col-main .widget-product-link a { background:url(http://localhost/dwellstore1.9.2/skin/frontend/base/default/css/../images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding-right:15px; }
 
 .sidebar .widget-product-link { display:block; margin:0 0 15px; padding:0 10px; }
-.sidebar .widget-product-link a { background:url(https://store-assets.dwell.com/skin/frontend/base/default/css/../images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding:0 15px 0 0; }
+.sidebar .widget-product-link a { background:url(http://localhost/dwellstore1.9.2/skin/frontend/base/default/css/../images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding:0 15px 0 0; }
 
 /* Widget: Catalog Category Link */
 .widget-category-link-inline { display:inline; }
 
 .col-main .widget-category-link { display:block; text-align:right; margin:7px 0; }
-.col-main .widget-category-link a { background:url(https://store-assets.dwell.com/skin/frontend/base/default/css/../images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding-right:15px; }
+.col-main .widget-category-link a { background:url(http://localhost/dwellstore1.9.2/skin/frontend/base/default/css/../images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding-right:15px; }
 
 .sidebar .widget-category-link { display:block; margin:0 0 15px; padding:0 10px; }
-.sidebar .widget-category-link a { background:url(https://store-assets.dwell.com/skin/frontend/base/default/css/../images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding:0 15px 0 0; }
+.sidebar .widget-category-link a { background:url(http://localhost/dwellstore1.9.2/skin/frontend/base/default/css/../images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding:0 15px 0 0; }
 
 /* Widget: CMS Page Link */
 .widget-cms-link-inline { display:inline; }
 
 .col-main .widget-cms-link { display:block; text-align:right; margin:7px 0; }
-.col-main .widget-cms-link a { background:url(https://store-assets.dwell.com/skin/frontend/base/default/css/../images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding-right:15px; }
+.col-main .widget-cms-link a { background:url(http://localhost/dwellstore1.9.2/skin/frontend/base/default/css/../images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding-right:15px; }
 
 .sidebar .widget-cms-link { display:block; margin:0 0 15px; padding:0 10px; }
-.sidebar .widget-cms-link a { background:url(https://store-assets.dwell.com/skin/frontend/base/default/css/../images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding:0 15px 0 0; }
+.sidebar .widget-cms-link a { background:url(http://localhost/dwellstore1.9.2/skin/frontend/base/default/css/../images/widgets/i_widget-link.gif) 100% 4px no-repeat; padding:0 15px 0 0; }
 /* ======================================================================================= */
 
 /* ==================== Improved One Page Checkout with progressbar  ===================== */
@@ -3925,7 +3925,7 @@ ul.shipping-method-tab li.active{ font-weight:bold;padding:5px 0;}
 #esns_background_layer {
     position: absolute;
     z-index: 9998;
-    background: url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_dark2.png);
+    background: url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_dark2.png);
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -3952,7 +3952,7 @@ ul.shipping-method-tab li.active{ font-weight:bold;padding:5px 0;}
     width: 440px;
     height: auto;
     overflow: hidden;
-    background: url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_box_block1.png) no-repeat right top;
+    background: url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_box_block1.png) no-repeat right top;
 }
 
 #esns_box_block_1 {
@@ -3974,12 +3974,12 @@ ul.shipping-method-tab li.active{ font-weight:bold;padding:5px 0;}
 #esns_box_close {
     height: 22px;
     width: 22px;
-    background: url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_box_close.png) no-repeat;
+    background: url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_box_close.png) no-repeat;
     cursor: pointer;
     float: right;
 }
 .esns_box_lines {
-    background: url("https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_box_lines.png") no-repeat scroll 0 0 transparent;
+    background: url("http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_box_lines.png") no-repeat scroll 0 0 transparent;
     display: block;
     height: 1px;
     width: 100%;
@@ -4010,7 +4010,7 @@ ul.shipping-method-tab li.active{ font-weight:bold;padding:5px 0;}
 }
 
 #esns_box_subscribe_submit a {
-    background-image: url('https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_box_button.png');
+    background-image: url('http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_box_button.png');
     width: 117px;
     height: 34px;
     display: block;
@@ -4048,7 +4048,7 @@ ul.shipping-method-tab li.active{ font-weight:bold;padding:5px 0;}
 .tl#esns_box_layer {
     height: 263px;
     width: 504px;
-    background: url('https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_label.png') no-repeat transparent;
+    background: url('http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_label.png') no-repeat transparent;
     position: relative;
 }
 .tl #esns_box_block_1, .tl #esns_box_block_2 {
@@ -4104,7 +4104,7 @@ ul.shipping-method-tab li.active{ font-weight:bold;padding:5px 0;}
     color: #ffffff;
     height: 29px;
     line-height: 25px;
-    background: url('https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_input.png') no-repeat -212px 0px;
+    background: url('http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_input.png') no-repeat -212px 0px;
 }
 .tl #esns_box_subscribe_response_success {
     color: #FFFFFF;
@@ -4113,13 +4113,13 @@ ul.shipping-method-tab li.active{ font-weight:bold;padding:5px 0;}
     width: 340px;
 }
 .tl #esns_box_subscribe_input {
-    background: url('https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_input.png') no-repeat 125px 0px;
+    background: url('http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_input.png') no-repeat 125px 0px;
 }
 
 .tl #esns_box_close {
     height: 36px;
     width: 36px;
-    background: url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_box_close2.png) no-repeat;
+    background: url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/../images/newssubscribers/esns_box_close2.png) no-repeat;
     right: 10px;
     top:-5px;
 }
@@ -4138,7 +4138,7 @@ ul.shipping-method-tab li.active{ font-weight:bold;padding:5px 0;}
     right: 0px;
     top: -25px;   
     z-index: 19999;
-	background:url(https://store-assets.dwell.com/skin/frontend/rwd/dwell2/css/magestore/bannerslider/image/close-tiny.png) no-repeat center;
+	background:url(http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/css/magestore/bannerslider/image/close-tiny.png) no-repeat center;
 }
 #bg_fade {
     background-color: #000000;
@@ -4159,12 +4159,12 @@ ul.shipping-method-tab li.active{ font-weight:bold;padding:5px 0;}
     display:none;
 }
 #bubble_tooltip .bubble_top{
-    background-image: url('https://store-assets.dwell.com/skin/frontend/rwd/dwell2/js/amasty/amconf/css/../images/bubble_top.gif');
+    background-image: url('http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/js/amasty/amconf/css/../images/bubble_top.gif');
     background-repeat:no-repeat;
     height:16px;    
 }
 #bubble_tooltip .bubble_middle{
-    background-image: url('https://store-assets.dwell.com/skin/frontend/rwd/dwell2/js/amasty/amconf/css/../images/bubble_middle.gif');
+    background-image: url('http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/js/amasty/amconf/css/../images/bubble_middle.gif');
     background-repeat:repeat-y;    
     background-position:bottom left;
     padding-left:7px;
@@ -4179,7 +4179,7 @@ ul.shipping-method-tab li.active{ font-weight:bold;padding:5px 0;}
     font-size:16px;
 }
 #bubble_tooltip .bubble_bottom{
-    background-image: url('https://store-assets.dwell.com/skin/frontend/rwd/dwell2/js/amasty/amconf/css/../images/bubble_bottom.gif');
+    background-image: url('http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/js/amasty/amconf/css/../images/bubble_bottom.gif');
     background-repeat:no-repeat;
     background-repeat:no-repeat;    
     height:44px;

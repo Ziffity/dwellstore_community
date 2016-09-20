@@ -1,0 +1,47 @@
+# Git ignore for Dwell Magento
+.vagrant
+# Untracked directories
+# from https://github.com/github/gitignore/blob/master/Magento.gitignore
+.DS_Store
+skin/frontend/enterprise/dwell2/sass/.sass-cache
+media/*txt
+media/js/*txt
+media/css/*txt
+app/etc/local.xml
+app/etc/local.xml.secret
+media/catalog*
+media/tmp
+media/bannerslider
+media/md
+media/css
+media/js
+media/amconf
+media/customer
+media/downloadable
+media/.htaccess
+media/import
+media/xmlconnect
+media/wysiwyg
+media/tmp
+media/md
+media/menubg
+media/mercentfeed
+var/
+var/api
+var/cache
+var/export
+var/full_page_cache
+var/locks
+var/log
+var/package
+var/report
+var/session
+var/tmp
+var/resource_config.json
+magmi/state/*
+error_log
+fonttest/
+media/productsfeed/
+media/email/
+media/css_secure/
+sitemap.xml

@@ -5,6 +5,12 @@ class Kartparadigm_Giftcard_IndexController extends Mage_Core_Controller_Front_A
     public function indexAction()
 
     {
+        $this->_forward('noRoute');
+    }
+	
+	public function addindexAction()
+
+    {
         $data = $this->getRequest()->getParams();
         $quote = Mage::getSingleton('checkout/session')->getQuote();
         $customermail = Mage::getSingleton('customer/session')->getCustomer()->getEmail(); //checkout customer
@@ -30,8 +36,11 @@ class Kartparadigm_Giftcard_IndexController extends Mage_Core_Controller_Front_A
 		$currentCurrencyCode = Mage::app()->getStore()->getCurrentCurrencyCode();
 		
 		  $giftbal=Mage::helper('directory')->currencyConvert($collection['giftcard_bal'],$baseCurrencyCode,$currentCurrencyCode);
-		
-        if($total<=$disamt)
+	if($collection['giftcard_code'] == ''){
+		 Mage::getSingleton('core/session')->addError("In Correct Giftcard");
+            $this->_redirect('checkout/cart/');
+	}	
+        else if($total<=$disamt)
         {
           Mage::getSingleton('core/session')->addNotice("Giftcard cannot be applied to '0' total");
             $this->_redirect('checkout/cart/');
@@ -40,12 +49,24 @@ class Kartparadigm_Giftcard_IndexController extends Mage_Core_Controller_Front_A
             Mage::getSingleton('core/session')->addNotice("Giftcard already applied to cart");
             $this->_redirect('checkout/cart/');
         }
+        else if ($collection['giftcard_status'] == 0) {
+            Mage::getSingleton('core/session')->addNotice("Giftcard is inactive stage");
+            $this->_redirect('checkout/cart/');
+        }
         else if ($collection['giftcard_status'] == 2) {
             Mage::getSingleton('core/session')->addNotice("Giftcard in processing stage");
             $this->_redirect('checkout/cart/');
         }
         else if ($collection['giftcard_status'] == 3) {
             Mage::getSingleton('core/session')->addError("Giftcard Redeemed");
+            $this->_redirect('checkout/cart/');
+        }
+        else if ($collection['giftcard_status'] == 4) {
+            Mage::getSingleton('core/session')->addNotice("Gift Card Code Expired");
+            $this->_redirect('checkout/cart/');
+        }
+		else if ($collection['giftcard_status'] == 5) {
+            Mage::getSingleton('core/session')->addNotice("Giftcard in cancelled stage");
             $this->_redirect('checkout/cart/');
         }
         else if (strtotime($expireday) < strtotime($today)) {
@@ -86,20 +107,20 @@ class Kartparadigm_Giftcard_IndexController extends Mage_Core_Controller_Front_A
                             $quote->setGiftcardBalused($amt);
                         }
                         $quote->save();
-                        $bal = Mage::getModel('kartparadigm_giftcard/custommethods')
-                        ->getBalance($amt, $collection['giftcard_currency']);
-                        Mage::getSingleton('core/session')
-                        ->addSuccess("Gift voucher '" . $data['gc_code'] . "' was applied with amount '" . $bal . "' to your order");
+                       // $bal = Mage::getModel('kartparadigm_giftcard/custommethods')
+                       // ->getBalance($amt, $collection['giftcard_currency']);
+                        //Mage::getSingleton('core/session')
+                       // ->addSuccess("Gift voucher '" . $data['gc_code'] . "' was applied with amount '" . $bal . "' to your order");
                     }
                 }
             
             else {
-                Mage::getSingleton('core/session')
-                ->addError("Gift voucher '" . $data['gc_code'] . "' applied is not valid");
+               // Mage::getSingleton('core/session')
+               // ->addError("Gift voucher '" . $data['gc_code'] . "' applied is not valid");
             }
-            $this->_redirect('checkout/cart/');
         }
     }
+	
     public function cancelAction()
 
     {
@@ -111,6 +132,19 @@ class Kartparadigm_Giftcard_IndexController extends Mage_Core_Controller_Front_A
         $quote->save();
         Mage::getSingleton('core/session')->addNotice("Gift voucher removed from your order");
         $this->_redirect('checkout/cart/');
+    }
+	
+	public function cancelcardAction()
+
+    {
+        $quote = Mage::getSingleton('checkout/session')->getQuote();
+        $quote->setGiftcardCode('');
+        $quote->setGiftcardBal(0);
+        $quote->setGiftcardBalused(0);
+        $quote->setGiftcardNewbal(0);
+        $quote->save();
+        //Mage::getSingleton('core/session')->addNotice("Gift voucher removed from your order");
+        //$this->_redirect('checkout/cart/');
     }
 }
 

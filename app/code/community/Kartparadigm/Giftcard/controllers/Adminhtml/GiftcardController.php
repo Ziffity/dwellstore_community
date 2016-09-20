@@ -159,44 +159,7 @@ if($data['customer_groups']){
 		 $emailTemplateVariables['balance'] =  Mage::app()->getLocale()->currency($data['giftcard_currency'])->getSymbol()." ".$data['giftcard_val'];
          $emailTemplate->setSenderName(Mage::getStoreConfig('trans_email/ident_' . $type . '/name'));
          $emailTemplate->setSenderEmail(Mage::getStoreConfig('trans_email/ident_' . $type . '/email'));
-         //$emailTemplate->send($customermail, $customername, $emailTemplateVariables);
-		 
-		 
-		 $recipientName = $customername;
-        $recipientEmail = $customermail;
-        $recipientStore = $data['store_id'];
-        
-        $storeId = $data['store_id'];
-
-        $balance = Mage::app()->getLocale()->currency($data['giftcard_currency'])->getSymbol()." ".$data['giftcard_val'];
-        $code = $code;
-
-        $balance = Mage::app()->getLocale()->currency($recipientStore->getBaseCurrencyCode())->toCurrency($balance);
-
-        $email = Mage::getModel('core/email_template')->setDesignConfig(array('store' => $storeId));
-        $email->sendTransactional(
-            Mage::getStoreConfig('giftcard/giftcard/admin_giftcard_template'),
-            $recipientEmail,
-            $recipientName,
-			$code,
-			$balance,
-            array(
-                'name' => $code,
-                'code' => $code,
-                'balance' => $data['giftcard_val'],
-                'store' => $recipientStore,
-                'store_name' => $storeId // @deprecated after 1.4.0.0-beta1
-            )
-        );
-
-        $this->setEmailSent(false);
-        if ($email->getSentSuccess()) {
-            $this->setEmailSent(true)
-                ->setHistoryAction(Enterprise_GiftCardAccount_Model_History::ACTION_SENT)
-                ->save();
-        }
-		
-		
+         $emailTemplate->send($customermail, $customername, $emailTemplateVariables);
       }
 }
 else{
@@ -276,8 +239,9 @@ $customermail = $data['receiver_mail'];
       
 }
       Mage::getSingleton('adminhtml/session')->addSuccess(Mage::helper('adminhtml')->__('Giftcards Sent Successfully.'));
-	  
-     $this->_redirect('*/*/');
+      $this->_redirect('*/*/');
+      //$this->loadLayout();
+      //$this->renderLayout();
    }
    // ----------------------------------------Edit giftcard record option for admin--------------------------------
    public function editAction()
@@ -396,10 +360,10 @@ $customermail = $data['receiver_mail'];
                $emailTemplateVariables['textcolor'] = "#BF0D0D";
                 $emailTemplateVariables['receivername'] = $data['receiver_name'];
                $emailTemplateVariables['custommsg'] = $data['giftcard_msg'];
+			   $emailTemplateVariables['code'] = $code;
+		       $emailTemplateVariables['balance'] =  Mage::app()->getLocale()->currency($data['giftcard_currency'])->getSymbol()." ".$data['giftcard_val'];
                $emailTemplate->setSenderName(Mage::getStoreConfig('trans_email/ident_' . $type . '/name'));
                $emailTemplate->setSenderEmail(Mage::getStoreConfig('trans_email/ident_' . $type . '/email'));
-			   $emailTemplateVariables['code'] = $code;
-		 $emailTemplateVariables['balance'] =  Mage::app()->getLocale()->currency($data['giftcard_currency'])->getSymbol()." ".$data['giftcard_val'];
                $emailTemplate->send($data['receiver_mail'], $data['receiver_name'], $emailTemplateVariables);
                Mage::getSingleton('core/session')->addSuccess("Giftcard Added Succussfully");
             }

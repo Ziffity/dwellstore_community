@@ -1,6 +1,6 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) { /* line 3, ../sass/responsive.scss */
-  .footer-container { background: url("/skin/frontend/enterprise/dwell2/images/bg-footer.png") repeat-x scroll center top !important; background: #1f1f1f; }
+  .footer-container { background: url("/skin/frontend/rwd/dwell2/images/bg-footer.png") repeat-x scroll center top !important; background: #1f1f1f; }
   /* line 8, ../sass/responsive.scss */
   .footer-container .dwell-footer .dwell-inner-footer .footer-bg { min-width: 100%; }
   /* line 10, ../sass/responsive.scss */
@@ -26,7 +26,7 @@
   /* line 65, ../sass/responsive.scss */
   .footer-container .dwell-footer .dwell-inner-footer .footer-next-content .dwell-footer-logo img { max-width: 100%; margin-top: 16px; height: 49px; clear: both; }
   /* line 72, ../sass/responsive.scss */
-  .footer-container .dwell-footer .dwell-inner-footer .footer-next-content .rwd-footer-strip { background: url("/skin/frontend/enterprise/dwell2/images/footer-final_strip.png") repeat-x scroll center top; width: 100%; margin: 20px 0px 20px 0px; height: 1px; }
+  .footer-container .dwell-footer .dwell-inner-footer .footer-next-content .rwd-footer-strip { background: url("/skin/frontend/rwd/dwell2/images/footer-final_strip.png") repeat-x scroll center top; width: 100%; margin: 20px 0px 20px 0px; height: 1px; }
   /* line 78, ../sass/responsive.scss */
   .footer-container .dwell-footer .dwell-inner-footer .footer-next-content .footer-menu-outer { display: inline-block; vertical-align: top; margin: 0px 0px 60px 0px; }
   /* line 82, ../sass/responsive.scss */
@@ -53,7 +53,7 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) { /*footer RWD Layout */
   /* line 173, ../sass/responsive.scss */
-  .footer-container { background: url("/skin/frontend/enterprise/dwell2/images/bg-footer.png") repeat-x scroll center top !important; }
+  .footer-container { background: url("/skin/frontend/rwd/dwell2/images/bg-footer.png") repeat-x scroll center top !important; }
   /* line 177, ../sass/responsive.scss */
   .footer-container .dwell-footer .dwell-inner-footer .footer-bg { min-width: 100%; }
   /* line 179, ../sass/responsive.scss */
@@ -109,7 +109,7 @@
   /* line 319, ../sass/responsive.scss */
   .fancybox-overlay .fancybox-wrap .fancybox-skin .fancybox-inner #details p.popup-content { font: 13px/15px MiloSerifPro; color: #fff; }
   /* line 326, ../sass/responsive.scss */
-  .fancybox-overlay .fancybox-wrap .fancybox-close { background: url("/skin/frontend/enterprise/dwell2/images/icon_close.png") no-repeat scroll center top !important; left: 46%; top: 8px; } }
+  .fancybox-overlay .fancybox-wrap .fancybox-close { background: url("/skin/frontend/rwd/dwell2/images/icon_close.png") no-repeat scroll center top !important; left: 46%; top: 8px; } }
 @media only screen and (max-width: 568px) { /* line 335, ../sass/responsive.scss */
   .footer-container { background: #1f1f1f !important; width: 100%; }
   /* line 340, ../sass/responsive.scss */
@@ -174,7 +174,7 @@
   /* line 508, ../sass/responsive.scss */
   .footer-container .dwell-footer .dwell-inner-footer .footer-next-content .dwell-footer-logo img { clear: both; height: auto; margin-top: 16px; max-width: 100%; width: 55%; }
   /* line 516, ../sass/responsive.scss */
-  .footer-container .dwell-footer .dwell-inner-footer .footer-next-content .rwd-footer-strip { background: transparent url("/skin/frontend/enterprise/dwell2/images/footer-final_strip.png") repeat-x scroll center top; height: 1px; margin: 20px 10px 20px 10px; width: 94%; text-align: center; }
+  .footer-container .dwell-footer .dwell-inner-footer .footer-next-content .rwd-footer-strip { background: transparent url("/skin/frontend/rwd/dwell2/images/footer-final_strip.png") repeat-x scroll center top; height: 1px; margin: 20px 10px 20px 10px; width: 94%; text-align: center; }
   /* line 523, ../sass/responsive.scss */
   .footer-container .dwell-footer .dwell-inner-footer .footer-next-content .footer-menu-outer { display: inline-block; vertical-align: top; margin: 0px 0px 60px 0px; }
   /* line 527, ../sass/responsive.scss */
@@ -216,7 +216,7 @@
   /* line 637, ../sass/responsive.scss */
   .fancybox-overlay .fancybox-wrap .fancybox-skin .fancybox-inner #details p.popup-content { font: 13px/15px MiloSerifPro; color: #fff; }
   /* line 644, ../sass/responsive.scss */
-  .fancybox-overlay .fancybox-wrap .fancybox-close { background: url("/skin/frontend/enterprise/dwell2/images/icon_close.png") no-repeat scroll center top !important; left: 46%; top: 8px; } }
+  .fancybox-overlay .fancybox-wrap .fancybox-close { background: url("/skin/frontend/rwd/dwell2/images/icon_close.png") no-repeat scroll center top !important; left: 46%; top: 8px; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) { /* line 654, ../sass/responsive.scss */
   .footer-container { background: #1f1f1f !important; width: 100%; }
@@ -245,7 +245,7 @@
   /* line 717, ../sass/responsive.scss */
   .footer-container .dwell-footer .dwell-inner-footer .footer-next-content .dwell-footer-logo img { clear: both; height: auto; margin-top: 16px; max-width: 100%; width: 55%; }
   /* line 725, ../sass/responsive.scss */
-  .footer-container .dwell-footer .dwell-inner-footer .footer-next-content .rwd-footer-strip { background: transparent url("/skin/frontend/enterprise/dwell2/images/footer-final_strip.png") repeat-x scroll center top; height: 1px; margin: 20px 10px 20px 10px; width: 94%; text-align: center; }
+  .footer-container .dwell-footer .dwell-inner-footer .footer-next-content .rwd-footer-strip { background: transparent url("/skin/frontend/rwd/dwell2/images/footer-final_strip.png") repeat-x scroll center top; height: 1px; margin: 20px 10px 20px 10px; width: 94%; text-align: center; }
   /* line 732, ../sass/responsive.scss */
   .footer-container .dwell-footer .dwell-inner-footer .footer-next-content .footer-menu-outer { display: inline-block; vertical-align: top; margin: 0px 0px 60px 0px; width: 95%; }
   /* line 737, ../sass/responsive.scss */
@@ -273,4 +273,4 @@
   /* line 799, ../sass/responsive.scss */
   .fancybox-overlay .fancybox-wrap .fancybox-skin .fancybox-inner #details p.popup-content { color: #fff; font: 13px/17px MiloSerifPro; padding: 0; }
   /* line 807, ../sass/responsive.scss */
-  .fancybox-overlay .fancybox-wrap .fancybox-close { background: url("/skin/frontend/enterprise/dwell2/images/icon_close.png") no-repeat scroll center top !important; left: 46%; top: 8px; } }
+  .fancybox-overlay .fancybox-wrap .fancybox-close { background: url("/skin/frontend/rwd/dwell2/images/icon_close.png") no-repeat scroll center top !important; left: 46%; top: 8px; } }

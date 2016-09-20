@@ -43,14 +43,14 @@
    
     <!-- This will override the coupon output, then adds the coupon block back as well as our own custom creditpoint block-->
  <checkout_cart_index>
-    <reference name="checkout.cart">
+    <!--<reference name="checkout.cart">
       <block type="core/text_list" name="coupon.and.discount" as="coupon">
         <action method="insert">
           <block>checkout.cart.coupon</block>
         </action>
         <block type="core/template" name="discountblock" template="kartparadigm/giftcard/product/coupon.phtml" after="checkout.cart.coupon" />
       </block>
-     </reference>
+     </reference>-->
   </checkout_cart_index>
 
 

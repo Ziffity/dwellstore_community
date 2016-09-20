@@ -1,10 +1,10 @@
 
-@font-face { font-family: "TheinhardtBold-Regular"; src: url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtBold-Regular.eot'); src: url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtBold-Regular.eot?#iefix') format('eot'), url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtBold-Regular.woff') format('woff'), url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtBold-Regular.ttf') format('truetype'); }
-@font-face { font-family: "TheinhardtBold-Italic"; src: url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtBold-Italic.eot'); src: url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtBold-Italic.eot?#iefix') format('eot'), url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtBold-Italic.woff') format('woff'), url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtBold-Italic.ttf') format('truetype'); }
-@font-face { font-family: "TheinhardtMedium-Regular"; src: url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtMedium-Regular.eot'); src: url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtMedium-Regular.eot?#iefix') format('eot'), url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtMedium-Regular.woff') format('woff'), url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtMedium-Regular.ttf') format('truetype'); }
-@font-face { font-family: "TheinhardtMedium-Italic"; src: url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtMedium-Italic.eot'); src: url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtMedium-Italic.eot?#iefix') format('eot'), url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtMedium-Italic.woff') format('woff'), url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtMedium-Italic.ttf') format('truetype'); }
-@font-face { font-family: "TheinhardtRegular-Regular"; src: url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtRegular-Regular.eot'); src: url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtRegular-Regular.eot?#iefix') format('eot'), url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtRegular-Regular.woff') format('woff'), url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtRegular-Regular.ttf') format('truetype'); }
-@font-face { font-family: "TheinhardtRegular-Italic"; src: url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtRegular-Italic.eot'); src: url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtRegular-Italic.eot?#iefix') format('eot'), url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtRegular-Italic.woff') format('woff'), url('/skin/frontend/enterprise/dwell2/css/fonts/TheinhardtRegular-Italic.ttf') format('truetype'); }
+@font-face { font-family: "TheinhardtBold-Regular"; src: url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtBold-Regular.eot'); src: url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtBold-Regular.eot?#iefix') format('eot'), url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtBold-Regular.woff') format('woff'), url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtBold-Regular.ttf') format('truetype'); }
+@font-face { font-family: "TheinhardtBold-Italic"; src: url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtBold-Italic.eot'); src: url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtBold-Italic.eot?#iefix') format('eot'), url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtBold-Italic.woff') format('woff'), url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtBold-Italic.ttf') format('truetype'); }
+@font-face { font-family: "TheinhardtMedium-Regular"; src: url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtMedium-Regular.eot'); src: url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtMedium-Regular.eot?#iefix') format('eot'), url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtMedium-Regular.woff') format('woff'), url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtMedium-Regular.ttf') format('truetype'); }
+@font-face { font-family: "TheinhardtMedium-Italic"; src: url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtMedium-Italic.eot'); src: url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtMedium-Italic.eot?#iefix') format('eot'), url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtMedium-Italic.woff') format('woff'), url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtMedium-Italic.ttf') format('truetype'); }
+@font-face { font-family: "TheinhardtRegular-Regular"; src: url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtRegular-Regular.eot'); src: url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtRegular-Regular.eot?#iefix') format('eot'), url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtRegular-Regular.woff') format('woff'), url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtRegular-Regular.ttf') format('truetype'); }
+@font-face { font-family: "TheinhardtRegular-Italic"; src: url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtRegular-Italic.eot'); src: url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtRegular-Italic.eot?#iefix') format('eot'), url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtRegular-Italic.woff') format('woff'), url('/skin/frontend/rwd/dwell2/css/fonts/TheinhardtRegular-Italic.ttf') format('truetype'); }
  
 /* Clear */
 .clear{
@@ -34,7 +34,7 @@ button.onestepcheckout-btn-checkout{
 
 #shipping-new-address-form .two-fields select,#payment_form_verisign select,#verisign_cc_type_exp_div select,.v-fix select,#billing-new-address-form .two-fields select {
      -moz-appearance: none;
-    background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
+    background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
     border: 1px solid #c7c7c7;
     height: 26px;
     padding: 2px 30px 2px 2px;
@@ -45,7 +45,7 @@ button.onestepcheckout-btn-checkout{
 }
 .onestepcheckout-index-index select.validation-failed{
   -moz-appearance: none;
-    background:#FFF7F5  url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center!important;
+    background:#FFF7F5  url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center!important;
     border: 1px solid #c7c7c7;
     height: 26px;
     padding: 2px 30px 2px 3px;
@@ -53,7 +53,7 @@ button.onestepcheckout-btn-checkout{
 }
 select#shipping-address-select,select#billing-address-select{
      -moz-appearance: none;
-    background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
+    background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
     border: 1px solid #c7c7c7;
     height: 26px;
     padding: 2px 30px 2px 2px;
@@ -67,7 +67,7 @@ select#shipping-address-select,select#billing-address-select{
 	float: left;
 	display: inline-block;
 	border: 1px solid #d8d8d8;            
-	background:url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center!important;
+	background:url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center!important;
 	cursor: pointer;
 	width:144px;
 }
@@ -408,6 +408,7 @@ select#shipping-address-select,select#billing-address-select{
 
 .one-step-checkout li label{font-weight:bold;}
 label span.required{color:#F00;}
+
 .one-step-checkout .login{width:49%;}
 .one-step-checkout h3{
 	color: #fff;
@@ -1372,7 +1373,7 @@ button#add_coupon_code_button span,button#remove_coupon_code_button span{
 }
 .group-select select,#container_payment_method_verisign select{
 	/*-moz-appearance: none;
-    background: #fff url("/skin/frontend/enterprise/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
+    background: #fff url("/skin/frontend/rwd/dwell2/images/drop-down-arrow.png") no-repeat scroll right center;
     border: 1px solid #c7c7c7;
     padding: 2px 30px 2px 2px;*/
 }

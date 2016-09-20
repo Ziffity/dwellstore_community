@@ -1,5 +1,5 @@
-/*@import "https://store-assets.dwell.com/skin/frontend/rwd/dwell2/sass/stylesheets/compass/css3/";
-@import "https://store-assets.dwell.com/skin/frontend/rwd/dwell2/sass/stylesheets/compass/utilities/general/clearfix";*/
+/*@import "http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/sass/stylesheets/compass/css3/";
+@import "http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/sass/stylesheets/compass/utilities/general/clearfix";*/
 /* #808285 */
 /*RWD*/
 html, body, input, button, * {
@@ -797,7 +797,7 @@ div.multishipping-title-cont {
   .catalog-product-view .product-view .socialicons .icon-mono {
     background-attachment: scroll;
     background-clip: border-box;
-    background-image: url("https://store-assets.dwell.com/skin/frontend/rwd/dwell2/sass/stylesheets/../../images/socialshare/social-icon.png"), none;
+    background-image: url("http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/sass/stylesheets/../../images/socialshare/social-icon.png"), none;
     background-origin: padding-box;
     background-position: 0 0;
     background-repeat: repeat;
@@ -841,7 +841,7 @@ div.multishipping-title-cont {
     width: 20px;
     height: 20px; }
     .catalog-product-view .product-view .socialicons .socialgoogleplus:hover {
-      /*background-image: url("https://store-assets.dwell.com/skin/frontend/rwd/dwell2/sass/stylesheets/../../images/socialshare/googleplus-hover.png"), none;
+      /*background-image: url("http://localhost/dwellstore1.9.2/skin/frontend/rwd/dwell2/sass/stylesheets/../../images/socialshare/googleplus-hover.png"), none;
       background-repeat: none;*/
       background-position: -161px -37px;
       float: left; }
