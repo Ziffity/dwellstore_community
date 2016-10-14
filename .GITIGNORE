@@ -38,7 +38,7 @@ var/report
 var/session
 var/tmp
 var/resource_config.json
-magmi/state/*
+#magmi/state/*
 error_log
 fonttest/
 media/productsfeed/

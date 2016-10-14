@@ -348,7 +348,7 @@ class Mage_Admin_Model_User extends Mage_Core_Model_Abstract
             $this->loadByUsername($username);
             $sensitive = ($config) ? $username == $this->getUsername() : true;
 
-            if ($sensitive && $this->getId() || Mage::helper('core')->validateHash($password, $this->getPassword())) {
+            if ($sensitive && $this->getId() && Mage::helper('core')->validateHash($password, $this->getPassword())) {
                 if ($this->getIsActive() != '1') {
                     Mage::throwException(Mage::helper('adminhtml')->__('This account is inactive.'));
                 }

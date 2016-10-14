@@ -1,0 +1,29 @@
+title:MAGMI by dweeves - version:0.7.22
+startup:Running Magmi Product Import Engine v1.9.1 by dweeves
+startup:Import Profile:dwell
+startup:Import Mode:update
+step:step:0.5%
+startup:Attributeset update is enabled.
+plugin;Magmi_CSVDataSource;pluginhello:CSV Datasource-1.3.1-Dweeves- 
+plugin;Magmi_ReindexingPlugin;pluginhello:Magmi Magento Reindexer-1.0.3a-Dweeves-http://wiki.magmi.org/index.php?title=Magmi_Magento_Reindexer 
+plugin;Magmi_ReindexingPlugin;startup:Magmi Magento Reindexer v1.0.3a - Using execution mode :popen
+plugin;Magmi_DefaultAttributeItemProcessor;pluginhello:Standard Attribute Import-1.1-Dweeves- 
+startup:Performing Datasource Lookup...
+lookup:1:6.9856643676758E-5
+startup:Found 1 records, took 6.9856643676758E-5 sec
+info:Initialized attribute_set_infos!
+columns:3
+startup:Ajusted processed columns:3
+itime:1 - 3.7908554077148E-5 - 3.7908554077148E-5
+dbtime:0 - 0 - 0 - 0
+skip:skipping unknown sku:1.2825E+11 - update mode set
+itime:1 - 0.00062203407287598 - 0.00052499771118164
+dbtime:1 - 0.0001988410949707 - 0.0001988410949707 - 1
+info:Skus imported OK:0/1
+warning:SKU 1.2825E+11 - Skus imported KO:1/1
+plugin;Magmi_ReindexingPlugin;info:Magmi Magento Reindexer v1.0.3a - Cleaning flat tables before reindex...
+plugin;Magmi_ReindexingPlugin;info:Magmi Magento Reindexer v1.0.3a - running indexer
+plugin;Magmi_ReindexingPlugin;info:Magmi Magento Reindexer v1.0.3a - Reindexing cataloginventory_stock....
+plugin;Magmi_ReindexingPlugin;info:Magmi Magento Reindexer v1.0.3a - Stock Status index was rebuilt successfully in 00:00:00<br>
+plugin;Magmi_ReindexingPlugin;info:Magmi Magento Reindexer v1.0.3a - done in 1.1 secs
+end:Import Ended
