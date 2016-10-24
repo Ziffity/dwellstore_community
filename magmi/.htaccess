@@ -1,5 +1,5 @@
-#AuthUserFile /home/store/dwellstore/docroot/magmi/htpasswd.txt
-#AuthName "Login Area"
-#AuthType Basic
+AuthUserFile /home/store/dwellstore/docroot/magmi/htpasswd.txt
+AuthName "Login Area"
+AuthType Basic
 
-#require user dwell
+require user dwell

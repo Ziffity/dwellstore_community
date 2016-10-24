@@ -32,7 +32,7 @@
 ## adjust memory limit
 
 #    php_value memory_limit 64M
-    php_value memory_limit 256M
+    php_value memory_limit 512M
     php_value max_execution_time 18000
 
 ############################################
@@ -49,7 +49,7 @@
 ############################################
 ## enable resulting html compression
 
-    #php_flag zlib.output_compression on
+    php_flag zlib.output_compression on
 
 ###########################################
 # disable user agent verification to not break multiple image upload
@@ -71,6 +71,29 @@
     SecFilterScanPOST Off
 </IfModule>
 
+
+##########################################
+# add access header for fonts
+<IfModule mod_headers.c>
+  # Add origin header for internal requests
+  SetEnvIf Origin "http(s)?://((store|store-dev).)?(dwell.com)$" AccessControlAllowOrigin=$0$1
+  Header add Access-Control-Allow-Origin %{AccessControlAllowOrigin}e env=AccessControlAllowOrigin
+
+  # Add origin header for webfonts
+  	<FilesMatch "\.(ttf|woff|otf|eot|svg)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+	<filesMatch "\\.(css|css.gz)$">
+		Header set Cache-Control "max-age=2592000, private"
+	</filesMatch>
+	<filesMatch "\\.(js|js.gz)$">
+		Header set Cache-Control "max-age=2592000, private"
+	</filesMatch>
+	<filesMatch "\\.(jpg|jpeg|png|gif|swf|mp3|mp4|woff)$">
+		Header set Cache-Control "max-age=2592000, private"
+	</filesMatch>
+</IfModule>
+
 <IfModule mod_deflate.c>
 
 ############################################
@@ -78,9 +101,10 @@
 ## http://developer.yahoo.com/performance/rules.html#gzip
 
     # Insert filter on all content
-    ###SetOutputFilter DEFLATE
+    #SetOutputFilter DEFLATE
+    
     # Insert filter on selected content types only
-    #AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+    AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript
 
     # Netscape 4.x has some problems...
     #BrowserMatch ^Mozilla/4 gzip-only-text/html
@@ -92,10 +116,13 @@
     #BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 
     # Don't compress images
-    #SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+    SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+    
+    # Don't compress api
+    SetEnvIfNoCase Request_URI ^/api/ no-gzip dont-vary
 
     # Make sure proxies don't deliver the wrong content
-    #Header append Vary User-Agent env=!dont-vary
+    Header append Vary User-Agent env=!dont-vary
 
 </IfModule>
 
@@ -115,6 +142,16 @@
 
     Options +FollowSymLinks
     RewriteEngine on
+	
+	RewriteCond %{HTTP_HOST} ^shop.dwell.com$ [NC]
+	RewriteRule ^(.*)$ http://store.dwell.com/$1 [R=301,L]
+	
+	RewriteCond %{REQUEST_URI} ^/(cron|install).(php|sh)$ [NC]
+	RewriteRule ^(.*)$ / [R=301,L]
+	
+	RewriteCond %{HTTPS} off
+	RewriteCond %{REQUEST_URI} ^/customer-service/order_tracking$ [NC]
+	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 ############################################
 ## you can put here your magento root folder
@@ -166,7 +203,7 @@
 ############################################
 ## rewrite everything else to index.php
 
-    RewriteRule .* index.php [L]
+    RewriteRule .* index.php [L,QSA]
 
 </IfModule>
 
@@ -183,7 +220,17 @@
 ############################################
 ## Add default Expires header
 ## http://developer.yahoo.com/performance/rules.html#expires
-
+    ExpiresActive On
+	ExpiresByType image/jpg "access plus 1 year"
+	ExpiresByType image/jpeg "access plus 1 year"
+	ExpiresByType image/gif "access plus 1 year"
+	ExpiresByType image/png "access plus 1 year"
+	ExpiresByType text/css "access plus 1 year"
+	ExpiresByType application/pdf "access plus 1 year"
+	ExpiresByType application/javascript "access plus 1 year"
+	ExpiresByType application/x-javascript "access plus 1 year"
+	ExpiresByType application/x-shockwave-flash "access plus 1 year"
+	ExpiresByType image/x-icon "access plus 1 year"
     ExpiresDefault "access plus 1 year"
 
 </IfModule>
@@ -208,7 +255,7 @@
 
     #FileETag none
 
-###########################################
+	###########################################
 ## Deny access to cron.php
     <Files cron.php>
 
@@ -232,3 +279,9 @@
         Deny from all
 
     </Files>
+
+############################################
+	## Download folder rename
+	RewriteEngine On
+    RedirectMatch 301 /downloader/(.*) /dlsdown900870/$1
+############################################
