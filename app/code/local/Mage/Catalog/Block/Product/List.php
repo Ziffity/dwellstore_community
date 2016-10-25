@@ -55,6 +55,7 @@ class Mage_Catalog_Block_Product_List extends Mage_Catalog_Block_Product_Abstrac
      */
     protected function _getProductCollection()
     {
+		
         if (is_null($this->_productCollection)) {
             $layer = $this->getLayer();
             /* @var $layer Mage_Catalog_Model_Layer */
@@ -84,6 +85,7 @@ class Mage_Catalog_Block_Product_List extends Mage_Catalog_Block_Product_Abstrac
                     $this->addModelTags($category);
                 }
             }
+		
             $this->_productCollection = $layer->getProductCollection();
 
             $this->prepareSortableFieldsByCategory($layer->getCurrentCategory());
@@ -92,6 +94,30 @@ class Mage_Catalog_Block_Product_List extends Mage_Catalog_Block_Product_Abstrac
                 $layer->setCurrentCategory($origCategory);
             }
         }
+		
+			/* Added by Krishnan */	
+		// $this->_productCollection->load();
+			 foreach($this->_productCollection as $col){
+
+		    $product=Mage::getModel('catalog/product') ->load($col->getData('entity_id'));
+			
+			 $cats=$product->getCategoryIds();
+			 $isActive=false;
+			 foreach ($cats as $category_id) {
+			 $_cat = Mage::getModel('catalog/category')->setStoreId(Mage::app()->getStore()->getId())->load($category_id);
+			
+				 if($_cat->getIsActive())
+					 $isActive=true;            
+			 }
+ 
+			 if(!$isActive){
+				  $this->_productCollection->addAttributeToFilter('sku', array('neq' => $product->getSku()));
+				 //$this->_productCollection->removeItemByKey($product->getId());	
+			 }
+
+		 }
+			/* Added by Krishnan */	
+		
 		if($this->getLayer()->getCurrentCategory()->getId() == '328'){
 			return $this->_productCollection->setVisibility(null);
 		} else {

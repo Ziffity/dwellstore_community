@@ -42,7 +42,7 @@
     </div>
 <?php else:?>
     <div class="block-title<?php if(!$_cartQty) { echo (' no-items'); } ?>">
-        <strong id="cartHeader"><a href="<?php echo $this->getUrl('checkout/cart'); ?>"><?php echo $_myCart ?></a></strong>
+        <a href="<?php echo $this->getUrl('checkout/cart'); ?>"><strong id="cartHeader"><?php echo $_myCart ?></strong></a>
     </div>
     <div id="topCartContent" class="block-content" style="display:none">
     	
