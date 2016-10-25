@@ -95,8 +95,10 @@ class Mage_Catalog_Block_Product_List extends Mage_Catalog_Block_Product_Abstrac
             }
         }
 		
-			/* Added by Krishnan */	
+			/* Added by Krishnan 
 		// $this->_productCollection->load();
+			$page = Mage::app()->getFrontController()->getRequest()->getRouteName();
+		if($page=="catalogsearch"){
 			 foreach($this->_productCollection as $col){
 
 		    $product=Mage::getModel('catalog/product') ->load($col->getData('entity_id'));
@@ -115,8 +117,9 @@ class Mage_Catalog_Block_Product_List extends Mage_Catalog_Block_Product_Abstrac
 				 //$this->_productCollection->removeItemByKey($product->getId());	
 			 }
 
-		 }
-			/* Added by Krishnan */	
+			}
+		}
+			 Added by Krishnan */	
 		
 		if($this->getLayer()->getCurrentCategory()->getId() == '328'){
 			return $this->_productCollection->setVisibility(null);
