@@ -34,7 +34,7 @@
 <?php 
 	$page = Mage::app()->getFrontController()->getRequest()->getRouteName();
 	if(($page=='catalog' && Mage::getModel('catalog/layer')->getCurrentCategory()->getCategoryLanding()=='70') || $page!='catalog'):
-		if ($page == 'catalog' || $page == 'catalogsearch')
+		if ($page != 'catalog' && $page != 'catalogsearch')
 	    $_productCollection=$this->getLoadedProductCollection()->clear()->setPage(1,16)->load();
 		else
 		$_productCollection=$this->getLoadedProductCollection();
