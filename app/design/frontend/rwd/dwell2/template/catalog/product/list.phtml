@@ -41,6 +41,7 @@
 		$_helper = $this->helper('catalog/output');
 		$_collectionSize = $_productCollection->count();
 		$_columnCount = ($page == 'catalog') ? 3 : 4;
+		$_productCollection->clear()->load();
 ?>
 <?php if ($page == 'catalog' || $page == 'catalogsearch'): ?>
 	<?php echo $this->getToolbarHtml() ?>

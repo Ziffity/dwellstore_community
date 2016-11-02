@@ -10,6 +10,11 @@
 			<registry>
 				<class>DWELL_Catalog_Helper</class>
 			</registry>
+			<catalog>
+				<rewrite>
+					<product_view>DWELL_Catalog_Helper_Product_View</product_view>
+				</rewrite>
+			</catalog>
 		</helpers>
 		<models>
 			<catalog>

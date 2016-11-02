@@ -46,24 +46,6 @@ class DWELL_Catalog_ProductController extends Mage_Catalog_ProductController
         $categoryId = (int) $this->getRequest()->getParam('category', false);
         $productId  = (int) $this->getRequest()->getParam('id');
         $specifyOptions = $this->getRequest()->getParam('options');
-	/* Added by Krishnan */
-		$product=Mage::getModel('catalog/product') ->load($productId );
-		
-		$cats=$product->getCategoryIds();
-		$isActive=false;
-		foreach ($cats as $category_id) {
-		$_cat = Mage::getModel('catalog/category')->setStoreId(Mage::app()->getStore()->getId())->load($category_id);
-		
-			if($_cat->getIsActive())
-				$isActive=true;            
-		}
-		
-		if(!$isActive){
-			$this->norouteAction();
-			return;
-		}
-	/* Added by Krishnan */	
-		
 		/****/
 		/*
 		/* 	DWELL - Redirect to parent product if simple product in order to show options.

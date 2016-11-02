@@ -95,22 +95,27 @@ class Mage_Catalog_Block_Product_List extends Mage_Catalog_Block_Product_Abstrac
             }
         }
 		
+		
 			/* Added by Krishnan */	
-		// $this->_productCollection->load();
+		$cat = Mage::getModel('catalog/category')->load(314);
+        $subcats = explode(',',$cat->getChildren());
+
 			$page = Mage::app()->getFrontController()->getRequest()->getRouteName();
 		if($page=="catalogsearch"){
 			 foreach($this->_productCollection as $col){
 
 		    $product=Mage::getModel('catalog/product') ->load($col->getData('entity_id'));
-			
+			$isActive=false;
 			 $cats=$product->getCategoryIds();
-			 $isActive=false;
-			 foreach ($cats as $category_id) {
-			 $_cat = Mage::getModel('catalog/category')->setStoreId(Mage::app()->getStore()->getId())->load($category_id);
-			
-				 if($_cat->getIsActive())
-					 $isActive=true;            
+			 $result = array_intersect($subcats, $cats);
+			 if(count($result)>0){
+				 $isActive=true; 
 			 }
+			 
+			 // foreach ($cats as $category_id) {
+			 // $_cat = Mage::getModel('catalog/category')->setStoreId(Mage::app()->getStore()->getId())->load($category_id);		
+				 // if($_cat->getIsActive())		            
+			 // }
  
 			 if(!$isActive){
 				  $this->_productCollection->addAttributeToFilter('sku', array('neq' => $product->getSku()));

@@ -15,6 +15,11 @@
 					<type_onepage>DWELL_Checkout_Model_Type_Onepage</type_onepage>
 				</rewrite>
 			</checkout>
+			<checkout>
+				<rewrite>
+					<cart>DWELL_Checkout_Model_Cart</cart>
+				</rewrite>
+			</checkout>
         </models>
         
        <!-- Disabling Subscription cart promo in lieu of DWELL-964 -->
